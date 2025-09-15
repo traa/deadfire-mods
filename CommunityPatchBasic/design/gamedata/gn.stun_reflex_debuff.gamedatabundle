@@ -1,0 +1,1082 @@
+﻿{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Stunned_SE_Reflex",
+			"ID": "f6e66f75-d5d5-42bd-b30d-13b9b1b72608",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "Reflex",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": -10,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 0,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "true",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "true",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "AFF_Stunned",
+			"ID": "f9d7ee58-565d-471c-8743-49a73a5f22a9",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "The_Thunder_Rolled_Like_SE_Stunned",
+			"ID": "2bc6cbc1-3e25-436e-a7ba-1b46ae600ef8",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Its_Crash_Could_Not_Be_Denied_SE_Stunned",
+			"ID": "f46fec3d-6fc0-420b-b461-e888c761f91d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Wild_Mind_SE_Stunned",
+			"ID": "83103321-62d9-43cc-94bb-fe22844934fd",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Psychic_Backlash_SE_Stun",
+			"ID": "6f0a26dd-a032-4c89-919e-723871b227db",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Silent_Scream_SE_Stun",
+			"ID": "b64e5c38-b867-49a7-b758-3299020aa70c",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Brutal_Backlash_SE_Stun",
+			"ID": "1be08c0d-0634-46d2-bd46-7a520c5c4c44",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Spiritshift_StormBlight_StormsRage_SE_Stun",
+			"ID": "cc708f64-906f-462e-8c49-dcb345aaf506",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Returning_Storm_SE_Stun",
+			"ID": "37fb255b-d6a3-488e-81b4-3f3ad3bec3a2",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Overwhelming_Wave_SE_Stun",
+			"ID": "9e24e372-82d1-4d0e-954e-f6fa63f4d45d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Relentless_Storm_SE_Stun",
+			"ID": "c067f4e0-71f6-4abc-bc82-82f09a23cb13",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Charge_SE_Stun",
+			"ID": "b5a99b43-0106-48e8-81c3-9bed8d6544c1",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Power_Strike_SE_Stunned",
+			"ID": "21ac1913-9ebc-4140-872f-c9c0c4ebbdd4",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Inspired_Strike_SE_Stunned",
+			"ID": "5f221bb6-40af-4a6d-9176-5fc44f218d65",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Stunning_Blow_SE_Stun",
+			"ID": "6627e3ef-1689-42a3-b322-af1f989fdd73",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Raised_Torment_SE_Stunned",
+			"ID": "4b50c45f-158d-4fff-8fff-28749fbbd47b",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Stunning_Surge_SE_Stun",
+			"ID": "3d83a80f-25bb-4094-b6d4-abb932a6344b",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Dimensional_Shift_SE_Stun",
+			"ID": "1680da2d-6676-4bc8-b2ad-a253bf0a31f5",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Tayns_Chaotic_Orb_SE_Stunned",
+			"ID": "0ed73dcb-d865-48ab-86ca-d20170070969",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Minolettas_Piercing_Sigil_SE_Stunned",
+			"ID": "e30502ab-730a-41f9-adb1-47178aef2505",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "BogBat_DeathShriek_SE_Stunned",
+			"ID": "7efc5602-2d64-4c36-b93c-b8abf6e6f27c",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Blight_Flame_StunnedOnFrost_SE_Stunned",
+			"ID": "2cc06a24-24ea-4b7a-beb2-5f54da1aaea3",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Blight_Sand_StunnedOnShock_SE_Stunned",
+			"ID": "f99fb77e-71e5-4884-9f6f-e60b0fe51b3c",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Ogre_Mercenary_HeadStrike_SE_Stun",
+			"ID": "a5dac43a-0809-4f1f-b64e-812bd5b5167a",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Panther_RakingSlash_SE_Stun",
+			"ID": "ba5ac636-170b-4fbb-8dc1-1f5b26b4345d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Tentacle_Kraken_ClearOut_SE_Stun",
+			"ID": "5b0cadb1-5c53-47da-8e69-15fc19ea5f63",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Guardian_FlashFreeze_SE_Stunned",
+			"ID": "8eda9830-1c8b-40d7-a07f-ddbe5e3220f6",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Wraith_Abduction_SE_Stunned",
+			"ID": "cdc99089-bc68-455c-b45b-0d216a22616d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Lagufaeth_Enraged_GalawainsRage_SE_Stun",
+			"ID": "205bfb6e-ab4f-4b9a-8d37-55cb470c4b33",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Totem_Naga_Fire_Death_Ability_SE_Stunned",
+			"ID": "681afe6d-ffe1-4f64-8b0a-0f6ce5844952",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Bomb_Stun_bomb_SE_StunAffliction",
+			"ID": "bef76069-ad89-4877-a280-1ec13a53eadd",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Bushwack_SE_StunAffliction",
+			"ID": "6c86d387-cea4-4f1f-9f40-3146a1ad81b5",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Reeling_blow_SE_StunAffliction",
+			"ID": "a888492f-c14d-4a0f-8a57-29a028c64f53",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Shout_of_hosts_SE_StunnAffliction",
+			"ID": "d6eacd6b-3e2a-4837-b5cf-997a2450eb8b",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Rebound_SE_StunnedAffliction",
+			"ID": "2b4f752e-9d9b-475d-8ead-206e017964e4",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Constant_Rebound_SE_StunnedAffliction",
+			"ID": "3badf9a2-af96-4a4d-9199-02efb31838a3",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Heavy_Rebound_SE_StunnedAffliction",
+			"ID": "2d326f14-b2dd-4c8d-a6d8-0818f8919258",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Sungrazer_Impacting_SE_Stunned",
+			"ID": "3bf528af-11e1-49eb-b4bc-c01f44c4ca72",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Checkmate_Ability_SE_Stunned",
+			"ID": "6d52989a-a013-447a-90a5-d141d8233042",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Ongitok_Angunisag_SE_StunnedAffliction",
+			"ID": "0141b1f2-92e9-4ee3-805c-4fa03cba76b9",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Magistrates_cudgel_Verdict_SE_Stunned",
+			"ID": "6bf5119c-2712-492e-99aa-846fd4dd04d5",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Modwyr_Experimentation_Ability_SE_Stunned",
+			"ID": "c87bae7a-f53f-403a-aabf-03ba4ad80fb2",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Maerwald_Stun_Clones_SE_Stun",
+			"ID": "69c42192-baa4-43d7-ac51-6195e185ab87",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Grub_Arc_System_Shock_SE_Stunned_Aff",
+			"ID": "7246f3f8-00b4-4649-ad3f-fb6006f40c4d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Dino_croc_PutridBreath_SE_Stunned",
+			"ID": "d2129d06-deee-45d9-902d-95e3a54e25b5",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Tentacle_Baby_Kraken_Destroyed_Limb_Stun_Aff_Stunned",
+			"ID": "1893ccdd-8cca-435e-8e69-d53c363304f2",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Disruptor_Coil_SE_Stunned",
+			"ID": "a1d8c869-ef56-41eb-a861-48956fa4bad8",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Boars_Charge_SE_Stun",
+			"ID": "52c7f3f2-25f8-4a88-9852-0de0e457933b",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Volatile_SE_Stunned",
+			"ID": "c82cc1d3-d52a-4df7-8016-419b0d40cd53",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX02_Chaos_Strike_SE_Stunned",
+			"ID": "4c67e0bf-5eae-401c-bf41-f1625a4e7949",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Double_Slam_SE_Stun",
+			"ID": "63b632ce-64fb-4f30-ae1b-a55ac863ea2d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Luminescent_Sporeling_Noxious_Injection_SE_Stunned",
+			"ID": "e0eab7dc-8a01-4ef0-bf67-f0acfb58f46f",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Memory_Hoarder_Archmage_Debuff_SE_Stun",
+			"ID": "ed535b86-ec15-4848-9fd8-283b44a234d3",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Memory_Hoarder_Librarian_Stupefied_SE_Stunned",
+			"ID": "85514997-ca86-45b2-a368-bac462490003",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Bomb_Imp_Spray_Ability_SE_Stunned",
+			"ID": "d12cf21f-93df-48cb-97cf-448961a30606",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Heavy_Rebound_TBM_SE_StunnedAffliction",
+			"ID": "1ade6dbe-163e-447c-aca4-4c997010235e",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectsValueIDs": [
+						"ef17d967-79f8-4cb6-ae93-a19e4d3eb8d2",
+						"9fd4396f-b41b-40f7-9d7f-049d1ab466b9",
+						"45537b43-aa00-4ee7-8f70-84f60a6b1d65",
+						"b83921b4-08a3-4327-a33b-365580ac88ad",
+						"f6e66f75-d5d5-42bd-b30d-13b9b1b72608"
+					]
+				}
+			]
+		}
+	]
+}

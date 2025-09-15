@@ -1,0 +1,50 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Blooded_Hunter_Add",
+			"ID": "254a2d2c-e73c-42f5-9c3f-1c0344da7dfe",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "false",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean HasAbility(Guid, Guid)",
+										"Parameters": [
+											"b1a8e901-0000-0000-0000-000000000000",
+											"da6c7b9c-3389-475d-98f9-d774c1bcbb2d"
+										]
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void AddAbility(Guid, Guid)",
+									"Parameters": [
+										"b1a8e901-0000-0000-0000-000000000000",
+										"da6c7b9c-3389-475d-98f9-d774c1bcbb2d"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+        }
+	]
+}

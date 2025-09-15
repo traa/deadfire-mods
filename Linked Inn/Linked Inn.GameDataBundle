@@ -1,0 +1,103 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ItemGameData, Assembly-CSharp",
+            "DebugName": "INN_ANYWHERE_Test",
+            "ID": "7df50ae4-c166-492e-bc2f-0d260d07e4b4",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+                    "DisplayName": 25133,
+                    "DescriptionText": 25132,
+                    "FilterType": "Quest",
+                    "InventoryAudioEventListID": "32023afc-c1c3-4b6a-bcfd-77bde56ee6c3",
+                    "IsQuestItem": "true",
+                    "IsIngredient": "false",
+                    "IsCurrency": "false",
+                    "IsAdventuringItem": "false",
+                    "IsJunk": "false",
+                    "CanSellForFullValue": "false",
+                    "MaxStackSize": 1,
+                    "NeverDropAsLoot": "false",
+                    "CanBePickpocketed": "true",
+                    "IsUnique": "false",
+                    "Value": 100000,
+                    "IconTextureSmall": "NEW_Linked_Inn_42.png",
+                    "IconTextureLarge": "gui/icons/items/NEW_Linked_Inn_75.png",
+                    "PencilSketchTexture": "",
+                    "InspectOnUseButton": [
+                        {
+                            "DisplayConditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "DisplayString": 25134,
+                            "Script": {
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                },
+                                "Scripts": [
+                                    {
+                                        "Data": {
+                                            "FullName": "Void OpenInn(Guid)",
+                                            "Parameters": [
+                                                "6f88c8c2-e6b7-4429-9407-5ae6c011d4fd"
+                                            ],
+                                            "Flags": "",
+                                            "UnrealCall": "",
+                                            "FunctionHash": 0,
+                                            "ParameterHash": 0
+                                        },
+                                        "Conditional": {
+                                            "Operator": 0,
+                                            "Components": []
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "IsPlaceholder": "false"
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "Grant_Inn_Item_ScriptHook",
+            "ID": "6b195c5b-487c-46c9-a2d9-3182ba59944c",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GiveItems(Guid, Int32)",
+                                    "Parameters": [
+                                        "7df50ae4-c166-492e-bc2f-0d260d07e4b4",
+                                        "1"
+                                    ],
+                                    "Flags": "",
+                                    "UnrealCall": "",
+                                    "FunctionHash": 0,
+                                    "ParameterHash": 0
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

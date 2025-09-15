@@ -1,0 +1,91 @@
+﻿{
+  "GameDataObjects": [
+
+		
+		{
+	      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+	      "DebugName": "Manual_of_Horticulture_LOOTLIST",
+	      "ID": "353b7b9b-34e1-470a-a389-c13c5f17db7a",
+	      "Components": [
+		{
+		  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+		  "Conditional": {
+		    "Operator": 0,
+		    "Components": []
+		  },
+		  "OutputChance": 1,
+		  "OutputMode": "All",
+		  "Items": [
+		    {
+		      "Conditional": {
+		        "Operator": 0,
+		        "Components": []
+		      },
+		      "OutputChance": 1,
+		      "MinCount": 1,
+		      "MaxCount": 1,
+		      "Weight": 1,
+		      "ItemID": "de813785-0efd-4d38-a90e-bfb0a4bfb78a",
+		      "LootListID": "00000000-0000-0000-0000-000000000000",
+		      "LockedVisible": "false"
+		    }
+		  ]
+		}
+	      ]
+	    },
+	
+	
+	{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "MANUAL_OF_HORTICULTURE_Location",
+			"ID": "2e01813e-df9a-47b4-b151-3a35a36905ac",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"9f4f0d65-757b-4196-ad47-84adb9d67625"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"9f4f0d65-757b-4196-ad47-84adb9d67625",
+										"353b7b9b-34e1-470a-a389-c13c5f17db7a"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							},
+							
+						]
+					}
+				}
+			]
+		},
+		
+
+	
+		
+		
+		
+	]
+}

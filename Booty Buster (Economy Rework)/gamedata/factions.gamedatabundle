@@ -1,0 +1,572 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Bad_01",
+      "ID": "70f062d8-5edc-43b5-8e32-f0ecbd7a9c9d",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Bad_02",
+      "ID": "8b1371c6-9917-4afd-92cd-24bcbb7354d4",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Good_WM",
+      "ID": "ebe5a3f2-4f77-4b18-b655-4e355982d9ea",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Good_3",
+      "ID": "dda88477-0aa3-4992-bd7f-0fc4b2394e45",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "SellMultiplier": 0.85,
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Good_2",
+      "ID": "d9ec906b-3f4c-4507-9cf1-235b466fbbc8",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Good_1",
+      "ID": "9e0a47e0-5103-44c7-973f-321316e9feeb",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Free",
+      "ID": "880953e4-2052-456e-a622-eab7e9359776",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Default",
+      "ID": "bd6efb6b-45e0-477f-b80e-95931b37fa53",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Beraths_Blessings",
+      "ID": "42c0f93d-ce7c-494c-a637-c7949fc4cbf2",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Bad_03",
+      "ID": "3aef39c3-757f-49c3-a5d9-299ff730409b",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "BuyMultiplier": 0.05
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorRatesGameData, Assembly-CSharp",
+      "DebugName": "Rates_Good_3_Fence",
+      "ID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorRatesComponent, Assembly-CSharp",
+          "SellMultiplier": 0.85,
+          "BuyMultiplier": 0.15,
+          "InnMultiplier": 0.85
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_DUN_Market_Ramaso",
+      "ID": "e0bf79fa-bab9-4a46-bb9a-cdbe512fb2aa",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_RE_Generic_Slaver",
+      "ID": "5ecb97b2-fd74-4916-baad-502502b40904",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "b_Slavers_Allied",
+                        "GreaterThanOrEqualTo",
+                        "1"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_14_Port_Vendor",
+      "ID": "1554a304-8ded-4f82-b173-259a11dc8bd0",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "StartingFactionID": "2d9b0cea-85af-4239-9704-17193f852b93",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "b_Slavers_Allied",
+                        "GreaterThanOrEqualTo",
+                        "1"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_Port_Vendor",
+      "ID": "9e2fe1a2-b982-4135-a903-51e70709b21f",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_DUN_Market_Bar",
+      "ID": "1c322b39-38e7-4ca8-8fa0-22fddccd9d37",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_DUN_Market_Food",
+      "ID": "ce08a6fb-61ee-4ed8-86e5-b25ab7450a94",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_DUN_Tavern",
+      "ID": "d7e5311c-da3f-4239-8375-8d03a95d0865",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_17_DUN_Treasure_Trove",
+      "ID": "1d648e00-8387-4e5a-ab7a-86ed5915e886",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_13_merchant",
+      "ID": "b14fa8d8-560e-49f9-a118-4d26ffa12aa4",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "5",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                      "Parameters": [
+                        "n_Allied_Faction",
+                        "EqualTo",
+                        "4"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.VendorGameData, Assembly-CSharp",
+      "DebugName": "Vendor_14_Spy",
+      "ID": "b0031106-7818-438d-939f-2bdd340705bd",
+      "Components": [
+        {
+          "$type": "Game.GameData.VendorComponent, Assembly-CSharp",
+          "ConditionalRates": [
+            {
+              "RatesID": "ee113aed-0b3a-449a-b363-2afaf2dc71a0",
+              "Condition": {
+                "Operator": 0,
+                "Components": [
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Good",
+                        "4",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 1
+                  },
+                  {
+                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                    "Data": {
+                      "FullName": "Boolean IsReputation(Guid, RankType, Int32, Operator)",
+                      "Parameters": [
+                        "0e5d53f8-8d15-4b45-9565-dc063cb24d30",
+                        "Mixed",
+                        "4",
+                        "GreaterThanOrEqualTo"
+                      ]
+                    },
+                    "Not": false,
+                    "Operator": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

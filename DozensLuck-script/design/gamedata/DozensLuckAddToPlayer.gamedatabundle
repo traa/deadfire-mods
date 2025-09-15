@@ -1,0 +1,50 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Dozens_Luck_Add",
+			"ID": "e3bc3b49-4f20-46cf-a45d-096d9cf0e35a",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "false",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean HasAbility(Guid, Guid)",
+										"Parameters": [
+											"b1a8e901-0000-0000-0000-000000000000",
+											"386b52bc-eacb-451b-8f1d-15e2bf36d677"
+										]
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void AddAbility(Guid, Guid)",
+									"Parameters": [
+										"b1a8e901-0000-0000-0000-000000000000",
+										"386b52bc-eacb-451b-8f1d-15e2bf36d677"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+        }
+	]
+}

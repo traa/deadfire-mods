@@ -1,0 +1,80 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "ItemsAdd_Marihi",
+            "ID": "fb69ed0f-2681-4734-aca0-8fff553c94e7",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "3f84e9ad-761d-47fa-9e38-7a492ff24b95"
+                                        ]
+                                    },
+                                    "Not": false,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                    "Parameters": [
+                                        "3f84e9ad-761d-47fa-9e38-7a492ff24b95",
+                                        "d6524305-5b4a-44ca-86fc-b846a37ff848"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+            "DebugName": "MQ_Custom_LootList_Marihi",
+            "ID": "d6524305-5b4a-44ca-86fc-b846a37ff848",
+            "Components": [
+                {
+                    "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                    "Conditional": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "OutputChance": 1,
+                    "OutputMode": "All",
+                    "Items": [
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "8a0dc1b9-2b18-4f03-bfc7-5f62c599e79b",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

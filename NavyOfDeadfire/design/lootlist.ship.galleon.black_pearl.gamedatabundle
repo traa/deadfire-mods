@@ -1,0 +1,80 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "ItemsAdd_Flooded_Cave_Bookcase",
+            "ID": "91dba8ea-44a7-4ddd-b20e-25dce11292ed",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "f86caa5d-c704-4262-929b-74fe02f8041d"
+                                        ]
+                                    },
+                                    "Not": false,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                    "Parameters": [
+                                        "f86caa5d-c704-4262-929b-74fe02f8041d",
+                                        "a17157ef-92cf-4bd3-aa4c-be8c3145b20c"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+            "DebugName": "MQ_Custom_LootList_Flooded_Cave_Bookcase",
+            "ID": "a17157ef-92cf-4bd3-aa4c-be8c3145b20c",
+            "Components": [
+                {
+                    "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                    "Conditional": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "OutputChance": 1,
+                    "OutputMode": "All",
+                    "Items": [
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "e263e3ad-fa61-4c01-bb35-71c4b6b19a1f",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

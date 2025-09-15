@@ -1,0 +1,50 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Rymrgand_Boon_Add",
+			"ID": "b1d7f106-213f-4276-b558-c4fcc8eff585",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "false",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean HasAbility(Guid, Guid)",
+										"Parameters": [
+											"b1a8e901-0000-0000-0000-000000000000",
+											"8cc092a6-4194-4ae7-bb1f-c530c5acf62f"
+										]
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void AddAbility(Guid, Guid)",
+									"Parameters": [
+										"b1a8e901-0000-0000-0000-000000000000",
+										"8cc092a6-4194-4ae7-bb1f-c530c5acf62f"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+        }
+	]
+}

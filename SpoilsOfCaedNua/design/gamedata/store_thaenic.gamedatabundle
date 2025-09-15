@@ -1,0 +1,106 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "ItemsAdd_Thaenic",
+            "ID": "bd8af550-7407-4e43-b4b3-4365521cf3ce",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "92b13140-5ccb-482a-b3d1-e5f366e85d53"
+                                        ]
+                                    },
+                                    "Not": false,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                    "Parameters": [
+                                        "92b13140-5ccb-482a-b3d1-e5f366e85d53",
+                                        "407676eb-251c-4b72-9af6-3572c559ebc5"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+            "DebugName": "MQ_Custom_LootList_Thaenic",
+            "ID": "407676eb-251c-4b72-9af6-3572c559ebc5",
+            "Components": [
+                {
+                    "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                    "Conditional": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "OutputChance": 1,
+                    "OutputMode": "All",
+                    "Items": [
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "c171694c-df10-4e58-9bcc-404eb3e7b8fb",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        },
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "af06beb6-bef4-4286-86d1-b607127505b8",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        },
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "cf6572e5-5160-40c8-a4aa-8d9838c6c8da",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

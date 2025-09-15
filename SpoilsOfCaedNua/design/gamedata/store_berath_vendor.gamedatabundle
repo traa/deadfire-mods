@@ -1,0 +1,80 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "ItemsAdd_Berath_Vendor",
+            "ID": "38e9c302-cafd-4de6-9079-a2d229f8e2c2",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "2c8238c9-cbd4-40c9-895f-f4c5e41875e2"
+                                        ]
+                                    },
+                                    "Not": false,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                    "Parameters": [
+                                        "2c8238c9-cbd4-40c9-895f-f4c5e41875e2",
+                                        "d7c2ebbd-4cce-4f42-b8a3-5e0e973f03a2"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+            "DebugName": "MQ_Custom_LootList_Berath_Vendor",
+            "ID": "d7c2ebbd-4cce-4f42-b8a3-5e0e973f03a2",
+            "Components": [
+                {
+                    "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                    "Conditional": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "OutputChance": 1,
+                    "OutputMode": "All",
+                    "Items": [
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "eeff8394-486f-403a-8407-bf88480e002f",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

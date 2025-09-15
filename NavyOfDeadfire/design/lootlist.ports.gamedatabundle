@@ -1,0 +1,93 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+      "DebugName": "ItemsAdd_Port_Neketaka",
+      "ID": "3f8ac812-8f8b-4af2-b060-76ec70180e48",
+      "Components": [
+        {
+          "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+          "RunOnlyOnce": "false",
+          "SucceedOnlyOnce": "true",
+          "Script": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": [
+                {
+                  "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                  "Data": {
+                    "FullName": "Boolean IsInActiveScene(Guid)",
+                    "Parameters": [
+                      "6f88c8c2-181a-4c68-99f5-28d0c70edcb8"
+                    ]
+                  },
+                  "Not": false,
+                  "Operator": 0
+                }
+              ]
+            },
+            "Scripts": [
+              {
+                "Data": {
+                  "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                  "Parameters": [
+                    "6f88c8c2-181a-4c68-99f5-28d0c70edcb8",
+                    "839124e5-61e4-420b-9c11-a51260b617c9"
+                  ]
+                },
+                "Conditional": {
+                  "Operator": 0,
+                  "Components": []
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+      "DebugName": "MQ_Custom_LootList_Port_Neketaka",
+      "ID": "839124e5-61e4-420b-9c11-a51260b617c9",
+      "Components": [
+        {
+          "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+          "Conditional": {
+            "Operator": 0,
+            "Components": []
+          },
+          "OutputChance": 1,
+          "OutputMode": "All",
+          "Items": [
+            {
+              "Conditional": {
+                "Operator": 0,
+                "Components": []
+              },
+              "OutputChance": 1,
+              "MinCount": 1,
+              "MaxCount": 1,
+              "Weight": 1,
+              "ItemID": "32c7da57-0cd5-4df7-8b78-74dfdc7ff31d",
+              "LootListID": "00000000-0000-0000-0000-000000000000",
+              "LockedVisible": "false"
+            },
+            {
+              "Conditional": {
+                "Operator": 0,
+                "Components": []
+              },
+              "OutputChance": 1,
+              "MinCount": 1,
+              "MaxCount": 1,
+              "Weight": 1,
+              "ItemID": "a13cd9ad-914e-43ef-bad5-48568e4fda53",
+              "LootListID": "00000000-0000-0000-0000-000000000000",
+              "LockedVisible": "false"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

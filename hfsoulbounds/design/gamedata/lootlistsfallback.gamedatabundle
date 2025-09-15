@@ -1,0 +1,246 @@
+{
+	"GameDataObjects": [{
+			"$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+			"DebugName": "LL_houseflyfallback",
+			"ID": "d5239707-0016-42ab-855d-1627bdfcbe59",
+			"Components": [{
+					"$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+					"Conditional": {
+						"Operator": 0,
+						"Components": []
+					},
+					"OutputChance": 1,
+					"OutputMode": "All",
+					"Items": [{
+							"Conditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"OutputChance": 1,
+							"MinCount": 1,
+							"MaxCount": 1,
+							"Weight": 1,
+							"ItemID": "0ce8813b-c98b-43ca-afc5-51e823f3e763",
+							"LootListID": "00000000-0000-0000-0000-000000000000",
+							"LockedVisible": "false"
+						}]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Fallback_ItemAdd",
+			"ID": "f5170788-d088-4082-a0b3-96478bce2b6f",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"1cf96a2c-6830-456b-a14f-98e3bd537c93"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}, {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+											"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+											"Parameters": [
+												"b125b502-c4a5-4f91-842f-6c6ff11bea79",
+												"GreaterThanOrEqualTo",
+												"1"
+											]
+										},
+									"Not": false,
+									"Operator": 0
+								}]},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"1cf96a2c-6830-456b-a14f-98e3bd537c93",
+										"d5239707-0016-42ab-855d-1627bdfcbe59"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		}, {
+			"$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+			"DebugName": "LL_houseflyfallbug",
+			"ID": "2f2e726f-c4f3-4673-8c43-c8c04e690a01",
+			"Components": [{
+					"$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+					"Conditional": {
+						"Operator": 0,
+						"Components": []
+					},
+					"OutputChance": 1,
+					"OutputMode": "All",
+					"Items": [{
+							"Conditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"OutputChance": 1,
+							"MinCount": 1,
+							"MaxCount": 1,
+							"Weight": 1,
+							"ItemID": "bcb1594f-3b14-4416-8ff7-5c0559028f52",
+							"LootListID": "00000000-0000-0000-0000-000000000000",
+							"LockedVisible": "false"
+						}]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Fallbug_ItemAdd",
+			"ID": "c9d52262-af52-4f6e-a4bc-8dac802f937d",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"1cf96a2c-6830-456b-a14f-98e3bd537c93"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}, {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+											"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+											"Parameters": [
+												"55988494-dd66-44cc-84f7-82782aecc63e",
+												"GreaterThanOrEqualTo",
+												"1"
+											]
+										},
+									"Not": false,
+									"Operator": 0
+								}]},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"1cf96a2c-6830-456b-a14f-98e3bd537c93",
+										"2f2e726f-c4f3-4673-8c43-c8c04e690a01"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		}, {
+			"$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+			"DebugName": "LL_houseflyfallback2",
+			"ID": "2eeaff2d-80af-4326-89e1-fa0a6d58a2d5",
+			"Components": [{
+					"$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+					"Conditional": {
+						"Operator": 0,
+						"Components": []
+					},
+					"OutputChance": 1,
+					"OutputMode": "All",
+					"Items": [{
+							"Conditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"OutputChance": 1,
+							"MinCount": 1,
+							"MaxCount": 1,
+							"Weight": 1,
+							"ItemID": "d6fc5166-2504-4281-88e6-1a3734aeec00",
+							"LootListID": "00000000-0000-0000-0000-000000000000",
+							"LockedVisible": "false"
+						}]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Fallback_ItemAdd2",
+			"ID": "3a4e4077-dcd8-4a91-a40e-bb93d64931dd",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"1cf96a2c-6830-456b-a14f-98e3bd537c93"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}, {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+											"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+											"Parameters": [
+												"d4ec432a-46b9-4dfd-a5a0-dcab08eb29dd",
+												"GreaterThanOrEqualTo",
+												"1"
+											]
+										},
+									"Not": false,
+									"Operator": 0
+								}]},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"1cf96a2c-6830-456b-a14f-98e3bd537c93",
+										"2eeaff2d-80af-4326-89e1-fa0a6d58a2d5"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		}]
+}

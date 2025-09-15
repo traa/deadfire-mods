@@ -1,0 +1,56 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Battle_Forged",
+			"ID": "71a5c599-a796-4796-af03-67cbaf730ff1",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"f0dbb330-1b06-4175-8ce4-efe790b99213"
+					],
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1.10,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 2,
+						"PenetrationAdjustment": 0.25
+					}
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Battle_Forged_Melee",
+			"ID": "f1d783c7-9f0e-424e-92be-bfc3b38b6db8",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"f0dbb330-1b06-4175-8ce4-efe790b99213"
+					],
+					"AttackDistance": 6,
+					"MinAttackDistance": 0,
+					"UseParentEquippableHand": "false",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 7,
+					"DamageData": {
+						"DamageType": "Burn",
+						"AlternateDamageType": "None",
+						"Minimum": 2,
+						"Maximum": 4,
+						"TacticalMinimumOverride": 0,
+						"TacticalMaximumOverride": 0,
+						"DamageProcs": []
+					}
+				}
+			]
+		}
+	]
+}

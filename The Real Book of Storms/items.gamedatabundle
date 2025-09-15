@@ -1,0 +1,110 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.ItemModGameData, Assembly-CSharp",
+      "DebugName": "Book_of_Storms_ItemMod",
+      "ID": "240f9da3-6cb2-4158-8893-83e74f124ab6",
+      "Components": [
+        {
+          "$type": "Game.GameData.ItemModComponent, Assembly-CSharp",
+          "DisplayName": 12817500,
+          "HideFromUI": "false",
+          "EnchantCategory": "Unique",
+          "Cost": 6,
+          "CursesItem": "false",
+          "DurabilityDamage": 0,
+          "StatusEffectsOnEquipIDs": [
+            "4aba2526-9120-4172-b550-47306d14da32",
+            "4d2534b4-4a8a-4818-9d09-bc4f22d5afab",
+            "cb87072a-3908-4b21-b3ff-35ee7b40d110",
+            "388a2d9f-f03b-4e7e-b8c5-eda9aff74d0e"
+          ],
+          "StatusEffectsOnLaunchIDs": [],
+          "StatusEffectsOnAttackIDs": [],
+          "AbilityModsOnEquipIDs": [],
+          "OnEquipVisualEffects": [],
+          "DamageProcs": [],
+          "AbilitiesOnEquipIDs": []
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+      "DebugName": "grimoire_book_of_storms",
+      "ID": "5fb1e66b-25a4-4251-8308-bdf3f37ab758",
+      "Components": [
+        {
+          "$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+          "ItemModsIDs": [
+            "240f9da3-6cb2-4158-8893-83e74f124ab6"
+          ]
+        },
+        {
+          "$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+          "IsUnique": "true"
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.RecipeData, Assembly-CSharp",
+      "DebugName": "Recipe_Book_of_Storms",
+      "ID": "a5f6f744-6484-4cc6-9a0b-c03a8589935e",
+      "Components": [
+        {
+          "$type": "Game.GameData.RecipeComponent, Assembly-CSharp",
+          "DisplayName": 12817500,
+          "CraftingLocation": "None",
+          "CategoryID": "7bad3803-0dfd-473a-a857-326f4853a4d6",
+          "VisibilityConditions": {
+            "Operator": 0,
+            "Components": [
+              {
+                "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                "Data": {
+                  "FullName": "Boolean HasItemMod(Guid)",
+                  "Parameters": [
+                    "240f9da3-6cb2-4158-8893-83e74f124ab6"
+                  ]
+                },
+                "Not": true,
+                "Operator": 0
+              }
+            ]
+          },
+          "CreationConditions": {
+            "Operator": 0,
+            "Components": [
+              {
+                "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                "Data": {
+                  "FullName": "Boolean HasItemMod(Guid)",
+                  "Parameters": [
+                    "240f9da3-6cb2-4158-8893-83e74f124ab6"
+                  ]
+                },
+                "Not": true,
+                "Operator": 0
+              }
+            ]
+          },
+          "Cost": 0,
+          "CostByValueMultiplier": 0,
+          "Double2HIngredientCost": "false",
+          "CanModifyWeapons": "false",
+          "CanModifyArmor": "false",
+          "CanModifyShields": "false",
+          "CanModifySpecificItemsIDs": [
+            "5fb1e66b-25a4-4251-8308-bdf3f37ab758"
+          ],
+          "Ingredients": [],
+          "Output": [],
+          "PrerequisiteItemModID": "00000000-0000-0000-0000-000000000000",
+          "ItemModsToAddIDs": [
+            "240f9da3-6cb2-4158-8893-83e74f124ab6"
+          ],
+          "ItemModsToRemoveIDs": []
+        }
+      ]
+    }
+  ]
+}

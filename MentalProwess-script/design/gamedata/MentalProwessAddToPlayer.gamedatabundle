@@ -1,0 +1,50 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Mental_Prowess_Add",
+			"ID": "9a302a46-6c99-40a7-923a-e8636402139f",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "false",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean HasAbility(Guid, Guid)",
+										"Parameters": [
+											"b1a8e901-0000-0000-0000-000000000000",
+											"4f7d5b7e-e815-4219-950d-6799ac38d82d"
+										]
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void AddAbility(Guid, Guid)",
+									"Parameters": [
+										"b1a8e901-0000-0000-0000-000000000000",
+										"4f7d5b7e-e815-4219-950d-6799ac38d82d"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+        }
+	]
+}

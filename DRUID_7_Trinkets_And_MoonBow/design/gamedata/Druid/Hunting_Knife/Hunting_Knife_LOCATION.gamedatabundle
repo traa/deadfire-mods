@@ -1,0 +1,90 @@
+﻿{
+  "GameDataObjects": [
+
+		
+		{
+	      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+	      "DebugName": "Hunting_Knife_LOOTLIST",
+	      "ID": "9a2586e8-6799-446d-91b4-d6e39611187c",
+	      "Components": [
+		{
+		  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+		  "Conditional": {
+		    "Operator": 0,
+		    "Components": []
+		  },
+		  "OutputChance": 1,
+		  "OutputMode": "All",
+		  "Items": [
+		    {
+		      "Conditional": {
+		        "Operator": 0,
+		        "Components": []
+		      },
+		      "OutputChance": 1,
+		      "MinCount": 1,
+		      "MaxCount": 1,
+		      "Weight": 1,
+		      "ItemID": "4168649b-c0d6-4b8c-9147-7c06ed9395b6",
+		      "LootListID": "00000000-0000-0000-0000-000000000000",
+		      "LockedVisible": "false"
+		    }
+		  ]
+		}
+	      ]
+	    },
+	
+	
+	{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Kazuwari_HUNTING_KNIFE",
+			"ID": "1d08a307-0ec8-4d18-a1d1-f30b438f0a2c",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"577f6ac6-cc76-4c9a-8bf3-a9a1cb20d4a7"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"577f6ac6-cc76-4c9a-8bf3-a9a1cb20d4a7",
+										"9a2586e8-6799-446d-91b4-d6e39611187c"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		
+
+	
+		
+		
+		
+	]
+}

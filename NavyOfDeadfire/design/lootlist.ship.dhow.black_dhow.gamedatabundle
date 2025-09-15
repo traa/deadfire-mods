@@ -1,0 +1,80 @@
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "ItemsAdd_Splintered_Reef_Menzzago",
+            "ID": "27aa756c-b0c0-48a6-b04f-691a9ef3f151",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "2979fe0c-0945-44a0-b999-3ded814ac91a"
+                                        ]
+                                    },
+                                    "Not": false,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+                            {
+                                "Data": {
+                                    "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                    "Parameters": [
+                                        "2979fe0c-0945-44a0-b999-3ded814ac91a",
+                                        "14e30377-873d-4902-8f0e-2fe67d73f377"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+            "DebugName": "MQ_Custom_LootList_Splintered_Reef_Menzzago",
+            "ID": "14e30377-873d-4902-8f0e-2fe67d73f377",
+            "Components": [
+                {
+                    "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                    "Conditional": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "OutputChance": 1,
+                    "OutputMode": "All",
+                    "Items": [
+                        {
+                            "Conditional": {
+                                "Operator": 0,
+                                "Components": []
+                            },
+                            "OutputChance": 1,
+                            "MinCount": 1,
+                            "MaxCount": 1,
+                            "Weight": 1,
+                            "ItemID": "577f75f6-3699-4ca7-939d-72524d9e0e18",
+                            "LootListID": "00000000-0000-0000-0000-000000000000",
+                            "LockedVisible": "false"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

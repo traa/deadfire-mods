@@ -1,0 +1,90 @@
+﻿{
+  "GameDataObjects": [
+
+		
+		{
+	      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+	      "DebugName": "Moonbow_LOOTLIST",
+	      "ID": "67f95a3d-a49e-400e-b9a7-0117fd7bfc1a",
+	      "Components": [
+		{
+		  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+		  "Conditional": {
+		    "Operator": 0,
+		    "Components": []
+		  },
+		  "OutputChance": 1,
+		  "OutputMode": "All",
+		  "Items": [
+		    {
+		      "Conditional": {
+		        "Operator": 0,
+		        "Components": []
+		      },
+		      "OutputChance": 1,
+		      "MinCount": 1,
+		      "MaxCount": 1,
+		      "Weight": 1,
+		      "ItemID": "dac39cc8-030d-47b6-be8e-a0de97937fc6",
+		      "LootListID": "00000000-0000-0000-0000-000000000000",
+		      "LockedVisible": "false"
+		    }
+		  ]
+		}
+	      ]
+	    },
+	
+	
+	{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Tikawara_Shrine_MOONBOW",
+			"ID": "447b2fd6-f0a2-4108-9cc0-dbfc9374a181",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"cb646e94-9c2e-4fc7-a19e-dc8186be2c84"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"cb646e94-9c2e-4fc7-a19e-dc8186be2c84",
+										"67f95a3d-a49e-400e-b9a7-0117fd7bfc1a"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		
+
+	
+		
+		
+		
+	]
+}

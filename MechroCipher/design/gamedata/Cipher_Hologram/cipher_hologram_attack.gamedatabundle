@@ -1,0 +1,122 @@
+{
+	"GameDataObjects": [{
+			"$type": "Game.GameData.AttackSummonRandomGameData, Assembly-CSharp",
+			"DebugName": "Cipher_Hologram_Summon",
+			"ID": "f37f6573-6f16-4da4-91d8-4068c46a7b4e",
+			"Components": [{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"AttackDistance": 12,
+					"MinAttackDistance": 0,
+					"AttackVariationID": "76b9f75f-4dd1-4160-ab4a-e715bf89d890",
+					"UseParentEquippableHand": "false",
+					"CastSpeedID": "e2258426-92df-4a1d-b12c-927feb8328cd",
+					"RecoveryTimeID": "cd5ad068-453b-41f9-8779-db38ff00dd20",
+					"OverrideTacticalActionType": "None",
+					"ImpactDelay": 0,
+					"ForcedTarget": "None",
+					"AffectedTargetType": "All",
+					"AffectedTargetConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"AffectedTargetDeathState": "Alive",
+					"HostilityOverride": "Default",
+					"PushDistance": 0,
+					"FaceTarget": "true",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 0,
+					"DamageData": {
+						"DamageType": "None",
+						"AlternateDamageType": "None",
+						"Minimum": 0,
+						"Maximum": 0,
+						"TacticalMinimumOverride": 0,
+						"TacticalMaximumOverride": 0,
+						"DamageProcs": []
+					},
+					"RequiresHitObject": "false",
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [],
+					"RandomizeStatusEffect": "false",
+					"CanGraze": "false",
+					"CanCrit": "true",
+					"DefendedBy": "None",
+					"AfflictionsDefendedBy": "None",
+					"AfflictionApplicationModifier": "None",
+					"SubstituteHitVisualEffect": "",
+					"VisualEffects": [{
+							"VisualEffect": "prefabs/effects/abilities/cast/fx_cast_chanter_head.prefab",
+							"AttachPoint": "Mouth",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnAnimEvent",
+							"AnimEventID": 0,
+							"Loop": "true",
+							"Scale": "false"
+						}
+					],
+					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+					"LaunchBone": "RightWeapon",
+					"HitBone": "Chest",
+					"OnHitShakeDuration": "None",
+					"OnHitShakeStrength": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"AllReactNoise": "false",
+					"InterruptsOn": "None",
+					"InterruptType": "Normal",
+					"TargetAngle": 0,
+					"ApplyOnceOnly": "false",
+					"PathsToTarget": "true",
+					"HideFromCombatLog": "false",
+					"AdditionalAttackOnTooltip": "false",
+					"DoesNotApplyDamage": "false",
+					"TreatAsWeapon": "false",
+					"BounceData": {
+						"Bounces": 0,
+						"Multiplier": 0.5,
+						"Range": 10,
+						"InRangeOrder": "false",
+						"NoRepeatTargets": "false",
+						"AlwaysBounceAtEnemies": "false",
+						"Delay": 0,
+						"NeverBounce": "false"
+					},
+					"AttackValidityConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					}
+				}, {
+					"$type": "Game.GameData.AttackSummonComponent, Assembly-CSharp",
+					"SummonType": "Summoned",
+					"SummonFileList": [{
+							"Filename": "prefabs/characters/poe2_creatures/cre_phantom.prefab"
+						}
+					],
+					"SummonDisplayStrings": [{
+							"String": 10000
+						}
+					],
+					"OnSummonVisualEffect": "prefabs/effects/abilities/fx_summon_phantom.prefab",
+					"OnDesummonVisualEffect": "prefabs/effects/abilities/fx_summon_phantom_despawn.prefab",
+					"TeamType": "JoinParty",
+					"OverrideTeamID": "00000000-0000-0000-0000-000000000000",
+					"SummonCopyOfSelf": "false",
+					"CopyOwnerAbilities": "false",
+					"CopyWeapons": "false",
+					"Duration": 30,
+					"HasLoot": "false"
+				}, {
+					"$type": "Game.GameData.AttackSummonRandomComponent, Assembly-CSharp",
+					"MaxSummons": 1
+				}
+			]
+		}
+	]
+}

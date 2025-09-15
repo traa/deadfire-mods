@@ -1,0 +1,84 @@
+﻿{
+  "GameDataObjects": [
+
+		
+		{
+	      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+	      "DebugName": "Belafas_Shard_LOOTLIST",
+	      "ID": "2555cdc9-7484-4985-8ae5-e68dc2fbbf36",
+	      "Components": [
+		{
+		  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+		  "Conditional": {
+		    "Operator": 0,
+		    "Components": []
+		  },
+		  "OutputChance": 1,
+		  "OutputMode": "All",
+		  "Items": [
+		    {
+		      "Conditional": {
+		        "Operator": 0,
+		        "Components": []
+		      },
+		      "OutputChance": 1,
+		      "MinCount": 1,
+		      "MaxCount": 1,
+		      "Weight": 1,
+		      "ItemID": "22f72386-d0db-40e8-87b6-beb8b73e1dd8",
+		      "LootListID": "00000000-0000-0000-0000-000000000000",
+		      "LockedVisible": "false"
+		    }
+		  ]
+		}
+	      ]
+	    },
+	
+	
+	{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Belafas_Shard_ONDRAS_TEMPLE_OLD_CITY_3_SKELETONOUTSIDE",
+			"ID": "dbb18922-00d0-48e8-a026-d89c561d5243",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"24b7d3d3-cf6c-4141-9005-e6fe9b6bad6c"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"24b7d3d3-cf6c-4141-9005-e6fe9b6bad6c",
+										"2555cdc9-7484-4985-8ae5-e68dc2fbbf36"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

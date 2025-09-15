@@ -1,0 +1,90 @@
+﻿{
+  "GameDataObjects": [
+
+		
+		{
+	      "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+	      "DebugName": "Bough_of_the_Aeons_LOOTLIST",
+	      "ID": "d049050d-849d-48f3-89fb-542acda9ad38",
+	      "Components": [
+		{
+		  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+		  "Conditional": {
+		    "Operator": 0,
+		    "Components": []
+		  },
+		  "OutputChance": 1,
+		  "OutputMode": "All",
+		  "Items": [
+		    {
+		      "Conditional": {
+		        "Operator": 0,
+		        "Components": []
+		      },
+		      "OutputChance": 1,
+		      "MinCount": 1,
+		      "MaxCount": 1,
+		      "Weight": 1,
+		      "ItemID": "32109aaa-6a26-456a-8dbd-66cfcc619fc0",
+		      "LootListID": "00000000-0000-0000-0000-000000000000",
+		      "LockedVisible": "false"
+		    }
+		  ]
+		}
+	      ]
+	    },
+	
+	
+	{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Bentbranch_Bog_BOUGH_OF_THE_AEONS",
+			"ID": "b88e0bb8-6a6d-46ac-96c4-d87f21f68e26",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"8c9e41d6-ff1e-491f-8230-090a66f47e87"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"8c9e41d6-ff1e-491f-8230-090a66f47e87",
+										"d049050d-849d-48f3-89fb-542acda9ad38"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		
+
+	
+		
+		
+		
+	]
+}

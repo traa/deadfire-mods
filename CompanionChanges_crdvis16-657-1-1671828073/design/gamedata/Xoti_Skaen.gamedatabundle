@@ -1,0 +1,796 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.CharacterProgressionTableGameData, Assembly-CSharp",
+			"DebugName": "PT_Xoti_Skaen",
+			"ID": "44276de0-f618-4c85-be5c-f002e5e1ba0c",
+			"Components": [
+				{
+					"$type": "Game.GameData.BaseProgressionTableComponent, Assembly-CSharp",
+					"AbilityUnlocks": [
+						{
+							"Note": "CL 0 - Holy Radiance",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "383d76f5-e6ae-4fb0-be09-224d74c57548",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Restore",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "22cf522c-31df-4d0a-9893-43d34e8ad68e",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 1
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 Auto Grant - Skaen",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "640bdbfa-39ef-4d1b-bd8c-ba180106105f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 Auto Grant - Skaen - Barbs of Condemnation",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "cd547181-dcc0-44e5-af02-7e376f3d3294",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 1
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 2 Auto Grant - Skaen - Escape",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "7fbcf966-6ac6-4f11-8879-2dc46a131dce",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 2
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 3 Auto Grant - Skaen - Divine Mark",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "994a953a-3d79-4b80-8762-74fea087bd50",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 3
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 4 Auto Grant - Skaen - Finishing Blow",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "1013ce05-df78-4a6c-b8a6-18482a2b8315",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 4
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 5 Auto Grant - Skaen - Shadowing Beyond",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "227e6784-de45-422c-9a2c-d72778c941e5",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 5
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 6 Auto Grant - Skaen - Spiritual Ally",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "a53ea8c5-95b7-4f60-8f66-19ede1b8335c",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 6
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 7 Auto Grant - Skaen - Minor Avatar",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "616e3868-2d2e-4922-ae26-f44d1e5294ff",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 7
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 8 Auto Grant - Skaen - Symbol of Skaen",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "264b2f09-7cd0-461e-9223-74491a1e4cc2",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 8
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 9 Auto Grant - Skaen - Revenge of Skaen",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "42da4378-2fa9-414c-a60a-a36b98493a20",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 9
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"fba5c900-db6d-49e4-af52-4239bed0c811"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -1632432717
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Proficiency Club",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "0cf0974b-2f76-4924-bb23-bd58fd34df03",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Stiletto Proficiency",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "ddadfd01-83e7-4716-8061-ae9bdc892993",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						}
+					],
+					"DefaultDecisionTrees": [],
+					"DecisionTreeSelectionType": "RandomOrder",
+					"DefaultCustomAIID": "00000000-0000-0000-0000-000000000000",
+					"DefaultCustomAI2ID": "00000000-0000-0000-0000-000000000000"
+				},
+				{
+					"$type": "Game.GameData.CharacterProgressionTableComponent, Assembly-CSharp",
+					"DefaultClassID": "f7cb46af-a719-41c0-9a53-107eefdbce2b",
+					"MultiClassID": "00000000-0000-0000-0000-000000000000",
+					"Skills": [
+						{
+							"Level": 2,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 3,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 4,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 5,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 6,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 7,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 8,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 9,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 10,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 11,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 12,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 13,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 14,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 15,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 16,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 17,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 18,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 19,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 20,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						}
+					],
+					"SubclassesIDs": [
+						"fba5c900-db6d-49e4-af52-4239bed0c811"
+					],
+					"IgnoreResources": "false"
+				}
+			]
+		}
+	]
+}

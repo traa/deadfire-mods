@@ -1,0 +1,73 @@
+﻿{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+			"DebugName": "Confounding_Blind",
+			"ID": "a54896f9-19fe-4edc-9d56-45fa753fa1fa",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"ShowStatusEffects": "true"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Flanked_SE_Armor",
+			"ID": "9ced31c6-345b-4dc7-954d-4032edf99dcc",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"ApplicationBehavior": "StackWithAllSimilarDataEffects"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Flanked_SE_Deflection",
+			"ID": "d7d4ee02-a23b-434c-bf14-5d3ca0195cf5",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"ApplicationBehavior": "StackWithAllSimilarDataEffects"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Confounding_Blind_SE_Deflection",
+			"ID": "b9362648-2d0d-4f57-b67b-a3be15d12f30",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "Deflection",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "Child",
+					"BaseValue": -2,
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "OnDamaged",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": -2,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 11,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 2,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0.75
+					}
+				}
+			]
+		}
+	]
+}

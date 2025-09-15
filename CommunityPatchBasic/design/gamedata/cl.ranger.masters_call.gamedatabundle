@@ -1,0 +1,48 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.MastersCallAttackGameData, Assembly-CSharp",
+			"DebugName": "Masters_Call_Attack",
+			"ID": "0c11e111-9a22-4281-9864-e7a2da7f3fb8",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+					"RecoveryTimeID": "cd5ad068-453b-41f9-8779-db38ff00dd20"
+				},
+				{
+					"$type": "Game.GameData.MastersCallAttackComponent, Assembly-CSharp"
+				},
+				{
+					"$type": "Game.GameData.TeleportAttackComponent, Assembly-CSharp",
+					"SkipRaycast": "false",
+					"Retreating": "false"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.BeamTeleportAttackGameData, Assembly-CSharp",
+			"DebugName": "Furious_Call_Attack",
+			"ID": "5a20808d-91f5-4179-80b5-b6cf11eb4e4c",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+					"RecoveryTimeID": "cd5ad068-453b-41f9-8779-db38ff00dd20"
+				},
+				{
+					"$type": "Game.GameData.TeleportAttackComponent, Assembly-CSharp",
+					"SkipRaycast": "false",
+					"Retreating": "false"
+				},
+				{
+					"$type": "Game.GameData.BeamTeleportAttackComponent, Assembly-CSharp",
+					"HitWithPrimaryAttack": "true",
+					"HitWithSecondaryAttack": "false",
+					"HitTargetWithPrimaryAttack": "false",
+					"HitTargetWithSecondaryAttack": "false"
+				}
+			]
+		}
+	]
+}

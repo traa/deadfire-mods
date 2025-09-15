@@ -1,0 +1,1433 @@
+{
+	"GameDataObjects": [{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "TB_Potion_NoPotions",
+			"ID": "43a1f486-2243-4505-81bb-953a4697ee58",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "CannotUsePotions",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": -10,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "UseDurationTime",
+					"Duration": 3,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "AddDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "true",
+						"BaseLevel": 1,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": -1,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "true",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "true",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "TB_Potion_Immunity",
+			"ID": "28f493ba-b365-4bba-a239-09027dcb0759",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "Immunity",
+					"OverrideDescriptionString": 7212021,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": -10,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Instant",
+					"Duration": 0,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "AddDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "true",
+						"BaseLevel": 1,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": -1,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "true",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "true",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": ["52bab8df-37f8-468c-97a6-aa622fdc1d9e"],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_ascension_Attack",
+			"ID": "50c475f7-b884-4b12-9f21-5b5e447b2f9e",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectKeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e"
+					],
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"3cf552c0-bc48-4baf-9b05-4736a3ec3ab4"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_cleansing_purge_Attack",
+			"ID": "789539f4-05dc-4e9e-8b69-2e3e337a025b",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"5f943686-dba7-428c-aaa9-b760b1247fe3",
+						"3e0300df-b829-45ad-9890-5c1558214074",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_deftness_Attack",
+			"ID": "b4827c61-c84f-4fd5-98ef-b5a9bdb2f50d",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"e335cd75-7305-4f6f-8ae9-63a81c73fc9e",
+						"f650148e-f19f-443f-b9f2-5de09f86fff5"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_elemental_defense_Attack",
+			"ID": "0f630110-f8f9-4049-837e-32e502fb6233",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"c0072dac-f13d-4131-ab9f-4e1eb86cf42b",
+						"621df993-620e-4efd-8130-bf801eea46ea",
+						"815da5d7-c5c3-43e4-9f2b-0367ffa7c64b",
+						"7d1ec890-a43a-4ec9-bcb2-12a044fcbf1f"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_impediment_Attack",
+			"ID": "8eaf4aa8-9be3-466a-a6f4-53a484706d7b",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"63a46706-c1ee-408c-aaf3-4fded2bf4840"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_imperfect_arcane_reflection_Attack",
+			"ID": "49b8419e-1208-459f-a9e4-d1ff6c9bff19",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"daa97dd7-1305-4302-a734-c5d76045a44a"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_improved_arcane_reflection_Attack",
+			"ID": "b14e18ca-3cfa-4996-9497-f379de6adc61",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"8fa7cba1-337d-44e4-acdd-9767cda03e68",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_insubstantial_form_Attack",
+			"ID": "e2c756fb-ad48-4e6b-9eb9-f708de28f520",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"d91be27d-35f5-48a7-8105-a46f23d8dbe4",
+						"2f5ced33-b52d-4bab-8a02-5d3c3cea64f5",
+						"e473fe8a-1414-42a7-b8de-9ffa3d088f8e"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_invisibility_Attack",
+			"ID": "497995cc-5e56-4eb9-bd17-e0e7e9d0a739",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"StatusEffectsIDs": [
+						"20db9991-586d-47e2-a048-b22bd6d87998",
+						"05444488-fece-4347-939c-3f0d1b0ef4da",
+						"42d09c26-e816-48c6-8a10-43198d00b91f",
+						"7867871b-9e1d-456e-9417-66279baf0cf3",
+						"ecb7d0ef-551d-4395-bf2b-41fee8e2489a"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_ironskin_Attack",
+			"ID": "3078b315-25b9-4777-af9a-13440d8a50fc",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"9c66c5a2-1a26-49fe-b63a-eace91b3f74c"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_major_healing_Attack",
+			"ID": "dd536dc2-954c-402a-97be-99d5815f7804",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"0df6225f-0ac9-494b-adda-ddcf95e700b7",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_major_recovery_Attack",
+			"ID": "fb2f5d7e-dc58-4ca1-83be-30da7903833e",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"0b4a5bba-19ef-4d99-b5c0-faa22d5f859a"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_mental_prowess_Attack",
+			"ID": "312d715b-55ae-4691-a36b-d7762f6532a0",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"e3710283-e25e-48ac-812f-03a35985f549",
+						"282f9e99-aeb1-44a6-acc8-f1720cbd0f42",
+						"cdf41984-1429-4175-8683-6336c4a3b692"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_merciless_gaze_Attack",
+			"ID": "216fcd2d-ef3a-4085-9af9-662718ba6a2a",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"cf9c7b60-c298-4630-9be3-62a5d03993ca"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_minor_healing_Attack",
+			"ID": "87b63b1d-6644-4922-810e-bd6bc0669c06",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"cd28d424-c999-45e3-885c-b2c1ba34fd30",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_miraculous_healing_Attack",
+			"ID": "cce3e14a-9415-430c-8a6d-99b47ba18d02",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"3a4b639f-03ad-40d5-9eb2-e96c6f27408c",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_moderate_healing_Attack",
+			"ID": "9b42b7c2-3095-4d52-adf2-889ed5de28c5",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"b4a1893a-087f-4253-b459-65ba0d5acc59",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_perfect_aim_Attack",
+			"ID": "6cd7ef3a-3097-43c5-bb37-1db6b241a82c",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"1005038f-4852-4fd1-a974-1e5906d55809",
+						"169ee285-d6c0-4aeb-81fb-d43aa89c09a9",
+						"f8aea9f5-2cdb-4ff4-ab2e-90030757c8d7"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_physical_prowess_Attack",
+			"ID": "439082de-a8ad-46ab-b445-8e382bff00e0",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"bab3a4c7-5d78-436b-bc3d-c37648327d63",
+						"810d0619-f570-418c-85d0-6a39e10237e8",
+						"9919538b-0925-449b-a82c-97fb9d2a2daf"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_piercing_strikes_Attack",
+			"ID": "54783942-b3a4-4510-94b2-fcc876ce6aa3",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"07ca8c38-8970-490f-ac92-b32cea9446af"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_refuge_Attack",
+			"ID": "0716672f-bfb2-49cc-91c2-a6d94f2774a7",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"a0973ee3-f6f4-4dfe-a2b1-77332453c7f2",
+						"3bcfb366-8bc0-4e41-b5c7-47417efd977c",
+						"dd37bfef-60a2-41ae-b1ae-d55515f98e4b"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_relentless_striking_Attack",
+			"ID": "9a0427df-925b-4875-a39f-1e945469fcc1",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"12673225-17c6-4f7c-bbf6-6ca751b79cf6",
+						"cea65b70-c58d-4a9d-9a59-033958b1ced3",
+						"e2cf012a-b965-4cdf-98c8-e1c825bc87d3"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_spatial_alacrity_Attack",
+			"ID": "68e4b65b-f5dd-4469-9f6d-5bea84cfe4ed",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"fca242e9-c86c-4f1e-9016-95c9d00bbe3f",
+						"519ba859-952f-444a-acc5-7ccca3cee395"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_spirit_shield_Attack",
+			"ID": "f1040e51-a82b-430d-9845-023a2e24e6f8",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"f49d0b3e-2291-4d88-996e-b51753346cbd",
+						"e744aeb5-0def-4eee-9da4-4dc295e65d8d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_superior_elemental_defense_Attack",
+			"ID": "35d0b4cd-87fb-44d9-b315-b28bbc55221a",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"7d808b7c-f214-41d6-9a09-e157cb9901c6",
+						"f147bd9b-539a-445d-82a7-ee6c4a4995d1",
+						"7dea24f2-cfe4-4345-a8b7-3d113e4d3616",
+						"dc37e868-dce8-4c59-939f-083dcf46bd89",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_attuned_self_Attack",
+			"ID": "300592ce-c316-4477-aec1-924df3dcae8e",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"492a887f-a518-4b52-ac4b-46e3f0fea125",
+						"7ec62ffd-d6a0-4e98-b1f7-8bce1fa836c2"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_final_stand_Attack",
+			"ID": "8948383e-b2e7-4bdc-8751-9429f87fc462",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"224a1fe1-5b72-458d-8c5b-f1617053fbbe",
+						"2bad7806-b5bc-4e90-8d21-795e4add7ab1",
+						"6f993786-090b-4801-9ef9-07c9ca7e5b4f"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_focused_mind_Attack",
+			"ID": "2b594a7d-bb51-419c-909c-9a6a656280a9",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"f211c00b-37e4-4be9-900a-0909b42febe8",
+						"0849f150-3418-41ed-9536-45e69a4c5359"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_resilient_body_Attack",
+			"ID": "8e24903c-ed44-468d-8f38-8879effabc52",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"e114262e-fc8d-4b56-860a-7b22f53bdf29",
+						"1e6ec386-a2fc-436c-ada3-e8e8ba4f2079"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Natures_bounty_attack",
+			"ID": "dfb24346-889d-485d-a4cf-cc7c22c6dcbc",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"d389f934-ccce-426a-8429-3989b51e7a20",
+						"b6b46810-cb97-4fa0-a80d-212550f0c231",
+						"3ff3d841-c5ba-47e0-bf91-b242d34a1f9b",
+						"bb7b9dc7-7ff9-4d31-a202-da6e535c41a2"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Antidote_Attack",
+			"ID": "f4fedc75-6eaa-4e5e-81a1-26ace2d34e70",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"e53776c6-4c79-479f-85df-4ee3807f4472",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAXD_Vial_Of_Starlight_Attack",
+			"ID": "06a9d3b0-6cd6-4ec1-bc1f-918d363a988d",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectKeywordsIDs": ["52bab8df-37f8-468c-97a6-aa622fdc1d9e"],
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"ea5d7590-7b2d-4d82-b0f6-0bf505428cd1",
+						"b0fe5e79-fa6b-4a71-b5d3-232d41e68cf4",
+						"cafcf7e3-6510-43db-b86a-e95247308c37",
+						"3466fb86-bca5-4154-958a-6c848a417f8a",
+						"e99d17c6-54b9-4b89-a424-4c35e68717b2",
+						"0c23bec2-389b-44d6-9f18-4cc5825ed647",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Bubbling_Chalice_Self",
+			"ID": "1703f4c7-1cfa-4e7f-9449-9aad0118be66",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"2963f9c7-8faf-4ec7-8d64-a944b2c81f92",
+						"97f030a9-ac4a-4b7d-8e5e-1216cc5f469c",
+						"bce1d092-b6f7-492e-bac0-855d8a007ab3"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Skull_of_the_Fallen_Attack",
+			"ID": "3dd77429-2626-44ad-8b1b-0787e0ccd73c",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"aa83ac78-487e-41e4-bbaa-ee1fa98dfbf1"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAX02_Compassionate_Soul_Essence_Attack",
+			"ID": "c8585005-3d2e-41a7-afb4-05deecdcc2aa",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"28f493ba-b365-4bba-a239-09027dcb0759",
+						"02761d3a-c745-4061-99af-dfe95cb131a1",
+						"5621856c-244d-4378-b231-9061a303e8e8"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAXD_Deck_Of_Endless_Possibilities_Melee",
+			"ID": "94afff49-d06b-4802-a268-2d859dc88bf7",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free"}
+			]
+		},
+		{
+			"$type": "Game.GameData.ConsumableGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Liquid_Adra_Item",
+			"ID": "58e3dc23-bf8c-407e-95c6-43e1fa166d21",
+			"Components": [
+				{
+					"$type": "Game.GameData.ConsumableComponent, Assembly-CSharp",
+					"UsageCount": 1,
+					"UsageType": "PerEncounter"}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Liquid_Adra_Ability",
+			"ID": "080c9c15-e4a7-47fa-aa90-dc34e1b99328",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					}}
+			]
+		},
+		{
+			"$type": "Game.GameData.KeywordGameData, Assembly-CSharp",
+			"DebugName": "Light",
+			"ID": "38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd",
+			"Components": [
+				{
+					"$type": "Game.GameData.KeywordComponent, Assembly-CSharp",
+					"GuiDisplayString": 7222101,
+					"AbilitiesDisplayString": -1,
+					"Description": -1,
+					"OverridePluralEffect": -1,
+					"Icon": "",
+					"TintableIcon": ""
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.KeywordGameData, Assembly-CSharp",
+			"DebugName": "Heavy",
+			"ID": "15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+			"Components": [
+				{
+					"$type": "Game.GameData.KeywordComponent, Assembly-CSharp",
+					"GuiDisplayString": 7222103,
+					"AbilitiesDisplayString": -1,
+					"Description": -1,
+					"OverridePluralEffect": -1,
+					"Icon": "",
+					"TintableIcon": ""
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Luminous_adra_potion_Ability",
+			"ID": "4a901620-091d-4525-b6c5-3f1d6a04c75d",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Natures_bounty_Ability",
+			"ID": "c2ea73af-8356-4d6a-86d1-72c8b92043b1",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_ascension_Ability",
+			"ID": "0be2d107-b8b4-425c-87c9-fed2ee6eb60c",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_cleansing_purge_Ability",
+			"ID": "af1059e5-a531-4a1e-b853-c016ca8e81a1",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_deftness_Ability",
+			"ID": "93495e5b-6920-4346-8774-4a2d1cb844f1",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_elemental_defense_Ablity",
+			"ID": "e665506c-d847-4140-be12-224ddacc9542",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_impediment_Ability",
+			"ID": "ccd9004b-254c-45e5-aa44-86cfa176923e",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_imperfect_arcane_reflection_Ability",
+			"ID": "6161d729-76d7-4bc1-bb42-d08506e4329a",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_improved_arcane_reflection_Ability",
+			"ID": "3fbf1ff6-b6a2-4794-8630-bdee1dd06270",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_insubstantial_form_Ability",
+			"ID": "ebaab1b3-7ae8-4e29-bfb2-5f9c1abac72f",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_invisibility_Ability",
+			"ID": "82ed24d4-3b6f-415d-b2ee-d7fdace3a11e",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_ironskin_Ability",
+			"ID": "44b8c651-f509-448f-a5a1-88dcdbac4a35",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_major_healing_Ability",
+			"ID": "fde2f908-2622-41fc-9016-805e02968783",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_major_recovery_Ability",
+			"ID": "a5e4f2ba-f0af-4c15-83e8-86289472ad78",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_mental_prowess_Ability",
+			"ID": "adc91f07-a5a5-4ee8-91dd-55c029316783",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_merciless_gaze_Ability",
+			"ID": "d4884069-a444-43ef-bb70-81479e9602cd",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_minor_healing_Ability",
+			"ID": "17f72da8-12da-4e04-ba4c-3565a5ee6fa5",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_miraculous_healing_Ability",
+			"ID": "0f4a2551-af4f-4661-b75f-daf088f93222",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_moderate_healing_Ability",
+			"ID": "00a60d67-69d1-40b6-80e4-c2d7211f315d",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_perfect_aim_Ability",
+			"ID": "c1a692ec-73b7-4642-a1f2-e1c57ab6c72f",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_physical_prowess_Ability",
+			"ID": "5194639e-7cfb-40b1-a044-636f9b6cdaa3",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_piercing_strikes_Ability",
+			"ID": "c76875cb-1e70-4610-a075-b7761af0bd40",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_refuge_Ability",
+			"ID": "53ca7f74-5dfd-4782-8d6b-5626f680f6ef",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_relentless_striking_Ability",
+			"ID": "5884e137-2a60-4daf-80e2-3aa17fb4be27",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_ryngrims_repulsive_visage_Ability",
+			"ID": "f4b9092a-f71a-4278-b28d-000508b4f4cc",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_spatial_alacrity_Ability",
+			"ID": "ed9cd3a5-125e-410e-8b7d-02161b0e2a7e",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_spirit_shield_Ability",
+			"ID": "c7a2df10-9059-4dd1-9ef7-2ce08fa059af",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_superior_elemental_defense_Ability",
+			"ID": "28b550b0-c15e-426e-9e59-325105eb253d",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_attuned_self_Ability",
+			"ID": "62233a65-8255-4f43-b29a-d9a69d643749",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_fearsome_brute_Ability",
+			"ID": "26f39f11-25d4-4f56-b914-9adf3d662bfe",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"ab88e534-596e-4f40-b54e-9dd8b2cab983",
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_fearsome_brute_SE_Passive",
+			"ID": "87c80ab1-4305-4003-919d-10e86f09b681",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"ab88e534-596e-4f40-b54e-9dd8b2cab983",
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_final_stand_Ability",
+			"ID": "1a9e9740-b62a-4789-8dc9-d753e38d54f5",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_focused_mind_Ability",
+			"ID": "37e4d2b6-c199-4c8f-b14b-b9068516b812",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Potion_of_the_resilient_body_Ability",
+			"ID": "83f3b583-cb7e-4c6d-8e34-7ccc5bbd11d6",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Antidote_Ability",
+			"ID": "d7834eb5-72ec-400b-84a1-825db2173c48",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"50c8cfad-cfeb-42b3-ae29-0e51f50b0126",
+						"40d41e77-446e-4e69-8761-df60936eed5e",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "LAXD_Vial_Of_Starlight_Ability",
+			"ID": "bbae5949-d3a9-4449-8527-8c86f1506d4d",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"15eb6f01-daa8-4e12-8ac8-8e59601f2d1d",
+						"43a1f486-2243-4505-81bb-953a4697ee58"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "LAX02_Compassionate_Soul_Essence_Ability",
+			"ID": "1cc3e909-036e-474f-a3c0-1ba40f941e9d",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Bubbling_Chalice_Ability",
+			"ID": "ee15ca3e-7eb4-4035-8719-95bbcd629912",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"f0dbb330-1b06-4175-8ce4-efe790b99213",
+						"3f075d80-787a-493e-bbaa-6da3d6dc2d0f",
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "LAX01_Skull_of_the_Fallen_Ability",
+			"ID": "cd6d9fcb-7c60-44d0-aea5-3d90e2b35746",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"52bab8df-37f8-468c-97a6-aa622fdc1d9e",
+						"b904d1af-cebd-423d-a764-cfe9a824ff38",
+						"38b88b8f-b9f6-4b3d-ae7e-f32eba9d07fd"
+					]}
+			]
+		}]
+}

@@ -1,0 +1,50 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "Dungeon_Delver_Add",
+			"ID": "dee6ba0f-3320-4259-98e0-b8d82d1d4cd5",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "false",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean HasAbility(Guid, Guid)",
+										"Parameters": [
+											"b1a8e901-0000-0000-0000-000000000000",
+											"5253fdcb-8ea2-4ceb-8447-317be944359d"
+										]
+									},
+									"Not": true,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void AddAbility(Guid, Guid)",
+									"Parameters": [
+										"b1a8e901-0000-0000-0000-000000000000",
+										"5253fdcb-8ea2-4ceb-8447-317be944359d"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+        }
+	]
+}

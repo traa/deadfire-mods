@@ -1,0 +1,156 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+			"DebugName": "LL_InfamousCaptainToken",
+			"ID": "9dcfe522-d0bd-406e-a8d4-83167fedf112",
+			"Components": [
+				{
+					"$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+					"Conditional": {
+						"Operator": 0,
+						"Components": []
+					},
+					"OutputChance": 1,
+					"OutputMode": "OneRandom",
+					"Items": [
+						{
+							"Conditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"OutputChance": 1,
+							"MinCount": 1,
+							"MaxCount": 1,
+							"Weight": 1,
+							"ItemID": "00a5fde7-d4d9-452c-8279-e6f1f81c1dd4",
+							"LootListID": "00000000-0000-0000-0000-000000000000",
+							"LockedVisible": "false"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "InfamousCaptainItemGiver",
+			"ID": "40ff2807-01f7-447e-98aa-88964e865708",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"4b53d81d-c5ac-4418-9760-0a4e06b2b29d"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"4b53d81d-c5ac-4418-9760-0a4e06b2b29d",
+										"9dcfe522-d0bd-406e-a8d4-83167fedf112"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+			"DebugName": "LL_InnToken",
+			"ID": "441014f6-7323-447e-9e3a-59c5b4a76582",
+			"Components": [
+				{
+					"$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+					"Conditional": {
+						"Operator": 0,
+						"Components": []
+					},
+					"OutputChance": 1,
+					"OutputMode": "OneRandom",
+					"Items": [
+						{
+							"Conditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"OutputChance": 1,
+							"MinCount": 1,
+							"MaxCount": 1,
+							"Weight": 1,
+							"ItemID": "5d2593a4-04c8-4f66-9cf8-e58f9b2336c2",
+							"LootListID": "00000000-0000-0000-0000-000000000000",
+							"LockedVisible": "false"
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+			"DebugName": "InnTokenGiver",
+			"ID": "597f570c-9ac4-4d92-8cac-be949d2a128b",
+			"Components": [
+				{
+					"$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+					"RunOnlyOnce": "false",
+					"SucceedOnlyOnce": "true",
+					"Script": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsInActiveScene(Guid)",
+										"Parameters": [
+											"4b53d81d-c5ac-4418-9760-0a4e06b2b29d"
+										]
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							]
+						},
+						"Scripts": [
+							{
+								"Data": {
+									"FullName": "Void GenerateLootListInto(Guid, Guid)",
+									"Parameters": [
+										"4b53d81d-c5ac-4418-9760-0a4e06b2b29d",
+										"441014f6-7323-447e-9e3a-59c5b4a76582"
+									]
+								},
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

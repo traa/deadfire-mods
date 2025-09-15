@@ -1,0 +1,5077 @@
+{
+	"GameDataObjects": [{
+			"$type": "Game.GameData.ItemGameData, Assembly-CSharp",
+			"DebugName": "decoyshield",
+			"ID": "4cfd80d0-2665-4711-b45c-1a8e5ce441a9",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 1304607,
+					"DescriptionText": 1304606,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Misc",
+					"InventoryAudioEventListID": "705deb97-3f84-48c8-a84b-e3c34e2d0e3a",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 7216,
+					"IconTextureSmall": "gui/icons/items/quest/iron_stronbox_s.png",
+					"IconTextureLarge": "gui/icons/items/quest/iron_stronbox_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [
+						{
+							"DisplayConditional": {
+								"Operator": 0,
+								"Components": [{
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean PartyHasDiscoveredAbility(Guid)",
+									"Parameters": [
+										"9b004384-e7ac-4198-bc40-e281214b6714"
+									],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 2142431537,
+									"ParameterHash": -1103568547
+								},
+								"Not": false,
+								"Operator": 0
+							}]
+							},
+							"DisplayString": 1304482,
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void RemoveItems(Guid, Int32)",
+											"Parameters": [
+												"4cfd80d0-2665-4711-b45c-1a8e5ce441a9",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -326616246,
+											"ParameterHash": -1837954309
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void GiveItems(Guid, Int32)",
+											"Parameters": [
+												"d6fc5166-2504-4281-88e6-1a3734aeec00",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1926025091,
+											"ParameterHash": 912213581
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"1304485"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1320128747,
+											"ParameterHash": -1712383834
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void LoadAudioBankPlayAudioEvent(Guid, String, String, Single, Boolean)",
+											"Parameters": [
+												"00000000-0000-0000-0000-000000000000",
+												"",
+												"ab_summon_cast",
+												"0",
+												"True"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1161045438,
+											"ParameterHash": 1988608987
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.DataScriptEventComponent, Assembly-CSharp",
+					"Scripts": [
+						{
+							"Event": "OnItemCollected",
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"2031714"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1222327136,
+											"ParameterHash": -1578861245
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+			"DebugName": "cadushield",
+			"ID": "d6fc5166-2504-4281-88e6-1a3734aeec00",
+			"Components": [{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 6132536,
+					"DescriptionText": 6135109,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Weapons",
+					"InventoryAudioEventListID": "3e83b58f-e67b-4ba5-b2c4-964e57aa1b4f",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 3571,
+					"IconTextureSmall": "gui/icons/items/weapons/shield_large/shield_large_adra_s.png",
+					"IconTextureLarge": "gui/icons/items/weapons/shield_large/shield_large_adra_l.png",
+					"PencilSketchTexture": "gui/itemsketches/Sketch_Cadu_Scalth.png",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				}, {
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentType": "LargeShield",
+					"EquipmentSlot": "SecondaryWeaponOnly",
+					"AppearancePiece": {
+						"ModelVisualDataPath": "prefabs/items/appearance/weapons/shield_large/a_shield_large02_v01.asset"
+					},
+					"ItemModsIDs": ["92236b9d-7217-47fa-9c45-3b30b38e70a0",
+						"14c58087-ac22-4a3b-99ab-eefb4aa12586",
+						"a2167541-1c4f-4d4a-819c-9072c93518bd"],
+					"OnEquipVisualEffects": [],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "f2a32614-d8ce-4183-870f-96cc74d2c57a",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "prefabs/itemrenderers/genericitemrenderer.prefab",
+					"ItemModel": "",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				},
+				{
+					"$type": "Game.GameData.ShieldComponent, Assembly-CSharp",
+					"ShieldType": "Large",
+					"AttachmentType": "Arm",
+					"AnimationStanceID": "82d96ea3-42dd-4466-9b8b-4a3cecf9d898",
+					"BaseDeflectBonus": 12,
+					"BaseReflexBonus": 0,
+					"BaseAccuracyBonus": -8,
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000"
+				}, {
+					"$type": "Game.GameData.SoulbindComponent, Assembly-CSharp",
+					"ProhibitUnbind": "false",
+					"BindableClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+					"BindConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"UnlockStages": [{
+							"Note": "Stage 1 Monk",
+							"LoreToAdd": 6135108,
+							"ItemModsToAddIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "8e34cfb2-5c30-4984-b4d4-0e173388dfbb", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["14c58087-ac22-4a3b-99ab-eefb4aa12586"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Monk",
+							"LoreToAdd": 6135107,
+							"ItemModsToAddIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "425e8cdb-dafa-4553-ac05-6626596c341c", "485c3df4-3318-4cad-bfa2-f77458775499", "ffc66248-7ada-40ab-93da-98d6fc9383fc"],
+							"ItemModsToRemoveIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "8e34cfb2-5c30-4984-b4d4-0e173388dfbb", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Monk",
+							"LoreToAdd": 6135106,
+							"ItemModsToAddIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "3778dbdd-13d9-41fd-a643-84469163dada", "c9ca2598-d2cf-4a19-94e9-16f42ab12e03"],
+							"ItemModsToRemoveIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "425e8cdb-dafa-4553-ac05-6626596c341c", "ffc66248-7ada-40ab-93da-98d6fc9383fc"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 10,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Monk",
+							"LoreToAdd": 6135105,
+							"ItemModsToAddIDs": ["8087bdeb-7f54-4cd9-95fd-ee0c20a1ee98", "523a14ae-ae3e-45da-b705-41a1e47ca8b7", "f25aca5d-7f72-4709-bc5d-af100a180afc"],
+							"ItemModsToRemoveIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "3778dbdd-13d9-41fd-a643-84469163dada"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210011,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_helfire_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Paladin",
+							"LoreToAdd": 6135108,
+							"ItemModsToAddIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "ee3212be-548f-475f-a298-391d79cc6735"],
+							"ItemModsToRemoveIDs": ["14c58087-ac22-4a3b-99ab-eefb4aa12586"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Paladin",
+							"LoreToAdd": 6135107,
+							"ItemModsToAddIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "2cc3fbc1-e180-4448-9ad0-6d9f79582d7a", "0f694abf-7b60-4880-b07e-2f4213039b8a", "b9407ab0-5ab5-4528-85f6-75ee7fc022c1"],
+							"ItemModsToRemoveIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "ee3212be-548f-475f-a298-391d79cc6735"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 9,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Paladin",
+							"LoreToAdd": 6135106,
+							"ItemModsToAddIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "bd5bbbd8-2424-4ae4-b955-443e6c3040bf", "e4511f41-b952-46f6-b319-fc13af128296"],
+							"ItemModsToRemoveIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "2cc3fbc1-e180-4448-9ad0-6d9f79582d7a", "b9407ab0-5ab5-4528-85f6-75ee7fc022c1"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [
+								{
+									"TargetValue": 7,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5747,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Paladin",
+							"LoreToAdd": 6135105,
+							"ItemModsToAddIDs": ["8087bdeb-7f54-4cd9-95fd-ee0c20a1ee98", "c732ccea-a0a6-49e1-9a6f-8a034990ff2f", "ea8d82e2-ee3a-4621-ae95-c48179cea27e"],
+							"ItemModsToRemoveIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "bd5bbbd8-2424-4ae4-b955-443e6c3040bf"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210011,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_helfire_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Ranger",
+							"LoreToAdd": 6135108,
+							"ItemModsToAddIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "6505d79c-ad2f-418c-8c23-e0f79bfd3cb1"],
+							"ItemModsToRemoveIDs": ["14c58087-ac22-4a3b-99ab-eefb4aa12586"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Ranger",
+							"LoreToAdd": 6135107,
+							"ItemModsToAddIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "a7490fa4-2a6e-4c53-a8df-742f77731037", "485c3df4-3318-4cad-bfa2-f77458775499"],
+							"ItemModsToRemoveIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "6505d79c-ad2f-418c-8c23-e0f79bfd3cb1"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Ranger",
+							"LoreToAdd": 6135106,
+							"ItemModsToAddIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "2e255ef5-0a1b-462c-908f-e3ba19d19815", "f684589e-7863-40cd-93fa-83d413abcd0c"],
+							"ItemModsToRemoveIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "a7490fa4-2a6e-4c53-a8df-742f77731037"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 9,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Ranger",
+							"LoreToAdd": 6135105,
+							"ItemModsToAddIDs": ["8087bdeb-7f54-4cd9-95fd-ee0c20a1ee98", "d8a72aba-2eb1-4b11-ab05-cdf990c984be", "573a31b5-6a2e-4093-93e6-26d9040ba8de"],
+							"ItemModsToRemoveIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "2e255ef5-0a1b-462c-908f-e3ba19d19815", "f684589e-7863-40cd-93fa-83d413abcd0c"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210011,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_helfire_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Rogue",
+							"LoreToAdd": 6135108,
+							"ItemModsToAddIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "0ea2dac0-2bfc-475a-9ff8-3d4ff176cd76"],
+							"ItemModsToRemoveIDs": ["14c58087-ac22-4a3b-99ab-eefb4aa12586"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Rogue",
+							"LoreToAdd": 6135107,
+							"ItemModsToAddIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "36775eb7-8586-45b4-b1e7-22517ba3992e", "49bbbc3a-9fbd-41be-9343-ab81eeca2d07"],
+							"ItemModsToRemoveIDs": ["e2b1b1d6-0e6e-4046-b11e-1ef52ca23639", "0ea2dac0-2bfc-475a-9ff8-3d4ff176cd76"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Rogue",
+							"LoreToAdd": 6135106,
+							"ItemModsToAddIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "13acfab3-3cd9-4486-83ae-2b0ffd241657", "1ba2f982-cee0-4441-ab72-2384bc4529b6"],
+							"ItemModsToRemoveIDs": ["9f21b418-4c30-4e5d-a297-8768bb8fb0bf", "36775eb7-8586-45b4-b1e7-22517ba3992e"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 7,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Rogue",
+							"LoreToAdd": 6135105,
+							"ItemModsToAddIDs": ["8087bdeb-7f54-4cd9-95fd-ee0c20a1ee98", "933611bd-92a0-4fe6-b651-a525dc0ea24e", "443b4a19-4b95-4bbd-90a9-2607ef548af1"],
+							"ItemModsToRemoveIDs": ["f2be9006-05d4-46d2-9da7-951f632c9715", "13acfab3-3cd9-4486-83ae-2b0ffd241657"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210011,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_helfire_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}
+					]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+			"DebugName": "weychead",
+			"ID": "85d33ad6-e64c-43d6-a6bb-84a55f739c34",
+			"Components": [{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 6135721,
+					"DescriptionText": 6135722,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Clothing",
+					"InventoryAudioEventListID": "50b61346-2a8e-4595-a76f-85c497adab02",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 3008,
+					"IconTextureSmall": "gui/icons/items/head/head_ageals_hood_s.png",
+					"IconTextureLarge": "gui/icons/items/head/head_ageals_hood_l.png",
+					"PencilSketchTexture": "gui/itemsketches/Sketch_Mask_Of_The_Weyc.png",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				}, {
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentType": "None",
+					"EquipmentSlot": "Head",
+					"AppearancePiece": {
+						"ModelVisualDataPath": "prefabs/lax03/appearance/helm/a_lax03_helm300_v01.asset"
+					},
+					"ItemModsIDs": ["d4dc98de-ebe2-47a2-b687-5413fbd3899a"],
+					"OnEquipVisualEffects": [],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "00000000-0000-0000-0000-000000000000",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "",
+					"ItemModel": "",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				}, {
+					"$type": "Game.GameData.SoulbindComponent, Assembly-CSharp",
+					"ProhibitUnbind": "false",
+					"BindableClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "b4a0f1d1-b8f7-47e7-b899-99e478004a37", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+					"BindConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"UnlockStages": [{
+							"Note": "Stage 1 Barbarian",
+							"LoreToAdd": 6135723,
+							"ItemModsToAddIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "87f31d7d-9e9d-44ca-89c2-a12ae03a97ce"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Barbarian",
+							"LoreToAdd": 6135724,
+							"ItemModsToAddIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "6bd98b3b-5ddf-4d7e-9a84-3e428b2731ef", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "87f31d7d-9e9d-44ca-89c2-a12ae03a97ce"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de"],
+							"UnlockActions": [
+								{
+									"TargetValue": 20,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4797,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								},
+								{
+									"TargetValue": 40,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5138,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Barbarian",
+							"LoreToAdd": 6135725,
+							"ItemModsToAddIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "87853959-4620-4af8-95e9-9201b99ce6d8", "ed5bf23e-4863-4a3c-a76b-e62087388b50", "f7483e48-acf3-4c99-a392-3b28f9ff2ca9"],
+							"ItemModsToRemoveIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "6bd98b3b-5ddf-4d7e-9a84-3e428b2731ef", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Barbarian",
+							"LoreToAdd": 6135726,
+							"ItemModsToAddIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "e56c6eca-9b12-404c-8ddc-c45a56ef42e6", "aaff5282-a0ca-4e88-9449-33ff116794e0", "066f605d-41aa-4de6-a996-75d301e81f13"],
+							"ItemModsToRemoveIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "ed5bf23e-4863-4a3c-a76b-e62087388b50", "87853959-4620-4af8-95e9-9201b99ce6d8", "f7483e48-acf3-4c99-a392-3b28f9ff2ca9"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de"],
+							"UnlockActions": [{
+									"TargetValue": 1100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4705,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 5 Barbarian",
+							"LoreToAdd": 6135727,
+							"ItemModsToAddIDs": ["5104a95a-80e8-4eb9-8c80-15065ec6d685", "ef689fab-93aa-4406-ab41-01da25f79cf1", "8849ad53-7629-410d-8384-803940c45139", "eec80402-7050-4024-ac98-2f27ce2e5740"],
+							"ItemModsToRemoveIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "aaff5282-a0ca-4e88-9449-33ff116794e0", "e56c6eca-9b12-404c-8ddc-c45a56ef42e6"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210012,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_wizard_lunatic_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Chanter",
+							"LoreToAdd": 6135723,
+							"ItemModsToAddIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "612de7ca-0ad3-4d1e-9318-51aef34cd216", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Chanter",
+							"LoreToAdd": 6135724,
+							"ItemModsToAddIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "8589ebaa-6454-4e2f-a1b2-90c06665eec8", "612de7ca-0ad3-4d1e-9318-51aef34cd216"],
+							"ItemModsToRemoveIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "612de7ca-0ad3-4d1e-9318-51aef34cd216", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Chanter",
+							"LoreToAdd": 6135725,
+							"ItemModsToAddIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "071525f2-5e70-4b01-af27-3d9d674ca547", "716b5bc4-ddb9-4ddd-a303-0106cfb3991d"],
+							"ItemModsToRemoveIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "8589ebaa-6454-4e2f-a1b2-90c06665eec8", "612de7ca-0ad3-4d1e-9318-51aef34cd216"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37"],
+							"UnlockActions": [{
+									"TargetValue": 30,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4709,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Chanter",
+							"LoreToAdd": 6135726,
+							"ItemModsToAddIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "756a3081-dfbd-4394-a7b2-023e9db3c166", "043f6f83-0742-4f56-b47a-9ae07c29d185", "33cff2f8-f725-4b0e-b00c-d9b057ffd768"],
+							"ItemModsToRemoveIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "071525f2-5e70-4b01-af27-3d9d674ca547", "716b5bc4-ddb9-4ddd-a303-0106cfb3991d"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37"],
+							"UnlockActions": [{
+									"TargetValue": 7,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 5 Chanter",
+							"LoreToAdd": 6135727,
+							"ItemModsToAddIDs": ["5104a95a-80e8-4eb9-8c80-15065ec6d685", "6b662f67-c2e1-44e5-bc34-89558bfc81a3", "fac8fce0-362f-4a26-a13c-99b8e4ae396b", "a00ed72b-84af-413f-bd32-90fb74d11e44"],
+							"ItemModsToRemoveIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "756a3081-dfbd-4394-a7b2-023e9db3c166", "043f6f83-0742-4f56-b47a-9ae07c29d185"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210012,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_wizard_lunatic_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Druid",
+							"LoreToAdd": 6135723,
+							"ItemModsToAddIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["568f1c26-1398-4e67-8b81-0f6a60e6cdde"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Druid",
+							"LoreToAdd": 6135724,
+							"ItemModsToAddIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "1d04944a-bbb8-4048-8a2f-be2e3e6f69dd", "b0e7674d-7c45-424b-94d5-38965b607516", "f99d450b-1c45-450e-82f7-b79ec2470eae"],
+							"ItemModsToRemoveIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["568f1c26-1398-4e67-8b81-0f6a60e6cdde"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Druid",
+							"LoreToAdd": 6135725,
+							"ItemModsToAddIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "645818a4-901b-4d13-b54b-4056a7054c6f", "8e01050e-1f07-49a2-b79a-765d8c455c45", "06b38547-bb59-40ba-b9f5-f64f66411533"],
+							"ItemModsToRemoveIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "1d04944a-bbb8-4048-8a2f-be2e3e6f69dd", "b0e7674d-7c45-424b-94d5-38965b607516", "f99d450b-1c45-450e-82f7-b79ec2470eae"],
+							"EligibleClassesIDs": ["568f1c26-1398-4e67-8b81-0f6a60e6cdde"],
+							"UnlockActions": [
+								{
+									"TargetValue": 25,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4803,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								},
+								{
+									"TargetValue": 45,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4782,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Druid",
+							"LoreToAdd": 6135726,
+							"ItemModsToAddIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "a842f40c-7c65-4c5d-bc49-5d45f907a019", "4dc46180-d097-4598-9c50-7d05560c4605", "109229a8-1570-4451-9733-dc28bf9b42ab", "914a77c5-363b-4999-a443-8d38b5434475"],
+							"ItemModsToRemoveIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "645818a4-901b-4d13-b54b-4056a7054c6f", "8e01050e-1f07-49a2-b79a-765d8c455c45", "06b38547-bb59-40ba-b9f5-f64f66411533"],
+							"EligibleClassesIDs": ["568f1c26-1398-4e67-8b81-0f6a60e6cdde"],
+							"UnlockActions": [
+								{
+									"TargetValue": 35,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4711,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								},
+								{
+									"TargetValue": 65,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4782,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 5 Druid",
+							"LoreToAdd": 6135727,
+							"ItemModsToAddIDs": ["5104a95a-80e8-4eb9-8c80-15065ec6d685", "2cba8e6d-c7e3-40af-8702-419a59ea7a2f", "9c48b08f-fdd4-4311-8620-426aad206823", "e4fe8adb-0f32-4249-98ce-5357d6e8e2a9"],
+							"ItemModsToRemoveIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "a842f40c-7c65-4c5d-bc49-5d45f907a019", "4dc46180-d097-4598-9c50-7d05560c4605"],
+							"EligibleClassesIDs": ["568f1c26-1398-4e67-8b81-0f6a60e6cdde"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210012,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_wizard_lunatic_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Paladin",
+							"LoreToAdd": 6135723,
+							"ItemModsToAddIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Paladin",
+							"LoreToAdd": 6135724,
+							"ItemModsToAddIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "2fcd504d-4c63-4608-a16f-459ab626affa"],
+							"ItemModsToRemoveIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 1100,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Paladin",
+							"LoreToAdd": 6135725,
+							"ItemModsToAddIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "bfcb4388-16ec-49d0-929f-05e8a40f77e1", "d2715143-4950-40d2-80f9-3f5a18bf3a8a", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "2fcd504d-4c63-4608-a16f-459ab626affa"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 35,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Paladin",
+							"LoreToAdd": 6135726,
+							"ItemModsToAddIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "6d1de3ab-0e27-40fc-ba90-4dd4ab7acdc6", "b1f750c5-ec46-478e-ad3b-6171451aecb1"],
+							"ItemModsToRemoveIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "bfcb4388-16ec-49d0-929f-05e8a40f77e1", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 5 Paladin",
+							"LoreToAdd": 6135727,
+							"ItemModsToAddIDs": ["5104a95a-80e8-4eb9-8c80-15065ec6d685", "a37dbaf1-7e4c-4519-9459-b20c5db109dc", "f65b5e81-f50f-462a-ba16-da2d7ec95cc8"],
+							"ItemModsToRemoveIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "6d1de3ab-0e27-40fc-ba90-4dd4ab7acdc6"],
+							"EligibleClassesIDs": ["f64b5a21-2dd1-41ae-8562-60ce099b25aa"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210012,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_wizard_lunatic_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Ranger",
+							"LoreToAdd": 6135723,
+							"ItemModsToAddIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Ranger",
+							"LoreToAdd": 6135724,
+							"ItemModsToAddIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "9a60af12-2176-4b16-a22c-ec0df51a2606", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["5f0456b3-a3e4-421e-90ca-020a3fbc7e50"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Ranger",
+							"LoreToAdd": 6135725,
+							"ItemModsToAddIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "3565aec4-43c8-4223-85e2-14d257728c52", "114356ca-c2d7-43ea-9454-34ce48368bc8", "ffc66248-7ada-40ab-93da-98d6fc9383fc"],
+							"ItemModsToRemoveIDs": ["6f7d315f-aa58-4685-8093-9ed2cbbc1505", "9a60af12-2176-4b16-a22c-ec0df51a2606", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Ranger",
+							"LoreToAdd": 6135726,
+							"ItemModsToAddIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "74104e40-420f-4a40-8f3b-870f64ea0244", "cbe8e169-f283-49de-baa1-e36b6b9499a3", "1d64c064-6015-4da8-b073-92a64a2aa672"],
+							"ItemModsToRemoveIDs": ["9779585f-d8b0-4e5c-9c7c-35a6ea1ea401", "3565aec4-43c8-4223-85e2-14d257728c52", "114356ca-c2d7-43ea-9454-34ce48368bc8", "ffc66248-7ada-40ab-93da-98d6fc9383fc"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [{
+									"TargetValue": 95,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5387,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 5 Ranger",
+							"LoreToAdd": 6135727,
+							"ItemModsToAddIDs": ["5104a95a-80e8-4eb9-8c80-15065ec6d685", "cb8bbd1a-ed42-47c8-b32c-02b514e75f6a", "0a36684e-c4b5-45da-9486-a38c879776d5", "7710ceef-e7b2-4054-97af-65e5e15a3bfa"],
+							"ItemModsToRemoveIDs": ["34d937dd-c969-4a4d-8c58-673d1ff9709d", "74104e40-420f-4a40-8f3b-870f64ea0244", "cbe8e169-f283-49de-baa1-e36b6b9499a3"],
+							"EligibleClassesIDs": ["1718929c-1faf-4292-b82c-7e2a7c20b3ab"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210012,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_wizard_lunatic_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ItemGameData, Assembly-CSharp",
+			"DebugName": "decoysword",
+			"ID": "5125dea3-f449-4ae6-abd1-862dd67bc731",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 1304608,
+					"DescriptionText": 1304609,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Misc",
+					"InventoryAudioEventListID": "705deb97-3f84-48c8-a84b-e3c34e2d0e3a",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 7109,
+					"IconTextureSmall": "gui/icons/items/weapons/miscellaneous/summoned_berath_greatsword_s.png",
+					"IconTextureLarge": "gui/icons/items/weapons/miscellaneous/summoned_berath_greatsword_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [
+						{
+							"DisplayConditional": {
+								"Operator": 0,
+								"Components": [{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsCompanionActiveInPartyOrPresent(Guid)",
+													"Parameters": [
+														"b1a7e807-0000-0000-0000-000000000000"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": -419637131,
+													"ParameterHash": -1341316833
+												},
+												"Not": false,
+												"Operator": 0
+											}]
+							},
+							"DisplayString": 1304483,
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void RemoveItems(Guid, Int32)",
+											"Parameters": [
+												"5125dea3-f449-4ae6-abd1-862dd67bc731",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -326616246,
+											"ParameterHash": -1837954309
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void GiveItems(Guid, Int32)",
+											"Parameters": [
+												"0ce8813b-c98b-43ca-afc5-51e823f3e763",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1926025091,
+											"ParameterHash": 912213581
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"1304486"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1320128747,
+											"ParameterHash": -1712383834
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void LoadAudioBankPlayAudioEvent(Guid, String, String, Single, Boolean)",
+											"Parameters": [
+												"00000000-0000-0000-0000-000000000000",
+												"",
+												"ab_summon_cast",
+												"0",
+												"True"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1161045438,
+											"ParameterHash": 1988608987
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.DataScriptEventComponent, Assembly-CSharp",
+					"Scripts": [
+						{
+							"Event": "OnItemCollected",
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"2031714"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1222327136,
+											"ParameterHash": -1578861245
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.WeaponGameData, Assembly-CSharp",
+			"DebugName": "soulburden",
+			"ID": "0ce8813b-c98b-43ca-afc5-51e823f3e763",
+			"Components": [{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 5613497,
+					"DescriptionText": 6135781,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Weapons",
+					"InventoryAudioEventListID": "d9ef8ec9-f1fb-4d0b-88b7-49d7c0310019",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 2508,
+					"IconTextureSmall": "gui/icons/items/weapons/great_sword/lax03_great_sword_burden_s.png",
+					"IconTextureLarge": "gui/icons/items/weapons/great_sword/lax03_great_sword_burden_l.png",
+					"PencilSketchTexture": "gui/itemsketches/LAX03_sketch_Burden.png",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				}, {
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentType": "GreatSword",
+					"EquipmentSlot": "BothPrimaryAndSecondary",
+					"AppearancePiece": {
+						"ModelVisualDataPath": "prefabs/items/appearance/weapons/great_sword/a_gs08_v01.asset"
+					},
+					"ItemModsIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5", "1a46b352-1708-4539-b77c-8d42eef814b2"],
+					"OnEquipVisualEffects": [],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "796bdb25-fcf5-41bf-a5b1-a3faa02c7103",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "prefabs/itemrenderers/genericitemrenderer.prefab",
+					"ItemModel": "art/character/weapons/great_sword/great_sword01/w_gs01.fbx",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				}, {
+					"$type": "Game.GameData.WeaponComponent, Assembly-CSharp",
+					"Stance": "TwoHandedClosedGrip",
+					"AnimationStanceID": "2bfb014c-53e1-44d0-82c8-3c3ff7a6741e",
+					"StatusEffectsOnLaunchIDs": [],
+					"IsDisplayedWhenAlternate": "true",
+					"IsUniversalType": "false",
+					"AttackID": "1d10eee8-c68a-4593-8075-7a2e19db6602",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"ForceBackScabbard": "true",
+					"ScabbardAppearancePiece": {
+						"ModelVisualDataPath": "prefabs/items/appearance/weapons/great_sword/a_gs08_v01_scabbard.asset"
+					},
+					"ScabbardRendererPrefab": "prefabs/itemrenderers/genericitemrenderer.prefab",
+					"ScabbardModel": "",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000"
+				}, {
+					"$type": "Game.GameData.SoulbindComponent, Assembly-CSharp",
+					"ProhibitUnbind": "false",
+					"BindableClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "f7cb46af-a719-41c0-9a53-107eefdbce2b", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+					"BindConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"UnlockStages": [{
+							"Note": "Stage 1 Fighter",
+							"LoreToAdd": 6135782,
+							"ItemModsToAddIDs": ["dde23a3a-e1d5-45d2-99c2-78119974986a", "b420d957-6932-4b02-8e02-1393b07f390d", "45ca31d1-b16d-4c99-9d0f-06a1965bf726"],
+							"ItemModsToRemoveIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5", "1a46b352-1708-4539-b77c-8d42eef814b2"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "Crush",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Fighter",
+							"LoreToAdd": 6135783,
+							"ItemModsToAddIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "6e92a301-b1af-400e-abde-89b3cfc1037f", "5fa935c8-b74f-46b5-a627-053cea1b6b36"],
+							"ItemModsToRemoveIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "dde23a3a-e1d5-45d2-99c2-78119974986a"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591"],
+							"UnlockActions": [{
+									"TargetValue": 1100,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "Corrode",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Fighter",
+							"LoreToAdd": 6135784,
+							"ItemModsToAddIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157", "9af53625-283c-4114-ac5d-b10cbb867b36", "3f6833d6-2437-43b0-94c2-547f30a89e83"],
+							"ItemModsToRemoveIDs": ["6e92a301-b1af-400e-abde-89b3cfc1037f", "4aa940c7-6a95-4be7-ad33-651afb6d5dde"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591"],
+							"UnlockActions": [{
+									"TargetValue": 1300,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "Freeze",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Fighter",
+							"LoreToAdd": 7015785,
+							"ItemModsToAddIDs": ["30ad6597-b4fa-4974-9dd1-ee50fdb998e9", "64998274-23b4-45ef-b29a-70e34d82db5c", "9d8cacc1-6081-416e-9df5-2bb04f8d7203"],
+							"ItemModsToRemoveIDs": ["3f6833d6-2437-43b0-94c2-547f30a89e83", "8b93c088-542b-46a8-a5a3-df0e74854157"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210009,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_spider_queen_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Monk",
+							"LoreToAdd": 6135782,
+							"ItemModsToAddIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "5aa69105-24c5-4713-8d93-9c2cc7723af3", "1c7fd1c8-511c-4793-a844-c8d20be1911a"],
+							"ItemModsToRemoveIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 35,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Monk",
+							"LoreToAdd": 6135783,
+							"ItemModsToAddIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "5ec9cf64-59fa-41dd-8e14-a63ba71300a9", "72eaf96f-569d-48e9-8825-9f54bb4de093"],
+							"ItemModsToRemoveIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "1c7fd1c8-511c-4793-a844-c8d20be1911a"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 75,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4972,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Monk",
+							"LoreToAdd": 6135784,
+							"ItemModsToAddIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157", "8a82b383-7d21-4ae1-93ba-46f212252f62"],
+							"ItemModsToRemoveIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "72eaf96f-569d-48e9-8825-9f54bb4de093"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [{
+									"TargetValue": 25,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5156,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Monk",
+							"LoreToAdd": 7025785,
+							"ItemModsToAddIDs": ["30ad6597-b4fa-4974-9dd1-ee50fdb998e9", "ad138895-49b5-474b-9fcb-9bfe6a0ae5dc"],
+							"ItemModsToRemoveIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157"],
+							"EligibleClassesIDs": ["f0036bfb-53d5-4d0c-b11a-b780d788a108"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210009,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_spider_queen_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Priest",
+							"LoreToAdd": 6135782,
+							"ItemModsToAddIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "12bffc54-61de-42a4-9e1b-1c0032d99aaa", "abf9aa3d-444c-4b8f-957a-438ae9321f54", "3ab8666d-4026-4f2a-ab9c-bb4c72cc8721"],
+							"ItemModsToRemoveIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5"],
+							"EligibleClassesIDs": ["f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 25,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Priest",
+							"LoreToAdd": 6135783,
+							"ItemModsToAddIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "8f3de805-b2a1-41b6-b720-cae5a5b1b923", "a39a53cd-b2b9-4af5-b457-584e0a2e3ddb"],
+							"ItemModsToRemoveIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "abf9aa3d-444c-4b8f-957a-438ae9321f54", "3ab8666d-4026-4f2a-ab9c-bb4c72cc8721"],
+							"EligibleClassesIDs": ["f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 50,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4971,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Priest",
+							"LoreToAdd": 6135784,
+							"ItemModsToAddIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157", "a123d983-fa62-4717-8036-02fc28074bd1", "6969e83e-f94b-4ada-afc2-7ebcb4b054bf"],
+							"ItemModsToRemoveIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "a39a53cd-b2b9-4af5-b457-584e0a2e3ddb"],
+							"EligibleClassesIDs": ["f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 500,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4720,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Priest",
+							"LoreToAdd": 7035785,
+							"ItemModsToAddIDs": ["30ad6597-b4fa-4974-9dd1-ee50fdb998e9", "0def9949-18f1-4583-a89e-1a367f0d292f"],
+							"ItemModsToRemoveIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157", "6969e83e-f94b-4ada-afc2-7ebcb4b054bf"],
+							"EligibleClassesIDs": ["f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210009,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_spider_queen_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Rogue",
+							"LoreToAdd": 6135782,
+							"ItemModsToAddIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "16def621-2cb4-433f-98f8-abb0376bb1cf"],
+							"ItemModsToRemoveIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 35,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Rogue",
+							"LoreToAdd": 6135783,
+							"ItemModsToAddIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "3f4749b5-3c8b-4c6f-a1cb-89561c815a1d"],
+							"ItemModsToRemoveIDs": ["b420d957-6932-4b02-8e02-1393b07f390d"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Rogue",
+							"LoreToAdd": 6135784,
+							"ItemModsToAddIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157", "8c240ef1-a972-44b1-af20-7ce8dfc471a0"],
+							"ItemModsToRemoveIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 1126105,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsArmorRating(Guid, DamageType, Operator, Single)",
+													"Parameters": [
+														"7d150000-0000-0000-0000-000000000000",
+														"All",
+														"GreaterThanOrEqualTo",
+														"19"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": -1622956291,
+													"ParameterHash": 651122916
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Rogue",
+							"LoreToAdd": 7045785,
+							"ItemModsToAddIDs": ["ad138895-49b5-474b-9fcb-9bfe6a0ae5dc", "30ad6597-b4fa-4974-9dd1-ee50fdb998e9"],
+							"ItemModsToRemoveIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157"],
+							"EligibleClassesIDs": ["8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210009,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_spider_queen_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1 Wizard",
+							"LoreToAdd": 6135782,
+							"ItemModsToAddIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "8e46f7a5-adb4-4ccb-b21d-ccb709e99566", "e99567fa-b961-400c-9065-ca4e538ea352", "2fd72da8-6ea4-409b-a5eb-abafd1894f4d"],
+							"ItemModsToRemoveIDs": ["7d7b81f7-7322-441f-a366-5d15d30379f5"],
+							"EligibleClassesIDs": ["acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 35,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2 Wizard",
+							"LoreToAdd": 6135783,
+							"ItemModsToAddIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde", "05e4d23c-a5e1-4662-b58c-b86b1f75ab0a"],
+							"ItemModsToRemoveIDs": ["b420d957-6932-4b02-8e02-1393b07f390d", "e99567fa-b961-400c-9065-ca4e538ea352", "2fd72da8-6ea4-409b-a5eb-abafd1894f4d"],
+							"EligibleClassesIDs": ["acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4719,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3 Wizard",
+							"LoreToAdd": 6135784,
+							"ItemModsToAddIDs": ["bb57e989-6cbd-40a5-9b71-3c0e9c0c1611", "8b93c088-542b-46a8-a5a3-df0e74854157"],
+							"ItemModsToRemoveIDs": ["4aa940c7-6a95-4be7-ad33-651afb6d5dde"],
+							"EligibleClassesIDs": ["acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 900,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 4 Wizard",
+							"LoreToAdd": 7055785,
+							"ItemModsToAddIDs": ["3390dcd8-d749-4bd3-b12a-1f93c72ec1a6", "30ad6597-b4fa-4974-9dd1-ee50fdb998e9"],
+							"ItemModsToRemoveIDs": ["8b93c088-542b-46a8-a5a3-df0e74854157"],
+							"EligibleClassesIDs": ["acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210009,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_spider_queen_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.RecipeData, Assembly-CSharp",
+			"DebugName": "Recipe_enchanted_amulet",
+			"ID": "e62bdcf8-bf97-4481-ac92-62a9647f268a",
+			"Components": [
+				{
+					"$type": "Game.GameData.RecipeComponent, Assembly-CSharp",
+					"DisplayName": 615437,
+					"CraftingLocation": "None",
+					"CategoryID": "7bad3803-0dfd-473a-a857-326f4853a4d6",
+					"VisibilityConditions": {
+						"Operator": 0,
+						"Components": [
+							{
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+									"Parameters": [
+										"4cfd80d0-2665-4711-b45c-1a8e5ce441a9",
+										"GreaterThanOrEqualTo",
+										"1"
+									],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 782680602,
+									"ParameterHash": 93382287
+								},
+								"Not": false,
+								"Operator": 0
+							}
+						]
+					},
+					"CreationConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"Cost": 3501,
+					"CostByValueMultiplier": 0,
+					"Double2HIngredientCost": "true",
+					"CanModifyWeapons": "false",
+					"CanModifyArmor": "false",
+					"CanModifyShields": "false",
+					"CanModifySpecificItemsIDs": [],
+					"Ingredients": [
+						{
+							"ItemID": "419d54c4-7865-4c73-8dd7-f287a1555b9d",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "99585b0b-90f5-49a1-8851-ba30f56d1b13",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "7a643864-91bc-4b0f-a346-cb19f74c6574",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "4cfd80d0-2665-4711-b45c-1a8e5ce441a9",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						}
+					],
+					"Output": [
+						{
+							"ItemID": "d4ec432a-46b9-4dfd-a5a0-dcab08eb29dd",
+							"Quantity": 1
+						}
+					],
+					"PrerequisiteItemModID": "00000000-0000-0000-0000-000000000000",
+					"ItemModsToAddIDs": [],
+					"ItemModsToRemoveIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+			"DebugName": "LAX03_Neck_U_Enchanted_Amulet",
+			"ID": "d4ec432a-46b9-4dfd-a5a0-dcab08eb29dd",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 1305703,
+					"DescriptionText": 1305704,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Clothing",
+					"InventoryAudioEventListID": "c607cfb4-6130-4827-87f4-fac4c95a3e02",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 5307,
+					"IconTextureSmall": "gui/icons/items/jewelry/disenchanted_amulet_s.png",
+					"IconTextureLarge": "gui/icons/items/jewelry/disenchanted_amulet_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentType": "None",
+					"EquipmentSlot": "Neck",
+					"AppearancePiece": {
+						"ModelVisualDataPath": ""
+					},
+					"ItemModsIDs": [
+						"13b4b184-4cc7-43c6-b85b-a18baffe739c"
+					],
+					"OnEquipVisualEffects": [],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "00000000-0000-0000-0000-000000000000",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "",
+					"ItemModel": "",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ItemModGameData, Assembly-CSharp",
+			"DebugName": "NoCrits_ItemMod",
+			"ID": "13b4b184-4cc7-43c6-b85b-a18baffe739c",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemModComponent, Assembly-CSharp",
+					"DisplayName": 203616,
+					"HideFromUI": "false",
+					"EnchantCategory": "Unique",
+					"Cost": 32,
+					"CursesItem": "false",
+					"DurabilityDamage": 0,
+					"StatusEffectsOnEquipIDs": [
+						"f4a77fc4-7422-451e-9f1d-a5309c854c7d"
+					],
+					"StatusEffectsOnLaunchIDs": [],
+					"StatusEffectsOnAttackIDs": [],
+					"AbilityModsOnEquipIDs": [],
+					"OnEquipVisualEffects": [],
+					"DamageProcs": [],
+					"AbilitiesOnEquipIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "NoCrits_EnemyCritToHit",
+			"ID": "f4a77fc4-7422-451e-9f1d-a5309c854c7d",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "EnemyCritToHitChance",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 1,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 1,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Not",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "Ranged",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.RecipeData, Assembly-CSharp",
+			"DebugName": "Recipe_ultrapotion",
+			"ID": "1e9c67f1-6719-4cdc-97d0-50318f70d487",
+			"Components": [
+				{
+					"$type": "Game.GameData.RecipeComponent, Assembly-CSharp",
+					"DisplayName": 615438,
+					"CraftingLocation": "None",
+					"CategoryID": "7bad3803-0dfd-473a-a857-326f4853a4d6",
+					"VisibilityConditions": {
+						"Operator": 0,
+						"Components": [
+							{
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+									"Parameters": [
+										"bab87f76-5e0e-4173-b8d9-3b060983aa28",
+										"GreaterThanOrEqualTo",
+										"1"
+									],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 782680602,
+									"ParameterHash": 93382287
+								},
+								"Not": false,
+								"Operator": 0
+							}
+						]
+					},
+					"CreationConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"Cost": 4303,
+					"CostByValueMultiplier": 0,
+					"Double2HIngredientCost": "true",
+					"CanModifyWeapons": "false",
+					"CanModifyArmor": "false",
+					"CanModifyShields": "false",
+					"CanModifySpecificItemsIDs": [],
+					"Ingredients": [
+						{
+							"ItemID": "15b788ea-0a98-45a2-8411-a706e1214fa4",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "8adab3be-23fc-428e-afb4-fb524a53ecde",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "9aae1cd8-adba-4e35-ad66-65e27859a113",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "c5afa525-13c2-4fcf-bfd3-eb66aa38dd26",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "d593b595-c8c1-4a41-ae0c-da08ce70106c",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "a6e10029-822a-4b93-b798-51c6f5e9f710",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "bab87f76-5e0e-4173-b8d9-3b060983aa28",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						}
+					],
+					"Output": [
+						{
+							"ItemID": "55988494-dd66-44cc-84f7-82782aecc63e",
+							"Quantity": 1
+						}
+					],
+					"PrerequisiteItemModID": "00000000-0000-0000-0000-000000000000",
+					"ItemModsToAddIDs": [],
+					"ItemModsToRemoveIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ConsumableGameData, Assembly-CSharp",
+			"DebugName": "decoy_Ultrapotion_Item",
+			"ID": "55988494-dd66-44cc-84f7-82782aecc63e",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 1304563,
+					"DescriptionText": 1304564,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Consumables",
+					"InventoryAudioEventListID": "c987d8de-f32a-4f9f-b489-46c511284c2e",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 6506,
+					"IconTextureSmall": "gui/icons/items/quest/fungus_fertilizer_s.png",
+					"IconTextureLarge": "gui/icons/items/quest/fungus_fertilizer_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.ConsumableComponent, Assembly-CSharp",
+					"Type": "Potion",
+					"RestType": "Food",
+					"UsageCount": 3,
+					"UsageType": "PerRest",
+					"AnimationVariation": 100,
+					"AbilityID": "b02dca66-7edb-4ba9-bbe4-e22653f54071",
+					"PickpocketAbilityID": "00000000-0000-0000-0000-000000000000",
+					"Timer": 0,
+					"SkillRequirement": {
+						"SkillID": "00000000-0000-0000-0000-000000000000",
+						"Value": 0
+					},
+					"ShipMoraleBonus": 1,
+					"SpoilHours": -1
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "sbSteel_potion",
+			"ID": "b02dca66-7edb-4ba9-bbe4-e22653f54071",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": ["d0748495-899c-4db1-a2e1-d474ed455e7d", "4b098b3f-f5c3-46b7-a2aa-34dc07fa2c31"],
+					"DisplayName": 1304563,
+					"Description": -1,
+					"DescriptionTactical": -1,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+					"Vocalization": "NoVocalization",
+					"Icon": "",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "00000000-0000-0000-0000-000000000000",
+					"AbilityLevel": 1,
+					"IsPassive": "false",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "false",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"ShowStatusEffects": "false",
+					"HideFromCombatLog": "false",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 30,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "ModifiersOnly",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [],
+					"RandomizeStatusEffect": "false",
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "8620d15c-2dd5-43be-8aea-91f505ceb3a1",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "906cf367-a954-4928-a553-e0c67497c210",
+					"GrantedViaScript": "false"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Decoy_potion_Attack",
+			"ID": "8620d15c-2dd5-43be-8aea-91f505ceb3a1",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"AttackDistance": 6,
+					"MinAttackDistance": 0,
+					"AttackVariationID": "3da0e9da-d35c-4288-8f8a-4060a2624e59",
+					"UseParentEquippableHand": "false",
+					"CastSpeedID": "e4c738a7-4d3f-407f-b035-cc76191fe26b",
+					"RecoveryTimeID": "9d15e1c1-c6e1-4b25-bc1d-bf3707f6f534",
+					"OverrideTacticalActionType": "None",
+					"ImpactDelay": 0,
+					"ForcedTarget": "Self",
+					"AffectedTargetType": "Self",
+					"AffectedTargetConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"AffectedTargetDeathState": "Alive",
+					"HostilityOverride": "Default",
+					"PushDistance": 0,
+					"FaceTarget": "true",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 7,
+					"DamageData": {
+						"DamageType": "None",
+						"AlternateDamageType": "None",
+						"Minimum": 0,
+						"Maximum": 0,
+						"TacticalMinimumOverride": 0,
+						"TacticalMaximumOverride": 0,
+						"DamageProcs": []
+					},
+					"RequiresHitObject": "true",
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"7bc8f258-45d7-427c-8ab6-728a7cfde280", "65ad103b-ca43-4c87-ba13-c27ae51b8ed6"
+					],
+					"RandomizeStatusEffect": "false",
+					"CanGraze": "false",
+					"CanCrit": "false",
+					"DefendedBy": "None",
+					"AfflictionsDefendedBy": "None",
+					"AfflictionApplicationModifier": "None",
+					"SubstituteHitVisualEffect": "",
+					"VisualEffects": [
+						{
+							"VisualEffect": "prefabs/effects/items/potions/fx_potion_generic_buff_01.prefab",
+							"AttachPoint": "Chest",
+							"AttachObject": "Target",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnHit",
+							"AnimEventID": 0,
+							"Loop": "false",
+							"Scale": "false"
+						}
+					],
+					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+					"LaunchBone": "RightWeapon",
+					"HitBone": "Chest",
+					"OnHitShakeDuration": "None",
+					"OnHitShakeStrength": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"AllReactNoise": "false",
+					"InterruptsOn": "None",
+					"InterruptType": "Normal",
+					"TargetAngle": 0,
+					"ApplyOnceOnly": "false",
+					"PathsToTarget": "true",
+					"HideFromCombatLog": "false",
+					"AdditionalAttackOnTooltip": "false",
+					"DoesNotApplyDamage": "false",
+					"TreatAsWeapon": "false",
+					"BounceData": {
+						"Bounces": 0,
+						"Multiplier": 0.5,
+						"Range": 10,
+						"InRangeOrder": "false",
+						"NoRepeatTargets": "false",
+						"AlwaysBounceAtEnemies": "false",
+						"Delay": 0,
+						"NeverBounce": "false"
+					},
+					"AttackValidityConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					}
+				},
+				{
+					"$type": "Game.GameData.AttackMeleeComponent, Assembly-CSharp",
+					"EngagementRadius": 1,
+					"IsUnarmed": "false"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Thundershock_potionSE_ApplyOnEvent",
+			"ID": "65ad103b-ca43-4c87-ba13-c27ae51b8ed6",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "ApplyStatusEffectToEnemyOnEvent",
+					"OverrideDescriptionString": 20464153,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 0,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "UseDurationTime",
+					"Duration": 30,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [{
+							"VisualEffect": "prefabs/effects/abilities/monk/fx_exploding_palm_hit.prefab",
+							"AttachPoint": "Chest",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnApply"
+						}],
+					"MaterialReplacementID": "94ba3150-fe9d-4eaf-9554-6d4f656d1598",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [
+						"529d483b-f460-4c6f-9490-cd4a0430909a"
+					],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnCriticallyHit",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Mythic_Potion_SE_Armor_Rating",
+			"ID": "7bc8f258-45d7-427c-8ab6-728a7cfde280",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "ArmorRating",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 5,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "UseDurationTime",
+					"Duration": 30,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "true",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.RecipeData, Assembly-CSharp",
+			"DebugName": "Recipe_HealSword",
+			"ID": "503800a2-45e0-4dec-b7a3-21cd4bbf2ed1",
+			"Components": [
+				{
+					"$type": "Game.GameData.RecipeComponent, Assembly-CSharp",
+					"DisplayName": 615439,
+					"CraftingLocation": "None",
+					"CategoryID": "7bad3803-0dfd-473a-a857-326f4853a4d6",
+					"VisibilityConditions": {
+						"Operator": 0,
+						"Components": [
+							{
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+									"Parameters": [
+										"5125dea3-f449-4ae6-abd1-862dd67bc731",
+										"GreaterThanOrEqualTo",
+										"1"
+									],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 782680602,
+									"ParameterHash": 93382287
+								},
+								"Not": false,
+								"Operator": 0
+							}
+						]
+					},
+					"CreationConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"Cost": 4704,
+					"CostByValueMultiplier": 0,
+					"Double2HIngredientCost": "true",
+					"CanModifyWeapons": "false",
+					"CanModifyArmor": "false",
+					"CanModifyShields": "false",
+					"CanModifySpecificItemsIDs": [],
+					"Ingredients": [
+						{
+							"ItemID": "e1c769f6-0c15-4263-adfd-5801e482208f",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "f163ffbf-9539-4e6e-ab78-33fb5519066e",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "44ad3e99-fd00-4649-aafa-40a8bbefd790",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "46593280-758d-4d39-a713-8d2425a9a31e",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						},
+						{
+							"ItemID": "5125dea3-f449-4ae6-abd1-862dd67bc731",
+							"Quantity": 1,
+							"IsDestroyed": "true"
+						}
+					],
+					"Output": [
+						{
+							"ItemID": "b125b502-c4a5-4f91-842f-6c6ff11bea79",
+							"Quantity": 1
+						}
+					],
+					"PrerequisiteItemModID": "00000000-0000-0000-0000-000000000000",
+					"ItemModsToAddIDs": [],
+					"ItemModsToRemoveIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.WeaponGameData, Assembly-CSharp",
+			"DebugName": "Healing_Great_Sword_Weapon",
+			"ID": "b125b502-c4a5-4f91-842f-6c6ff11bea79",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 131011,
+					"DescriptionText": 131012,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Weapons",
+					"InventoryAudioEventListID": "d9ef8ec9-f1fb-4d0b-88b7-49d7c0310019",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "true",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 1505,
+					"IconTextureSmall": "gui/icons/items/weapons/miscellaneous/citzals_armory_greatsword_s.png",
+					"IconTextureLarge": "gui/icons/items/weapons/miscellaneous/citzals_armory_greatsword_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentType": "GreatSword",
+					"EquipmentSlot": "AnyWeapon",
+					"AppearancePiece": {
+						"ModelVisualDataPath": "prefabs/items/appearance/weapons/great_sword/great_sword01_citzal.asset"
+					},
+					"ItemModsIDs": [
+						"354eeb5f-121c-4bf7-a570-e2cf9fb00987"
+					],
+					"OnEquipVisualEffects": [
+						{
+							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_citzals_enchanted_armory_sword_wpn.prefab",
+							"AttachPoint": "Fx_Bone_01",
+							"EmissiveColor": {
+								"A": 1,
+								"R": 0.8313726,
+								"G": 0.7764706,
+								"B": 1
+							},
+							"EmissiveGlowScale": 1,
+							"ScaleToCharacter": "false"
+						}
+					],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "0b5fe616-3d6d-460d-a02d-28a1b4217796",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "prefabs/itemrenderers/genericitemrenderer.prefab",
+					"ItemModel": "art/character/weapons/great_sword/great_sword01/w_gs01.fbx",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				},
+				{
+					"$type": "Game.GameData.WeaponComponent, Assembly-CSharp",
+					"Stance": "OneHanded",
+					"AnimationStanceID": "ddeda306-872b-4d63-8032-fbaf359d0ed2",
+					"StatusEffectsOnLaunchIDs": [],
+					"IsDisplayedWhenAlternate": "true",
+					"IsUniversalType": "false",
+					"AttackID": "b7fb9d9b-b883-4983-8f84-20818b697d18",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"ForceBackScabbard": "true",
+					"ScabbardAppearancePiece": {
+						"ModelVisualDataPath": "prefabs/items/appearance/weapons/great_sword/a_great_sword01_scabbard.asset"
+					},
+					"ScabbardRendererPrefab": "prefabs/itemrenderers/genericitemrenderer.prefab",
+					"ScabbardModel": "",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Healing_Great_Sword_Attack",
+			"ID": "b7fb9d9b-b883-4983-8f84-20818b697d18",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"3a2f20c5-5d12-4f5f-bb0d-856cc7a55d86"
+					],
+					"AttackDistance": 0.75,
+					"MinAttackDistance": 0,
+					"AttackVariationID": "536366a9-5173-415f-89a6-be3127e0fb68",
+					"UseParentEquippableHand": "false",
+					"CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+					"RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+					"OverrideTacticalActionType": "None",
+					"ImpactDelay": 0,
+					"ForcedTarget": "None",
+					"AffectedTargetType": "All",
+					"AffectedTargetConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"AffectedTargetDeathState": "Alive",
+					"HostilityOverride": "Default",
+					"PushDistance": 0,
+					"FaceTarget": "true",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 0,
+					"DamageData": {
+						"DamageType": "None",
+						"AlternateDamageType": "None",
+						"Minimum": 0,
+						"Maximum": 0,
+						"TacticalMinimumOverride": 0,
+						"TacticalMaximumOverride": 0,
+						"DamageProcs": []
+					},
+					"RequiresHitObject": "true",
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": ["1a418626-c778-4e9e-b6e4-a08797ff0f1e", "46e0834b-f637-4107-a5ee-531ea7148483", "a60f2e42-3d76-43e1-92e5-8280293e33bb", "aa83ac78-487e-41e4-bbaa-ee1fa98dfbf1", "023d3d96-2ca1-428e-9f5e-6c32535377ef", "9e21f3a4-97c5-43fe-af5a-2d1a950bc496", "dce63da0-4dc9-4d9d-90c9-127893c882ac", "b3456a7d-2afb-4fbd-864e-957ba2a651ed", "94117935-f853-4e1d-9b85-9318bd3f332b", "a3dfcd3f-d3ad-4ac4-beeb-f392fce52575", "3e8a3b31-e7c0-4f0a-b19d-93b730c8bdf9", "5022ecb9-15db-421a-99e7-2b51f44d2c43", "90cc850a-6d8c-4e19-945e-8ced3381b909", "30708faa-15ce-48ba-b993-ddcd4088e7b2"],
+					"RandomizeStatusEffect": "true",
+					"CanGraze": "false",
+					"CanCrit": "true",
+					"DefendedBy": "None",
+					"AfflictionsDefendedBy": "None",
+					"AfflictionApplicationModifier": "None",
+					"SubstituteHitVisualEffect": "",
+					"VisualEffects": [
+						{
+							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_citzals_enchanted_armory_sword_hit.prefab",
+							"AttachPoint": "Chest",
+							"AttachObject": "Target",
+							"AttachMode": "Position",
+							"MeshType": "None",
+							"Event": "OnHit",
+							"AnimEventID": 0,
+							"Loop": "false",
+							"Scale": "false"
+						}
+					],
+					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+					"LaunchBone": "RightWeapon",
+					"HitBone": "Chest",
+					"OnHitShakeDuration": "None",
+					"OnHitShakeStrength": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"AllReactNoise": "false",
+					"InterruptsOn": "None",
+					"InterruptType": "Normal",
+					"TargetAngle": 0,
+					"ApplyOnceOnly": "false",
+					"PathsToTarget": "true",
+					"HideFromCombatLog": "false",
+					"AdditionalAttackOnTooltip": "false",
+					"DoesNotApplyDamage": "false",
+					"TreatAsWeapon": "false",
+					"BounceData": {
+						"Bounces": 0,
+						"Multiplier": 0.5,
+						"Range": 4,
+						"InRangeOrder": "true",
+						"NoRepeatTargets": "false",
+						"AlwaysBounceAtEnemies": "true",
+						"Delay": 0,
+						"NeverBounce": "false"
+					},
+					"AttackValidityConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					}
+				},
+				{
+					"$type": "Game.GameData.AttackMeleeComponent, Assembly-CSharp",
+					"EngagementRadius": 1,
+					"IsUnarmed": "false"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ItemModGameData, Assembly-CSharp",
+			"DebugName": "Healing_Weapon",
+			"ID": "354eeb5f-121c-4bf7-a570-e2cf9fb00987",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemModComponent, Assembly-CSharp",
+					"DisplayName": 131616,
+					"HideFromUI": "false",
+					"EnchantCategory": "Unique",
+					"Cost": 35,
+					"CursesItem": "false",
+					"DurabilityDamage": 0,
+					"StatusEffectsOnEquipIDs": [
+						"b6bc3efb-97e1-4a71-988b-6e6ad1b4f89e"
+					],
+					"StatusEffectsOnLaunchIDs": [],
+					"StatusEffectsOnAttackIDs": [],
+					"AbilityModsOnEquipIDs": [],
+					"OnEquipVisualEffects": [],
+					"DamageProcs": [],
+					"AbilitiesOnEquipIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "HealBlade_SE_DisplayOnly",
+			"ID": "b6bc3efb-97e1-4a71-988b-6e6ad1b4f89e",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "None",
+					"OverrideDescriptionString": 131665,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 0,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 0,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "true",
+					"HideFromCombatLog": "true",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ItemGameData, Assembly-CSharp",
+			"DebugName": "decoygrubz",
+			"ID": "bab87f76-5e0e-4173-b8d9-3b060983aa28",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 6114608,
+					"DescriptionText": 6114609,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Ingredients",
+					"InventoryAudioEventListID": "705deb97-3f84-48c8-a84b-e3c34e2d0e3a",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 6800,
+					"IconTextureSmall": "gui/icons/items/misc/figurine_clay_grub_s.png",
+					"IconTextureLarge": "gui/icons/items/misc/figurine_clay_grub_l.png",
+					"PencilSketchTexture": "",
+					"InspectOnUseButton": [
+						{
+							"DisplayConditional": {
+								"Operator": 0,
+								"Components": []
+							},
+							"DisplayString": 6114483,
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void RemoveItems(Guid, Int32)",
+											"Parameters": [
+												"bab87f76-5e0e-4173-b8d9-3b060983aa28",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -326616246,
+											"ParameterHash": -1837954309
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void GiveItems(Guid, Int32)",
+											"Parameters": [
+												"bcb1594f-3b14-4416-8ff7-5c0559028f52",
+												"1"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1926025091,
+											"ParameterHash": 912213581
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"6114486"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1320128747,
+											"ParameterHash": -1712383834
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									{
+										"Data": {
+											"FullName": "Void LoadAudioBankPlayAudioEvent(Guid, String, String, Single, Boolean)",
+											"Parameters": [
+												"00000000-0000-0000-0000-000000000000",
+												"",
+												"ab_summon_cast",
+												"0",
+												"True"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": 1161045438,
+											"ParameterHash": 1988608987
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					],
+					"IsPlaceholder": "false"
+				},
+				{
+					"$type": "Game.GameData.DataScriptEventComponent, Assembly-CSharp",
+					"Scripts": [
+						{
+							"Event": "OnItemCollected",
+							"Script": {
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"Scripts": [
+									{
+										"Data": {
+											"FullName": "Void ShowMessageBox(StringTableType, Int32)",
+											"Parameters": [
+												"Gui",
+												"2031714"
+											],
+											"Flags": "",
+											"UnrealCall": "",
+											"FunctionHash": -1222327136,
+											"ParameterHash": -1578861245
+										},
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}, {
+			"$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+			"DebugName": "sbtrinketMindBug",
+			"ID": "bcb1594f-3b14-4416-8ff7-5c0559028f52",
+			"Components": [{
+					"$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+					"DisplayName": 861921,
+					"DescriptionText": 861922,
+					"DescriptionTextTactical": -1,
+					"FilterType": "Consumables",
+					"InventoryAudioEventListID": "c987d8de-f32a-4f9f-b489-46c511284c2e",
+					"IsQuestItem": "false",
+					"IsIngredient": "false",
+					"IsCurrency": "false",
+					"IsAdventuringItem": "false",
+					"IsJunk": "false",
+					"CanSellForFullValue": "false",
+					"MaxStackSize": 1,
+					"NeverDropAsLoot": "false",
+					"CanBePickpocketed": "true",
+					"IsUnique": "true",
+					"Value": 3654,
+					"IconTextureSmall": "mind_grub_s",
+					"IconTextureLarge": "gui/icons/items/mind_grub_L.png",
+					"PencilSketchTexture": "gui/icons/items/mindbug.png",
+					"InspectOnUseButton": [],
+					"IsPlaceholder": "false"
+				}, {
+					"$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+					"EquipmentSlot": "GrimoireOrTrinket",
+					"ItemModsIDs": ["1f49664f-7c99-483d-abbd-fc7c8b5856a0"],
+					"OnEquipVisualEffects": [],
+					"RestrictedToClassIDs": [],
+					"RestrictedToPlayer": "false",
+					"EquipConditionals": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ProficientAbilityID": "00000000-0000-0000-0000-000000000000",
+					"CannotUnequip": "false",
+					"ItemRendererPrefab": "",
+					"ItemModel": "",
+					"AnimationController": "",
+					"PaperdollOverrideRenderer": "",
+					"AttackSummonID": "00000000-0000-0000-0000-000000000000",
+					"CannotSheathe": "false",
+					"PropVisualEffects": []
+				}, {
+					"$type": "Game.GameData.SoulbindComponent, Assembly-CSharp",
+					"ProhibitUnbind": "false",
+					"BindableClassesIDs": [],
+					"BindConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"UnlockStages": [{
+							"Note": "Stage 1a",
+							"LoreToAdd": 8020100,
+							"ItemModsToAddIDs": ["a5c62689-9de6-4e57-ae2b-ee9963568999"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 500,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1b",
+							"LoreToAdd": 8020101,
+							"ItemModsToAddIDs": ["39c46ae9-1fcb-41a1-b9d6-e700ec3f8896"],
+							"ItemModsToRemoveIDs": ["1f49664f-7c99-483d-abbd-fc7c8b5856a0"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 700,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1c",
+							"LoreToAdd": 8020102,
+							"ItemModsToAddIDs": ["f259cef4-f7ea-4d93-aff8-482a7bd70b14"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 45,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1d",
+							"LoreToAdd": 8020103,
+							"ItemModsToAddIDs": ["af98dbcc-9e76-4e9c-9c0c-c91f0282d123", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 1000,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1e",
+							"LoreToAdd": 8020104,
+							"ItemModsToAddIDs": ["b5dc9596-ea4c-4414-beaf-d511e267c07a"],
+							"ItemModsToRemoveIDs": ["39c46ae9-1fcb-41a1-b9d6-e700ec3f8896", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1f",
+							"LoreToAdd": 8020105,
+							"ItemModsToAddIDs": ["c0870aad-858c-42e3-9a2d-5dd541fb2513", "b6868376-4e93-456e-9402-9887c55ac052"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 7,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1g",
+							"LoreToAdd": 8020106,
+							"ItemModsToAddIDs": ["f8e19a42-0f66-40b0-9131-ed5a787bc732"],
+							"ItemModsToRemoveIDs": ["b5dc9596-ea4c-4414-beaf-d511e267c07a", "b6868376-4e93-456e-9402-9887c55ac052"],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [{
+									"TargetValue": 50,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5137,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 1h",
+							"LoreToAdd": 8020107,
+							"ItemModsToAddIDs": ["dbcf12ac-601e-4242-a06e-8e054d479215"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["6e6750b6-61d7-4b61-9713-55957e0f0591", "f0036bfb-53d5-4d0c-b11a-b780d788a108", "1718929c-1faf-4292-b82c-7e2a7c20b3ab", "8efd7667-8bc9-4020-b7f6-5a91b9d04e48"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210010,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_mountainous_ooze_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2a",
+							"LoreToAdd": 8020108,
+							"ItemModsToAddIDs": ["5ad8a18b-77f3-4c22-8f11-f95c7afa4cb0"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 500,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2b",
+							"LoreToAdd": 8020109,
+							"ItemModsToAddIDs": ["cdfb2df6-5584-4334-a95c-23f2632c2c24"],
+							"ItemModsToRemoveIDs": ["1f49664f-7c99-483d-abbd-fc7c8b5856a0"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 700,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2c",
+							"LoreToAdd": 8020110,
+							"ItemModsToAddIDs": ["126f060f-0c25-4cb4-abfe-671fe9bfdf1c", "b6868376-4e93-456e-9402-9887c55ac052"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 45,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2d",
+							"LoreToAdd": 8020111,
+							"ItemModsToAddIDs": ["f53c754a-ee21-4327-84f4-70f0f8d320c5", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["b6868376-4e93-456e-9402-9887c55ac052"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 35,
+									"StatType": "Custom",
+									"OverrideRequirementString": 5137,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2e",
+							"LoreToAdd": 8020112,
+							"ItemModsToAddIDs": ["45230ffd-0d6e-4de6-af63-c459b75ce32d"],
+							"ItemModsToRemoveIDs": ["cdfb2df6-5584-4334-a95c-23f2632c2c24", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2f",
+							"LoreToAdd": 8020113,
+							"ItemModsToAddIDs": ["af322dea-a6a0-4fa6-8c89-eea694c62e71"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 7,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2g",
+							"LoreToAdd": 8020114,
+							"ItemModsToAddIDs": ["f21d5618-8970-4dbb-bd1d-f0a82b4fd6b6"],
+							"ItemModsToRemoveIDs": ["45230ffd-0d6e-4de6-af63-c459b75ce32d"],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [{
+									"TargetValue": 1200,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 2h",
+							"LoreToAdd": 8020115,
+							"ItemModsToAddIDs": ["dbcf12ac-601e-4242-a06e-8e054d479215"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["825817d4-1fb0-4e5c-bf84-473743ad98de", "ccdc9675-e2a7-46fa-83e9-7a5368b56265", "568f1c26-1398-4e67-8b81-0f6a60e6cdde", "acfd1303-4699-4939-91eb-6ac46d4af0bd"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210010,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_mountainous_ooze_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3a",
+							"LoreToAdd": 8020116,
+							"ItemModsToAddIDs": ["ece4e2f7-598d-4608-87d0-22d2eb683654"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 500,
+									"StatType": "TakeDamage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3b",
+							"LoreToAdd": 8020117,
+							"ItemModsToAddIDs": ["e7f1b831-91e4-482b-aa2d-41c5aacc5ea5"],
+							"ItemModsToRemoveIDs": ["1f49664f-7c99-483d-abbd-fc7c8b5856a0"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 700,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3c",
+							"LoreToAdd": 8020118,
+							"ItemModsToAddIDs": ["f3b16e8b-bcdf-46f1-a5c9-b4cdb210676f", "a9a44072-9286-4d4b-874c-10921e9cc103"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 45,
+									"StatType": "Kills",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3d",
+							"LoreToAdd": 8020119,
+							"ItemModsToAddIDs": ["564c44ed-3436-4a19-b7e4-bd3caa8f4ace", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"ItemModsToRemoveIDs": ["a9a44072-9286-4d4b-874c-10921e9cc103"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 700,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4728,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3e",
+							"LoreToAdd": 8020120,
+							"ItemModsToAddIDs": ["2a109b7e-0f1b-4655-9b0b-b2cd7767b011"],
+							"ItemModsToRemoveIDs": ["e7f1b831-91e4-482b-aa2d-41c5aacc5ea5", "771760ed-247e-4250-891a-c05fbc52104d"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 100,
+									"StatType": "Custom",
+									"OverrideRequirementString": 4729,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3f",
+							"LoreToAdd": 8020121,
+							"ItemModsToAddIDs": ["24fc5118-4c5a-4cf2-b414-4e37d987c13f"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 7,
+									"StatType": "BeRevived",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3g",
+							"LoreToAdd": 8020122,
+							"ItemModsToAddIDs": ["6eba1781-5a7c-4960-b871-44e7a084fccc"],
+							"ItemModsToRemoveIDs": ["2a109b7e-0f1b-4655-9b0b-b2cd7767b011"],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [{
+									"TargetValue": 1200,
+									"StatType": "Damage",
+									"OverrideRequirementString": -1,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": []
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}, {
+							"Note": "Stage 3h",
+							"LoreToAdd": 8020123,
+							"ItemModsToAddIDs": ["dbcf12ac-601e-4242-a06e-8e054d479215"],
+							"ItemModsToRemoveIDs": [],
+							"EligibleClassesIDs": ["b4a0f1d1-b8f7-47e7-b899-99e478004a37", "f64b5a21-2dd1-41ae-8562-60ce099b25aa", "f7cb46af-a719-41c0-9a53-107eefdbce2b"],
+							"UnlockActions": [
+								{
+									"TargetValue": 1,
+									"StatType": "Conditional",
+									"OverrideRequirementString": 8210010,
+									"RequireDamageType": "None",
+									"RequireHitType": "None",
+									"StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+									"Prerequisites": {
+										"Conditional": {
+											"Operator": 0,
+											"Components": []
+										}
+									},
+									"Conditional": {
+										"Operator": 0,
+										"Components": [
+											{
+												"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+												"Data": {
+													"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+													"Parameters": [
+														"b_mountainous_ooze_defeated",
+														"GreaterThanOrEqualTo",
+														"1"
+													],
+													"Flags": "",
+													"UnrealCall": "",
+													"FunctionHash": 901380568,
+													"ParameterHash": -1006772894
+												},
+												"Not": false,
+												"Operator": 0
+											}
+										]
+									}
+								}
+							],
+							"OverrideIconTextureSmall": "",
+							"OverrideIconTextureLarge": "",
+							"OverrideItemModel": "",
+							"Scripts": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.ItemModGameData, Assembly-CSharp",
+			"DebugName": "hfsb_Soul_Fragment",
+			"ID": "d4dc98de-ebe2-47a2-b687-5413fbd3899a",
+			"Components": [
+				{
+					"$type": "Game.GameData.ItemModComponent, Assembly-CSharp",
+					"DisplayName": 1420,
+					"HideFromUI": "false",
+					"EnchantCategory": "Unique",
+					"Cost": 8,
+					"CursesItem": "false",
+					"DurabilityDamage": 0,
+					"StatusEffectsOnEquipIDs": [
+						"e3bc2e6c-783f-4f21-a4f7-16625bbaaf73"
+					],
+					"StatusEffectsOnLaunchIDs": [],
+					"StatusEffectsOnAttackIDs": [],
+					"AbilityModsOnEquipIDs": [],
+					"OnEquipVisualEffects": [],
+					"DamageProcs": [],
+					"AbilitiesOnEquipIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "hfsb_SE_PowerPoolMax",
+			"ID": "e3bc2e6c-783f-4f21-a4f7-16625bbaaf73",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "AbilityPowerPoolMaximum",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 1,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 1,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "true",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		}]
+}

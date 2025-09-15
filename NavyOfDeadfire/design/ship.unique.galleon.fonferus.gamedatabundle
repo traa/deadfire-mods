@@ -1,0 +1,574 @@
+﻿{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.ShipGameData, Assembly-CSharp",
+      "DebugName": "SHP_Galleon_Ghost_Ship",
+      "ID": "73c30ae0-b506-4db3-b4bb-fbe1b628bdfc",
+      "Components": [
+        {
+          "$type": "Game.GameData.ShipComponent, Assembly-CSharp",
+          "ShipPrefab": "prefabs/ships/shp_ghost_a.prefab",
+          "NameplateFBX": "art/ships_new/props/name_plates/name_plate_galleon.fbx",
+          "ShipType": "GhostShip",
+          "WorldMapModelVisualData": "art/ships_new/wm_tokens/a_wm_ghost_a.asset",
+          "MinimumCrewSize": 8,
+          "Slots": [
+            {
+              "UpgradeType": "CannonsPort",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000"
+              ]
+            },
+            {
+              "UpgradeType": "CannonsStarboard",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000"
+              ]
+            },
+            {
+              "UpgradeType": "Hull",
+              "Locked": "true",
+              "DefaultItemsIDs": [
+                "be2b5e9c-c2df-4a07-81f4-79e927232546"
+              ]
+            },
+            {
+              "UpgradeType": "Sails",
+              "Locked": "true",
+              "DefaultItemsIDs": [
+                "88c8c938-3bf3-4e44-9d31-23adff777c96"
+              ]
+            },
+            {
+              "UpgradeType": "Flag",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000"
+              ]
+            },
+            {
+              "UpgradeType": "Misc",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Wheel",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Lantern",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Anchors",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            }
+          ],
+          "Actions": [
+            {
+              "Action": "None",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "SailFull",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "SailHalf",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Board",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Hold",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "TurnStarboard",
+              "IsAvailable": "true",
+              "Duration": 2
+            },
+            {
+              "Action": "TurnPort",
+              "IsAvailable": "true",
+              "Duration": 2
+            },
+            {
+              "Action": "TurnReverse",
+              "IsAvailable": "true",
+              "Duration": 3
+            },
+            {
+              "Action": "FireCannons",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Report",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "BraceForImpact",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Flee",
+              "IsAvailable": "true",
+              "Duration": 1
+            }
+          ],
+          "MovementEffects": [
+            {
+              "MovementType": "Stationary",
+              "VisualEffect": "prefabs/effects/environment/ships/fx_galleon_stationary.prefab"
+            },
+            {
+              "MovementType": "Sailing",
+              "VisualEffect": "prefabs/effects/environment/ships/fx_galleon_moving.prefab"
+            }
+          ],
+          "WorldMapMovementEffect": "prefabs/effects/environment/worldmap/fx_wm_ghost_ship.prefab",
+          "MinimumDeckhandRanks": 7,
+          "MinimumHelmsmanRanks": 3,
+          "CrewJobs": [
+            {
+              "JobType": "None",
+              "Count": 2,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Captain",
+              "Count": 0,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Boatswain",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Navigator",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Helmsman",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Deckhand",
+              "Count": 4,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Cannoneer",
+              "Count": 4,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Cook",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Surgeon",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Reserve",
+              "Count": 2,
+              "DefaultCrewIDs": []
+            }
+          ],
+          "BaseStats": [
+            {
+              "ShipAttributeType": "CombatSpeed",
+              "StatValue": 40
+            },
+            {
+              "ShipAttributeType": "SailHealth",
+              "StatValue": 60
+            },
+            {
+              "ShipAttributeType": "HullHealth",
+              "StatValue": 180
+            },
+            {
+              "ShipAttributeType": "TravelSpeed",
+              "StatValue": 0
+            },
+            {
+              "ShipAttributeType": "Hittability",
+              "StatValue": 50
+            }
+          ],
+          "SupplyLimits": [
+            {
+              "Type": "Ammunition",
+              "Count": 160
+            },
+            {
+              "Type": "Medicine",
+              "Count": 320
+            },
+            {
+              "Type": "Repair",
+              "Count": 100
+            }
+          ],
+          "ShipName": 1312,
+          "ShipTypeName": 3339,
+          "ShipTypeIconMetal": "gui/images/ingamehud/ships/icon_ship_ghost.png",
+          "ShipTypeIconParchment": "gui/worldmap/citymap/ic_garage_ghostship.png",
+          "ShipPortrait": "gui/nonatlased/ships/icon_ship_preview_ghost.png",
+          "Defenders": 6,
+          "SailsMajorColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "SailsMinorColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "ShipNameColor": {
+            "A": 1,
+            "R": 0.9372549,
+            "G": 0.8,
+            "B": 0.4823529
+          },
+          "HullColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "RTPCValue": 7,
+          "CloseToBoardDamageMultiplier": 1.2,
+          "CloseToBoardDefensiveDamageMultiplier": 1.2
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.ShipGameData, Assembly-CSharp",
+      "DebugName": "SHP_Galleon_Ghost_Ship_Rivan",
+      "ID": "808fd834-1d7e-4e8d-a1eb-52b25c82e51f",
+      "Components": [
+        {
+          "$type": "Game.GameData.ShipComponent, Assembly-CSharp",
+          "ShipPrefab": "prefabs/ships/shp_ghost_a.prefab",
+          "NameplateFBX": "art/ships_new/props/name_plates/name_plate_galleon.fbx",
+          "ShipType": "Galleon",
+          "WorldMapModelVisualData": "art/ships_new/wm_tokens/a_wm_ghost_a.asset",
+          "MinimumCrewSize": 8,
+          "Slots": [
+            {
+              "UpgradeType": "CannonsPort",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722"
+              ]
+            },
+            {
+              "UpgradeType": "CannonsStarboard",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "00000000-0000-0000-0000-000000000000",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722",
+                "809d73ca-bece-4682-b531-0d91ed5d4722"
+              ]
+            },
+            {
+              "UpgradeType": "Hull",
+              "Locked": "true",
+              "DefaultItemsIDs": [
+                "be2b5e9c-c2df-4a07-81f4-79e927232546"
+              ]
+            },
+            {
+              "UpgradeType": "Sails",
+              "Locked": "true",
+              "DefaultItemsIDs": [
+                "88c8c938-3bf3-4e44-9d31-23adff777c96"
+              ]
+            },
+            {
+              "UpgradeType": "Flag",
+              "Locked": "false",
+              "DefaultItemsIDs": [
+                "00000000-0000-0000-0000-000000000000"
+              ]
+            },
+            {
+              "UpgradeType": "Misc",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Wheel",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Lantern",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            },
+            {
+              "UpgradeType": "Anchors",
+              "Locked": "true",
+              "DefaultItemsIDs": []
+            }
+          ],
+          "Actions": [
+            {
+              "Action": "None",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "SailFull",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "SailHalf",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Board",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Hold",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "TurnStarboard",
+              "IsAvailable": "true",
+              "Duration": 2
+            },
+            {
+              "Action": "TurnPort",
+              "IsAvailable": "true",
+              "Duration": 2
+            },
+            {
+              "Action": "TurnReverse",
+              "IsAvailable": "true",
+              "Duration": 3
+            },
+            {
+              "Action": "FireCannons",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Report",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "BraceForImpact",
+              "IsAvailable": "true",
+              "Duration": 1
+            },
+            {
+              "Action": "Flee",
+              "IsAvailable": "true",
+              "Duration": 1
+            }
+          ],
+          "MovementEffects": [
+            {
+              "MovementType": "Stationary",
+              "VisualEffect": "prefabs/effects/environment/ships/fx_galleon_stationary.prefab"
+            },
+            {
+              "MovementType": "Sailing",
+              "VisualEffect": "prefabs/effects/environment/ships/fx_galleon_moving.prefab"
+            }
+          ],
+          "WorldMapMovementEffect": "prefabs/effects/environment/worldmap/fx_wm_ghost_ship.prefab",
+          "MinimumDeckhandRanks": 7,
+          "MinimumHelmsmanRanks": 3,
+          "CrewJobs": [
+            {
+              "JobType": "None",
+              "Count": 2,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Captain",
+              "Count": 0,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Boatswain",
+              "Count": 1,
+              "DefaultCrewIDs": [
+                "686c496f-fba6-4ba0-ac98-3399126d7bb3"
+              ]
+            },
+            {
+              "JobType": "Navigator",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Helmsman",
+              "Count": 1,
+              "DefaultCrewIDs": [
+                "e57a4974-916f-4178-818e-a04003291c61"
+              ]
+            },
+            {
+              "JobType": "Deckhand",
+              "Count": 4,
+              "DefaultCrewIDs": [
+                "eb60b5c4-f28c-4fc4-8286-e895dda4414f",
+                "eb60b5c4-f28c-4fc4-8286-e895dda4414f",
+                "eb60b5c4-f28c-4fc4-8286-e895dda4414f",
+                "eb60b5c4-f28c-4fc4-8286-e895dda4414f"
+              ]
+            },
+            {
+              "JobType": "Cannoneer",
+              "Count": 4,
+              "DefaultCrewIDs": [
+                "66cb0afb-0bf5-4b59-8819-1bd32d4f6051",
+                "66cb0afb-0bf5-4b59-8819-1bd32d4f6051",
+                "66cb0afb-0bf5-4b59-8819-1bd32d4f6051",
+                "66cb0afb-0bf5-4b59-8819-1bd32d4f6051"
+              ]
+            },
+            {
+              "JobType": "Cook",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Surgeon",
+              "Count": 1,
+              "DefaultCrewIDs": []
+            },
+            {
+              "JobType": "Reserve",
+              "Count": 2,
+              "DefaultCrewIDs": []
+            }
+          ],
+          "BaseStats": [
+            {
+              "ShipAttributeType": "CombatSpeed",
+              "StatValue": 40
+            },
+            {
+              "ShipAttributeType": "SailHealth",
+              "StatValue": 60
+            },
+            {
+              "ShipAttributeType": "HullHealth",
+              "StatValue": 180
+            },
+            {
+              "ShipAttributeType": "TravelSpeed",
+              "StatValue": 0
+            },
+            {
+              "ShipAttributeType": "Hittability",
+              "StatValue": 50
+            }
+          ],
+          "SupplyLimits": [
+            {
+              "Type": "Ammunition",
+              "Count": 160
+            },
+            {
+              "Type": "Medicine",
+              "Count": 320
+            },
+            {
+              "Type": "Repair",
+              "Count": 100
+            }
+          ],
+          "ShipName": 1312,
+          "ShipTypeName": 73339,
+          "ShipTypeIconMetal": "gui/images/ingamehud/ships/icon_ship_ghost.png",
+          "ShipTypeIconParchment": "gui/worldmap/citymap/ic_garage_ghostship.png",
+          "ShipPortrait": "gui/nonatlased/ships/icon_ship_preview_ghost.png",
+          "Defenders": 6,
+          "SailsMajorColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "SailsMinorColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "ShipNameColor": {
+            "A": 1,
+            "R": 0.9372549,
+            "G": 0.8,
+            "B": 0.4823529
+          },
+          "HullColor": {
+            "A": 1,
+            "R": 1,
+            "G": 1,
+            "B": 1
+          },
+          "RTPCValue": 7,
+          "CloseToBoardDamageMultiplier": 1.2,
+          "CloseToBoardDefensiveDamageMultiplier": 1.2
+        }
+      ]
+    }
+  ]
+}

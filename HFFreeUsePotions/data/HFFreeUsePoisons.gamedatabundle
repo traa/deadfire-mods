@@ -1,0 +1,247 @@
+{
+	"GameDataObjects": [{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "SE_PoisonDamageMalus",
+			"ID": "19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "DamageMultiplier",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 0.3,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 6,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "OnScoringGrazeHitOrCriticalHit",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 1,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "true",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "Weapon",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_fugue_spores_Attack",
+			"ID": "9f34bbcf-9c56-4694-8219-5ab59251fc2b",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"6d27e768-21fa-4846-8fc2-355e0eca8aba",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_fungal_bile_Attack",
+			"ID": "445386b5-57b0-4cb3-aedb-7fe6ffc947b7",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"535c895e-3cbb-4533-9c09-19690a925f31",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_razorgill_dust_Attack",
+			"ID": "3455dc79-2376-4fe9-bd6d-cac3af8ac9a1",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"b954ebc0-f742-410e-9164-f527201af8c2",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_scorching_venom_Attack",
+			"ID": "cda3f0a0-9f33-4058-a242-187f597f772f",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"9883a822-e5b4-47a9-8ba7-38332ed3ab4f",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_stone_joint_Attack",
+			"ID": "ec0c4635-c78f-48d9-ada2-b5765c8f3b47",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"545e9f02-6532-4b65-b145-df81e1d68771",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Poison_storm_toxin_Attack",
+			"ID": "604c5e96-44dc-4d12-8cf1-e05a6aaef340",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"1bea481a-03b1-44d1-9dc3-1b0f9562f464",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "LAX02_Poison_Corrosive_Soul_Essence_Attack",
+			"ID": "22154109-b91b-4ff0-9aee-3e3359787c4d",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"OverrideTacticalActionType": "Free",
+					"StatusEffectsIDs": [
+						"19139bd7-433a-4f2d-9e6b-81facf15a4e3",
+						"d59268c9-f64a-4f96-8936-887e80c4bee1",
+						"0391ae7f-a96a-4b20-b5f7-d29b6bdeebca",
+						"d4078277-590b-4644-9040-3edc0c5b47db"
+					],
+					"RandomizeStatusEffect": "false"}
+			]
+		}]
+}

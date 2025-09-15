@@ -1,0 +1,1720 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.CharacterProgressionTableGameData, Assembly-CSharp",
+			"DebugName": "PT_Eder_Fighter_Rogue",
+			"ID": "85df7158-f55b-4324-8362-fd5010a21388",
+			"Components": [
+				{
+					"$type": "Game.GameData.BaseProgressionTableComponent, Assembly-CSharp",
+					"AbilityUnlocks": [
+						{
+							"Note": "Berath's Blessing Allow Pet Slot",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "52ae9ce9-ab71-476e-a8a1-26458c33dd95",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+												"Parameters": [
+													"bb_can_i_pet_him_anyway",
+													"EqualTo",
+													"1"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 901380568,
+												"ParameterHash": 180701142
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean AlwaysFalse()",
+												"Parameters": [],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 334029817,
+												"ParameterHash": 334029817
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 0 - Sneak Attack",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "c0c9667b-a270-42fb-b7f5-a87f1287f46d",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"b20b6721-67a5-45f9-9ae0-83f4686eccd9"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -2093683938
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"b20b6721-67a5-45f9-9ae0-83f4686eccd9"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -2093683938
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 0 - Constant Recovery",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "6498a46a-15d2-45b6-89bd-a2550355f9af",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"67ebc2f9-0846-4ea8-8cb1-f946536f9110"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1273341317
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"c4c0216e-e388-4de9-83d4-bd04e57f39ed"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 1157182284
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Crippling Strike",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "1fda55c8-8d5f-47b2-b25d-0ca82c0debed",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"da59e137-4636-4362-9fce-e0c5e5394a06"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1868224487
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"5d9e8d52-1ad3-4217-b3bd-7d0ba32bc9c8"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -2090573881
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Knock Down",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "fa55ed74-c4b8-4a8b-a548-bac4e7350099",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"9c417a06-ff70-456b-820e-5a44c68281fe"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -2068426606
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 2 - Defensive Roll",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "b848e659-b19c-4be5-8ff7-16e79c77603d",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 2,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 3 - Disciplined Barrage",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "bc687a85-6dab-4d2b-87a5-fce79de5d020",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 3,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"60fb2474-b414-4ac1-b094-e49e90f04835"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -797329767
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"8b3ddbf7-cb09-43b7-87ea-5358a74affb3"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -1238368963
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Fighter Stances",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "956637e4-487a-4ad8-9421-2483d32fa7aa",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Cleaving Stance",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "f0190961-8fae-4514-aedc-0e4b6182f007",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"e3c7853b-3830-4fd8-b93c-d03945aafdfb"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 447521765
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Warrior Stance",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "5c886586-df91-4eee-aa3e-5ae24dfa31e5",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"2baaeb00-cc52-4115-92fe-d9ad0916fdb2"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 999343012
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Defender Stance",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "a3ccfefb-a002-4b27-9c0c-c255faf21190",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"e3c7853b-3830-4fd8-b93c-d03945aafdfb"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 447521765
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": false,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"956637e4-487a-4ad8-9421-2483d32fa7aa"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1856795919
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Smoke Veil (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "bfd3b60d-35ba-4c64-a9ca-fd3395fa3c4f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 5 - Escape",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "719dd06a-6008-4f1d-949c-2bac54bde4da",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 5,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"e110ab6f-f378-496f-b207-b557ea782f4f"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 515611327
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"e1668937-c325-45ec-a53e-7fb9ba421abe"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 124907666
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"c15e41f1-8e2f-4d67-b7b3-b79134b80e2a"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -805766243
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"0862b2a9-6d99-41e8-a283-c62b41c83825"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 61023668
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 6 - Snake's Reflexes",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "f15dcdfc-1ffd-4887-b154-cabc5d9688c5",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 6,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 7 - Deep Pockets (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "59146132-122b-489d-bb5b-54f59a33902f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 7,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 7 - Determination",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "6877894e-0585-4f4c-a15f-5a4fa31b364d",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 7,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 8 - Debilitating Strike",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "5d9e8d52-1ad3-4217-b3bd-7d0ba32bc9c8",
+							"RemoveAbilityID": "1fda55c8-8d5f-47b2-b25d-0ca82c0debed",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 8,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "1fda55c8-8d5f-47b2-b25d-0ca82c0debed",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"1fda55c8-8d5f-47b2-b25d-0ca82c0debed"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1458870876
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 9 - Hold the Line",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "a81f4573-b245-48d0-982a-f4f4e4f5654f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 9,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 10 - Fearless (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "528d6053-290e-49e1-9366-8b872e6c40f3",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 10,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 10 - Riposte",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "959d1aee-330f-4834-99b4-c44803a54030",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 10,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 11 - Tactical Barrage",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "8b3ddbf7-cb09-43b7-87ea-5358a74affb3",
+							"RemoveAbilityID": "bc687a85-6dab-4d2b-87a5-fce79de5d020",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 11,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "bc687a85-6dab-4d2b-87a5-fce79de5d020",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"bc687a85-6dab-4d2b-87a5-fce79de5d020"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -1133000789
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 12 - Withering Strike",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "e89bcf5c-5b28-4792-aff1-7daa02262d1e",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 12,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"b2ebf753-78e9-4b72-b9de-80bf68d0b646"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -137843589
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"158edf6d-677e-4a95-ba5b-1e49e1dbc108"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 129743783
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 13 - Deep Wounds (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "e430d7a9-13d0-4f2a-8465-8ef23372182b",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 13,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 13 - Vigorous Defense",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "08fdc230-975c-4f4e-8108-c39d3e58cb55",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 13,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"13991ec8-c9f0-49d3-9787-b5fcf357b7af"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 642268800
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 14 - Adept Evasion",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "b8d5f846-e6a6-4f1e-855c-9470edcb3e8b",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 14,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 15 - Body Control",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "acd8487d-52c8-4866-8529-1ce7ac3b7642",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 15,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 16 - Reaping The Whirlwind (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "4348a2bc-303a-4d3e-b830-be8b7b5d9632",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 16,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 16 - Persistent Distraction",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "cc2064c0-2106-42b8-9306-1ba5cb1df8e1",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 16,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 17 - Conquerer Stance",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "2baaeb00-cc52-4115-92fe-d9ad0916fdb2",
+							"RemoveAbilityID": "5c886586-df91-4eee-aa3e-5ae24dfa31e5",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 17,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "956637e4-487a-4ad8-9421-2483d32fa7aa",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"5c886586-df91-4eee-aa3e-5ae24dfa31e5"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 116196355
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 18 - Shadowing Beyond",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "e110ab6f-f378-496f-b207-b557ea782f4f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 18,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "719dd06a-6008-4f1d-949c-2bac54bde4da",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"719dd06a-6008-4f1d-949c-2bac54bde4da"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -269334114
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 19 - Deathblows (New PL)",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "be122d08-2964-4cf8-a99a-e58485a401dd",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 19,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 19 - Unbending",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "95175545-b157-4fee-8a56-4f13e5cd9820",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 19,
+								"PowerLevelRequirement": {
+									"ClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"ff625b7b-a406-4e12-8038-3dba6c5c3474"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 805551806
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"25a28cc0-1b40-4c92-b6c5-c3e59f647d6c"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 63278335
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 20 - Smoke Cloud",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "59efd9b3-33f8-41f4-9976-06c4b72a7bb6",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 20,
+								"PowerLevelRequirement": {
+									"ClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"0cd190ac-00f0-4f3c-a7dc-960efa88df57"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -1728292996
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"0dfe2284-a7d0-4344-a110-77580b9740b4"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 1748804315
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Proficiency Sabre",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "8feb7dae-7725-41dc-8984-fcdc4ec5d71c",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Proficiency Medium Shield",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "977ffd2e-63c6-497d-b817-b3b3d06b19fd",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 4 - Proficiency Stiletto",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "ddadfd01-83e7-4716-8061-ae9bdc892993",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 4,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 8 - Proficiency Hatchet",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "e573cd0c-3999-44a4-8b23-c68ca32c32a6",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 8,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 12 - Proficiency Pistol",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "276065a3-ad81-47f0-b6e9-41a326f8f6a3",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 12,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 16 - Proficiency Flail",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "39a4d04a-bc30-4d88-bae9-5d7b026f6112",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 16,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 20 - Proficiency Spear",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "fdb7384e-48a0-4903-8746-5482d876a6d5",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 20,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						}
+					],
+					"DefaultDecisionTrees": [],
+					"DecisionTreeSelectionType": "RandomOrder",
+					"DefaultCustomAIID": "00000000-0000-0000-0000-000000000000",
+					"DefaultCustomAI2ID": "00000000-0000-0000-0000-000000000000"
+				},
+				{
+					"$type": "Game.GameData.CharacterProgressionTableComponent, Assembly-CSharp",
+					"DefaultClassID": "6e6750b6-61d7-4b61-9713-55957e0f0591",
+					"MultiClassID": "8efd7667-8bc9-4020-b7f6-5a91b9d04e48",
+					"Skills": [
+						{
+							"Level": 2,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "c7e22ee0-bdd6-4ca8-99f0-a46f3dd66606"
+						},
+						{
+							"Level": 3,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 4,
+							"ActiveSkillID": "8cc41e27-e62f-4e75-9f7d-ae47986895d2",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 5,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 6,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 7,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 8,
+							"ActiveSkillID": "3b073ebf-0a4a-48a3-947d-ad38bef10b36",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 9,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "c7e22ee0-bdd6-4ca8-99f0-a46f3dd66606"
+						},
+						{
+							"Level": 10,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 11,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 12,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "c7e22ee0-bdd6-4ca8-99f0-a46f3dd66606"
+						},
+						{
+							"Level": 13,
+							"ActiveSkillID": "8cc41e27-e62f-4e75-9f7d-ae47986895d2",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 14,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 15,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 16,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "eb8da173-4a3e-4910-94e8-dd0c1436ca40"
+						},
+						{
+							"Level": 17,
+							"ActiveSkillID": "3b073ebf-0a4a-48a3-947d-ad38bef10b36",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 18,
+							"ActiveSkillID": "3affbb70-86bd-41f3-82c6-325326d40796",
+							"PassiveSkillID": "c7e22ee0-bdd6-4ca8-99f0-a46f3dd66606"
+						},
+						{
+							"Level": 19,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98cc5a0d-1387-42e3-9202-417bc42b53ad"
+						},
+						{
+							"Level": 20,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						}
+					],
+					"SubclassesIDs": [
+						"c4c0216e-e388-4de9-83d4-bd04e57f39ed",
+						"db98a320-6781-4469-b450-dec52ada245a"
+					],
+					"IgnoreResources": "false"
+				}
+			]
+		}
+	]
+}

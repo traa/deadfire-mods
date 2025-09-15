@@ -1,0 +1,1159 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.CharacterProgressionTableGameData, Assembly-CSharp",
+			"DebugName": "PT_Tekehu_Druid_Chanter",
+			"ID": "6bd7d28e-28a5-49ab-aabd-379d90a773e4",
+			"Components": [
+				{
+					"$type": "Game.GameData.BaseProgressionTableComponent, Assembly-CSharp",
+					"AbilityUnlocks": [
+						{
+							"Note": "CL 0 - Spiritshift Shark",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "499f7b81-27c9-49e0-a5af-59ec2d328065",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"65eddbbd-8489-46ff-a2b7-56c954c61198"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -121159574
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"0e7a5b7d-6eba-4d29-9bdc-a90dc145a0c4"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 1588994268
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"65eddbbd-8489-46ff-a2b7-56c954c61198"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -121159574
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"0e7a5b7d-6eba-4d29-9bdc-a90dc145a0c4"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 1588994268
+											},
+											"Not": true,
+											"Operator": 0
+										},
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"499f7b81-27c9-49e0-a5af-59ec2d328065"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": -313455361
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 0 - Chanter Trait",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "7475d223-1a61-41a0-abb8-8e89b7bf939a",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 0 - Chanter Phrase Boost",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "c284a2c9-1473-4afc-835c-ef3e8d5526cb",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 - Troubadour Subclass",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "723bbbf4-8452-4c0e-8880-59fb3b395091",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"3344bd8b-6c88-4eea-9b6e-0987ed3c54d2"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"3344bd8b-6c88-4eea-9b6e-0987ed3c54d2"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 - Troubadour Brisk Recitation",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "d4f9a5f8-e058-4dd8-a984-118f492dfcaf",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"3344bd8b-6c88-4eea-9b6e-0987ed3c54d2"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"3344bd8b-6c88-4eea-9b6e-0987ed3c54d2"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": -346019921
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 Auto Grant - Lifegiver",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "de55e03a-89a4-40a2-8ef3-a509b7a2616a",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 0 Auto Grant - Lifegiver Passive",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "1f819eea-2be7-4a73-92f3-4ed6dc052c70",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean AlwaysFalse()",
+												"Parameters": [],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 334029817,
+												"ParameterHash": 334029817
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 1 Auto Grant - Lifegiver Natures Vigor",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "84286332-10c9-42a6-9075-76e49d084232",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 1
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 2 Auto Grant - Lifegiver The Moons Light",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "06e405f5-7493-4f58-958e-7b903b6bfbef",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 2
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 3 Auto Grant - Lifegiver Natures Balm",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "1964bb6c-9cd0-4299-bfd9-4b943fd60754",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 3
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 4 Auto Grant - Lifegiver Moonwell",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "34b227d6-ad3a-4e53-88a1-4ce3fe42c44f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 4
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 5 Auto Grant - Lifegiver Cleansing Wind",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "b77f5a6c-e8a4-493a-9a23-0355080377d6",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 5
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 6 Auto Grant - Lifegiver Garden of Life",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "eee7b75c-5b46-465d-a65f-59e76304fe80",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 6
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 7 Auto Grant - Lifegiver Natures Bounty",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "efae7175-640a-45d4-bbbb-93a183127b2c",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 7
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 8 Auto Grant - Lifegiver Regenerate",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "6345a396-3d50-4159-80ea-ce8bda7cabd5",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 8
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 9 Auto Grant - Lifegiver Pollen Patch",
+							"Category": "Subclass",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "8897b8d3-6cf1-41ed-bb6b-c8099533ecbe",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 9
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+												"Parameters": [
+													"6a549e8e-c543-4abd-957e-9b8a5fda36ca"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": 1231916529,
+												"ParameterHash": 184842801
+											},
+											"Not": false,
+											"Operator": 0
+										}
+									]
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "PL 1 - Nature's Mark",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "73d53819-6cde-46a5-a674-c24b304a608f",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "00000000-0000-0000-0000-000000000000",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Hel-Hyraf Crashed Upon the Shield",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "a7ee08cb-0718-4ee2-a4b9-aa33af72617e",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": [
+										{
+											"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+											"Data": {
+												"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+												"Parameters": [
+													"c2fdfb45-b4f6-41fe-9ff0-4025501e383b"
+												],
+												"Flags": "",
+												"UnrealCall": "",
+												"FunctionHash": -1793712019,
+												"ParameterHash": 915306606
+											},
+											"Not": true,
+											"Operator": 0
+										}
+									]
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Blessed Was Wengridh, Quickest of His Tribe Chant",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "7fbd5b34-2f93-4b87-a1bc-7a8693eb9bec",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Proficiency Rod",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "b2ac11dc-55b3-4ce5-bf31-77d74b779aae",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						},
+						{
+							"Note": "CL 1 - Proficiency Quarterstaff",
+							"Category": "General",
+							"UnlockStyle": "AutoGrant",
+							"ActivationObject": "Self",
+							"AddAbilityID": "0ed6e0ae-afea-4e25-8fb1-b28c7c35c602",
+							"RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Prerequisites": {
+								"MinimumCharacterLevel": 1,
+								"PowerLevelRequirement": {
+									"ClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+									"MinimumPowerLevel": 0
+								},
+								"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+								"Conditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"VisibilityConditional": {
+									"Operator": 0,
+									"Components": []
+								},
+								"IsMutuallyExclusiveUpgrade": "true"
+							}
+						}
+					],
+					"DefaultDecisionTrees": [],
+					"DecisionTreeSelectionType": "RandomOrder",
+					"DefaultCustomAIID": "02b47eb7-2df2-4ac4-b104-094fbbb1fd23",
+					"DefaultCustomAI2ID": "1c2f69c3-7330-49a6-ad3f-24984a90f246"
+				},
+				{
+					"$type": "Game.GameData.CharacterProgressionTableComponent, Assembly-CSharp",
+					"DefaultClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+					"MultiClassID": "b4a0f1d1-b8f7-47e7-b899-99e478004a37",
+					"Skills": [
+						{
+							"Level": 2,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "c6b6f87a-0381-4219-93eb-77ae2b64f0af"
+						},
+						{
+							"Level": 3,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 4,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 5,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 6,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 7,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "c6b6f87a-0381-4219-93eb-77ae2b64f0af"
+						},
+						{
+							"Level": 8,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 9,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 10,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 11,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 12,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "c6b6f87a-0381-4219-93eb-77ae2b64f0af"
+						},
+						{
+							"Level": 13,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 14,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 15,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 16,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "c6b6f87a-0381-4219-93eb-77ae2b64f0af"
+						},
+						{
+							"Level": 17,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						},
+						{
+							"Level": 18,
+							"ActiveSkillID": "fefc4d3d-250d-4c32-85e0-62a851240e62",
+							"PassiveSkillID": "3ad9194b-4f41-480e-aa75-1c82df43be84"
+						},
+						{
+							"Level": 19,
+							"ActiveSkillID": "e67f20e3-5bf9-4d87-9bda-211405107362",
+							"PassiveSkillID": "98051b85-d7e5-4746-a66c-260e2fcd2d4b"
+						},
+						{
+							"Level": 20,
+							"ActiveSkillID": "e5f33551-ec5c-4cc8-b5f2-1eb03d210374",
+							"PassiveSkillID": "6fa62ec8-6695-4a1d-8553-7486b0ac20c4"
+						}
+					],
+					"SubclassesIDs": [
+						"6a549e8e-c543-4abd-957e-9b8a5fda36ca",
+						"3344bd8b-6c88-4eea-9b6e-0987ed3c54d2"
+					],
+					"IgnoreResources": "false"
+				}
+			]
+		}
+	]
+}

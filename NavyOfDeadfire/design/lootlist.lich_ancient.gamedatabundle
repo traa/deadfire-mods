@@ -1,0 +1,80 @@
+{
+  "GameDataObjects": [
+      {
+          "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+          "DebugName": "ItemsAdd_Flooded_Cave_Lich_Ancient",
+          "ID": "44ec2e05-749f-4c46-a806-8a310453116d",
+          "Components": [
+              {
+                  "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                  "RunOnlyOnce": "false",
+                  "SucceedOnlyOnce": "true",
+                  "Script": {
+                      "Conditional": {
+                          "Operator": 0,
+                          "Components": [
+                              {
+                                  "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                  "Data": {
+                                      "FullName": "Boolean IsInActiveScene(Guid)",
+                                      "Parameters": [
+                                          "f86caa5d-ff21-455c-af5f-3b31d95d0610"
+                                      ]
+                                  },
+                                  "Not": false,
+                                  "Operator": 0
+                              }
+                          ]
+                      },
+                      "Scripts": [
+                          {
+                              "Data": {
+                                  "FullName": "Void GenerateLootListInto(Guid, Guid)",
+                                  "Parameters": [
+                                      "f86caa5d-ff21-455c-af5f-3b31d95d0610",
+                                      "722b2aa0-dffd-4011-aa9a-06cc3ce7da0f"
+                                  ]
+                              },
+                              "Conditional": {
+                                  "Operator": 0,
+                                  "Components": []
+                              }
+                          }
+                      ]
+                  }
+              }
+          ]
+      },
+      {
+          "$type": "Game.GameData.LootListGameData, Assembly-CSharp",
+          "DebugName": "MQ_Custom_LootList_Flooded_Cave_Lich_Ancient",
+          "ID": "722b2aa0-dffd-4011-aa9a-06cc3ce7da0f",
+          "Components": [
+              {
+                  "$type": "Game.GameData.LootListComponent, Assembly-CSharp",
+                  "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                  },
+                  "OutputChance": 1,
+                  "OutputMode": "All",
+                  "Items": [
+                      {
+                          "Conditional": {
+                              "Operator": 0,
+                              "Components": []
+                          },
+                          "OutputChance": 1,
+                          "MinCount": 1,
+                          "MaxCount": 1,
+                          "Weight": 1,
+                          "ItemID": "063d7aa7-d0be-431e-8dcb-da6136161b7f",
+                          "LootListID": "00000000-0000-0000-0000-000000000000",
+                          "LockedVisible": "false"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}
