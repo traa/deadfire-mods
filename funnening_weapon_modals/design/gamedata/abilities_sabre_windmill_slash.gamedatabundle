@@ -3,15 +3,10 @@
         {
             "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash",
-            "_comment": "// sabre modal id vvvv",
             "ID": "c83913ec-391c-4779-9527-389dc5825e9f",
             "Components": [
                 {
                     "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
-                    "_comment1": "// -25% damage vvvv",
-                    "_comment2": "// +1 PEN vvvv",
-                    "_comment3": "// +25% attack speed vvvv",
-                    "_comment4": "// on hit apply + -15 reflex on hit included vvvv",
                     "StatusEffectsIDs": [
                         "36a0b01a-636f-4099-8333-211b13d3e8d1",
                         "c59d48c4-403d-4607-a8db-7860453e1833",
@@ -22,7 +17,6 @@
             ]
         },
         {
-            "_comment": "// -25% damage",
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash_SE_RecoveryMult",
             "ID": "36a0b01a-636f-4099-8333-211b13d3e8d1",
@@ -35,7 +29,6 @@
             ]
         },
         {
-            "_comment": "// rewrite penetration from 2 to 1",
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash_SE_Penetration",
             "ID": "c59d48c4-403d-4607-a8db-7860453e1833",
@@ -52,7 +45,6 @@
             ]
         },
         {
-            "_comment": "// +25% attack speed",
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash_SE_attack_speed",
             "ID": "8991028f-37f1-452c-ab47-8ef9b02b9fa0",
@@ -183,7 +175,6 @@
             ]
         },
         {
-            "_comment": "// on hit apply",
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash_SE_ApplyOnHit",
             "ID": "ef3516ee-a73b-4766-b8b8-14706702bc1b",
@@ -202,14 +193,13 @@
                         "MultiplyBy": 1,
                         "Operator": "Add"
                     },
-                    "_comment": "// sabre keyword vvvv",
                     "KeywordsIDs": [
                         "f48f6e5a-6de1-491e-8958-b426575a20ac"
                     ],
                     "DurationType": "Infinite",
                     "Duration": 0,
                     "MaxStackQuantity": 2,
-                    "ApplicationBehavior": "StackIfAlreadyApplied",
+                    "ApplicationBehavior": "StackWithAllSimilarDataEffects",
                     "ApplicationType": "ApplyOnStart",
                     "IntervalRateID": "00000000-0000-0000-0000-000000000000",
                     "StackedChildrenApplyEffects": "true",
@@ -257,7 +247,6 @@
                     "VisualEffects": [],
                     "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
                     "AttackFilter": {
-                        "_comment": "// sabre keyword vvvv",
                         "KeywordsIDs": [
                             "f48f6e5a-6de1-491e-8958-b426575a20ac"
                         ],
@@ -301,7 +290,6 @@
                     "StatusEffectTypeValue": "None",
                     "ItemValueID": "00000000-0000-0000-0000-000000000000",
                     "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
-                    "_comment1": "// new status effect -15 reflex vvvv",
                     "StatusEffectsValueIDs": [
                         "29d97fa3-a75d-4166-9dc4-4c7cf7cdadda"
                     ],
@@ -319,7 +307,6 @@
             ]
         },
         {
-            "_comment": "// -15 reflex",
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "Sabre_Windmill_Slash_SE_Reflex",
             "ID": "29d97fa3-a75d-4166-9dc4-4c7cf7cdadda",
@@ -342,7 +329,7 @@
                     "DurationType": "UseDurationTime",
                     "Duration": 20,
                     "MaxStackQuantity": 2,
-                    "ApplicationBehavior": "StackIfAlreadyApplied",
+                    "ApplicationBehavior": "StackWithAllSimilarDataEffects",
                     "ApplicationType": "ApplyOnStart",
                     "IntervalRateID": "00000000-0000-0000-0000-000000000000",
                     "StackedChildrenApplyEffects": "true",
