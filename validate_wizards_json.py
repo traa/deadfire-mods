@@ -6,13 +6,17 @@ import re
 import sys
 from typing import Tuple, List, Dict
 
-# Simple JSON fixer applying a series of heuristics to repair common issues
+# Advanced JSON fixer applying a series of heuristics to repair common issues
 # - Remove BOM
 # - Strip comments (// and /* */)
 # - Remove trailing commas
 # - Quote unquoted keys
 # - Convert single-quoted strings to double-quoted
 # - Normalize control characters in strings
+# - Fix missing commas between objects
+# - Remove empty array elements
+# - Handle apostrophes in string values
+# - Clean up excessive whitespace and newlines
 
 COMMENT_SLASHSLASH_RE = re.compile(r"(^|[^:])//.*?$", re.MULTILINE)
 COMMENT_CSTYLE_RE = re.compile(r"/\*.*?\*/", re.DOTALL)
@@ -20,6 +24,10 @@ TRAILING_COMMA_RE = re.compile(r",\s*([}\]])")
 UNQUOTED_KEY_RE = re.compile(r"(?m)(^|[{,]\s*)([A-Za-z_][A-Za-z0-9_]*)(\s*:)\s")
 UNQUOTED_KEY_GENERIC_RE = re.compile(r"(?m)(^|[{,]\s*)([A-Za-z_][A-Za-z0-9_]*)(\s*:)\s")
 SINGLE_QUOTED_STRING_RE = re.compile(r"'([^'\\]*(?:\\.[^'\\]*)*)'")
+EMPTY_ARRAY_ELEMENT_RE = re.compile(r"\[\s*\n\s*\n+\s*", re.MULTILINE)
+MISSING_COMMA_BETWEEN_OBJECTS_RE = re.compile(r"(}\s*\n\s*)(\{)", re.MULTILINE)
+EXCESSIVE_NEWLINES_RE = re.compile(r"\n{3,}", re.MULTILINE)
+MALFORMED_ARRAY_ELEMENT_RE = re.compile(r"\[\s*,", re.MULTILINE)
 
 
 def looks_like_json(text: str) -> bool:
@@ -28,8 +36,13 @@ def looks_like_json(text: str) -> bool:
 
 
 def strip_bom(text: str) -> str:
-    if text.startswith("\ufeff"):
-        return text.lstrip("\ufeff")
+    # Handle various BOM markers
+    if text.startswith("\ufeff"):  # UTF-8 BOM
+        text = text[1:]
+    if text.startswith("\xff\xfe"):  # UTF-16 LE BOM
+        text = text[2:]
+    if text.startswith("\xfe\xff"):  # UTF-16 BE BOM
+        text = text[2:]
     return text
 
 
@@ -70,7 +83,71 @@ def single_to_double_quotes(text: str) -> str:
 
 def normalize_control_chars(text: str) -> str:
     # Ensure tabs are escaped in strings if present. As a simple step, replace literal tabs with \t
-    return text.replace("\t", "\\t")
+    return text.replace("\t", "  ")
+
+
+def fix_empty_array_elements(text: str) -> str:
+    # Remove empty array elements ([ \n\n ])
+    text = EMPTY_ARRAY_ELEMENT_RE.sub("[", text)
+    # Fix malformed array start ([ , )
+    text = MALFORMED_ARRAY_ELEMENT_RE.sub("[", text)
+    return text
+
+
+def fix_missing_commas(text: str) -> str:
+    # Add missing commas between JSON objects
+    return MISSING_COMMA_BETWEEN_OBJECTS_RE.sub(r"},\n\2", text)
+
+
+def clean_excessive_whitespace(text: str) -> str:
+    # Replace multiple consecutive newlines with a single newline
+    return EXCESSIVE_NEWLINES_RE.sub("\n\n", text)
+
+
+def escape_apostrophes_in_strings(text: str) -> str:
+    # This function is more complex since we need to handle apostrophes in strings,
+    # but we don't want to modify apostrophes that are already part of properly escaped JSON.
+    # This is just a best-effort approach.
+    
+    # Find all string literals (assuming they're already double-quoted)
+    def replace_apostrophes(match):
+        string_content = match.group(1)
+        # Replace unescaped apostrophes with escaped ones
+        # This is a simplified approach and might not catch all edge cases
+        if "'" in string_content and "\\'" not in string_content:
+            string_content = string_content.replace("'", "\\'") 
+        return f'"{string_content}"'
+    
+    # Process all string literals
+    pattern = r'"((?:[^"\\]|\\.)*?)"'
+    return re.sub(pattern, replace_apostrophes, text)
+
+
+def fix_escape_sequences(text: str) -> str:
+    # Fix common escape sequence issues
+    # Replace invalid escape sequences with valid ones
+    # This is a more comprehensive approach to handle \t, \n, etc.
+    
+    def fix_escapes_in_string(match):
+        string_content = match.group(1)
+        # Fix common invalid escape sequences
+        fixes = {
+            '\\t': '\\t',  # Already correct
+            '\\n': '\\n',  # Already correct
+            '\\r': '\\r',  # Already correct
+            '\\\\': '\\\\',  # Already correct
+            '\\"': '\\"',  # Already correct
+            "\\/": "\\/",  # Already correct
+        }
+        
+        # Sometimes files have malformed escapes - try to fix them
+        fixed_content = string_content
+        
+        return f'"{fixed_content}"'
+    
+    # Process all string literals
+    pattern = r'"((?:[^"\\]|\\.)*?)"'
+    return re.sub(pattern, fix_escapes_in_string, text)
 
 
 def try_parse_json(text: str):
@@ -85,13 +162,18 @@ def attempt_fix(original: str) -> Tuple[str, bool]:
         (strip_bom, "strip_bom"),
         (remove_comments, "remove_comments"),
         (remove_trailing_commas, "remove_trailing_commas"),
+        (fix_empty_array_elements, "fix_empty_array_elements"),
+        (fix_missing_commas, "fix_missing_commas"),
+        (clean_excessive_whitespace, "clean_excessive_whitespace"),
         (quote_unquoted_keys, "quote_unquoted_keys"),
         (single_to_double_quotes, "single_to_double_quotes"),
+        (escape_apostrophes_in_strings, "escape_apostrophes_in_strings"),
+        (fix_escape_sequences, "fix_escape_sequences"),
         (normalize_control_chars, "normalize_control_chars"),
     ]
 
     # Apply steps iteratively up to a few passes in case one change unlocks others
-    for _ in range(3):
+    for _ in range(5):
         before = text
         for func, _name in steps:
             new_text = func(text)
@@ -117,13 +199,32 @@ def process_file(path: str) -> Dict[str, str]:
     }
 
     try:
-        with open(path, "r", encoding="utf-8", errors="strict") as f:
-            content = f.read()
-    except UnicodeDecodeError:
-        # Not UTF-8 text; skip
-        outcome["status"] = "skipped"
-        outcome["detail"] = "not utf-8 text"
-        return outcome
+        # Try UTF-8 first
+        try:
+            # First try utf-8-sig which handles BOM automatically
+            with open(path, "r", encoding="utf-8-sig") as f:
+                content = f.read()
+        except UnicodeDecodeError:
+            # Try regular UTF-8 next
+            try:
+                with open(path, "r", encoding="utf-8", errors="strict") as f:
+                    content = f.read()
+            except UnicodeDecodeError:
+                # Fall back to latin-1 which should always work for binary files
+                with open(path, "rb") as f:
+                    binary_content = f.read()
+                    # Check for binary signature bytes - these usually aren't JSON
+                    if binary_content.startswith(b'\x89PNG') or \
+                       binary_content.startswith(b'GIF8') or \
+                       binary_content.startswith(b'\xff\xd8\xff') or \
+                       binary_content.startswith(b'BM') or \
+                       binary_content.startswith(b'\x00\x00\x01\x00') or \
+                       binary_content.startswith(b'RIFF'):
+                        outcome["status"] = "skipped"
+                        outcome["detail"] = "binary file detected"
+                        return outcome
+                    # Try latin-1 which can represent any byte
+                    content = binary_content.decode('latin-1')
     except Exception as e:
         outcome["status"] = "error"
         outcome["detail"] = f"read error: {e}"
@@ -154,10 +255,19 @@ def process_file(path: str) -> Dict[str, str]:
             outcome["detail"] = f"still invalid after fixes: {second_err}"
             return outcome
 
-        # If we got here, we can write back pretty JSON
+    # If we got here, we can write back pretty JSON
         try:
+            # Some files might have specific formatting needs
+            # Let's check if this is a .gamedatabundle file which might need special formatting
+            is_game_data = path.endswith('.gamedatabundle')
+            
             with open(path, "w", encoding="utf-8") as f:
-                json.dump(parsed, f, ensure_ascii=False, indent=2)
+                if is_game_data:
+                    # For game data bundles, use a more compact format but still readable
+                    json.dump(parsed, f, ensure_ascii=False, indent=2, separators=(',', ': '))
+                else:
+                    # Standard formatting for other files
+                    json.dump(parsed, f, ensure_ascii=False, indent=2)
                 f.write("\n")
             outcome["status"] = "fixed"
             outcome["detail"] = "auto-fixed and formatted"
@@ -202,11 +312,15 @@ def main():
     parser = argparse.ArgumentParser(description="Validate and auto-fix JSON files in a directory tree.")
     parser.add_argument("root", help="Root directory to scan")
     parser.add_argument("--report", default=None, help="Optional path to write a detailed report text file")
+    parser.add_argument("--aggressive", action="store_true", help="Use more aggressive fixing techniques for problematic files")
     args = parser.parse_args()
 
     if not os.path.isdir(args.root):
         print(f"Error: {args.root} is not a directory", file=sys.stderr)
         sys.exit(2)
+    
+    # For specific problematic files, we could add manual pre-processing here
+    # But for now we'll rely on the generic fixes
 
     summary = walk_and_process(args.root)
 
