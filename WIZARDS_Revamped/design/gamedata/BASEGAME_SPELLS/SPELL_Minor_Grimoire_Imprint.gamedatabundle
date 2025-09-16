@@ -1,0 +1,298 @@
+﻿{
+  "GameDataObjects": [
+  
+  {
+      "$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+      "DebugName": "Minor_Grimoire_Imprint_Melee",
+      "ID": "a3403b4e-2cef-463b-90a9-9088e1622ae6",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "69d9e77c-1a78-4af0-b590-0ea1620ab60b"
+          ],
+          "AttackDistance": 10,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "4365c4d1-44ce-4b2a-bf11-d895a006b12b",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+          "RecoveryTimeID": "039ef4b4-eeb3-42d3-9817-a8df05c53515",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "Hostile",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": 0,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 0,
+          "DamageData": {
+            "DamageType": "None",
+            "AlternateDamageType": "None",
+            "Minimum": 0,
+            "Maximum": 0,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "true",
+          "StatusEffectKeywordsIDs": [
+            "69d9e77c-1a78-4af0-b590-0ea1620ab60b"
+          ],
+          "StatusEffectsIDs": [
+            "252717ed-e3e6-4742-aeeb-19c9420b373e"
+          ],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "true",
+          "DefendedBy": "Fortitude",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "prefabs/effects/abilities/wizzard/fx_minor_grimoire_impact01.prefab",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_minor_grimoire_imprint.prefab",
+              "AttachPoint": "LeftHand",
+              "AttachObject": "Caster",
+              "AttachMode": "AttachFaceSource",
+              "MeshType": "None",
+              "Event": "OnHit",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_minor_grimoire_imprint_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "AttachFaceSource",
+              "MeshType": "None",
+              "Event": "OnHit",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 0,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 1,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_grimoire_close_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 3,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand_launch.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "PositionRotation",
+              "MeshType": "None",
+              "Event": "OnLaunch",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "LeftWeapon",
+          "HitBone": "LeftWeapon",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 0,
+            "Multiplier": 0.5,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackMeleeComponent, Assembly-CSharp",
+          "EngagementRadius": 1,
+          "IsUnarmed": "false"
+        }
+      ]
+    },
+  
+  {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Minor_Grimoire_Imprint_SE_ImprintSpell",
+      "ID": "252717ed-e3e6-4742-aeeb-19c9420b373e",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "SpellSteal",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 1,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [],
+          "DurationType": "UseDurationTime",
+          "Duration": 60,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "RemoveExistingIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "true",
+          "ClearOnCombatEnd": "true",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 3,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "All",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+  
+  
+    ]
+}

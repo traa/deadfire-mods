@@ -1,0 +1,447 @@
+﻿{
+  "GameDataObjects": [
+  
+  
+{
+      "$type": "Game.GameData.EquippableGameData, Assembly-CSharp",
+      "DebugName": "Cloth_Armor_Soulbound_Cigotuvis_Embrace",
+      "ID": "89f0f84a-441d-4cbd-beec-2e7363970cca",
+      "Components": [
+        {
+          "$type": "Game.GameData.ItemComponent, Assembly-CSharp",
+          "DisplayName": 995010,
+          "DescriptionText": 995011,
+          "DescriptionTextTactical": -1,
+          "FilterType": "Armor",
+          "InventoryAudioEventListID": "3b0b476e-883e-4a9e-9a61-956eabf30b6d",
+          "IsQuestItem": "false",
+          "IsIngredient": "false",
+          "IsCurrency": "false",
+          "IsAdventuringItem": "false",
+          "IsJunk": "false",
+          "CanSellForFullValue": "false",
+          "MaxStackSize": 1,
+          "NeverDropAsLoot": "false",
+          "CanBePickpocketed": "true",
+          "IsUnique": "true",
+          "Value": 1200,
+          "IconTextureSmall": "gui/icons/items/armor/cloth/cloth_armor_bloody_s.png",
+          "IconTextureLarge": "gui/icons/items/armor/cloth/cloth_armor_bloody_l.png",
+          "PencilSketchTexture": "gui/itemsketches/sketch2.png",
+          "InspectOnUseButton": [],
+          "IsPlaceholder": "false"
+        },
+        {
+          "$type": "Game.GameData.EquippableComponent, Assembly-CSharp",
+          "EquipmentType": "None",
+          "EquipmentSlot": "Armor",
+          "AppearancePiece": {
+            "ModelVisualDataPath": "items/appearance/body/cl/cl01/a_cl01.asset"
+          },
+          "ItemModsIDs": [
+            "ffb3229b-d3ad-403f-81ad-280d818ffb18",
+            "22edcfee-1718-4ab8-b128-77ff76e52ed3"
+          ],
+          "OnEquipVisualEffects": [],
+          "RestrictedToClassIDs": [
+          	
+          ],
+          "RestrictedToPlayer": "false",
+          "EquipConditionals": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ProficientAbilityID": "00000000-0000-0000-0000-000000000000",
+          "CannotUnequip": "false",
+          "ItemRendererPrefab": "",
+          "ItemModel": "",
+          "AnimationController": "",
+          "PaperdollOverrideRenderer": "",
+          "AttackSummonID": "00000000-0000-0000-0000-000000000000",
+          "CannotSheathe": "false",
+          "PropVisualEffects": []
+        },
+        {
+          "$type": "Game.GameData.ArmorComponent, Assembly-CSharp",
+          "ArmorRating": 3,
+          "SpeedFactor": 1,
+          "ArmorCategory": "Light",
+          "ArmorMaterial": "Cloth",
+          "LevelScaling": {
+            "BaseLevel": 1,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ArmorRatingAdjustment": 0
+          },
+          "OverridePierceRating": -1,
+          "OverrideSlashRating": -1,
+          "OverrideCrushRating": -1,
+          "OverrideBurnRating": -1,
+          "OverrideFreezeRating": -1,
+          "OverrideShockRating": -1,
+          "OverrideCorrodeRating": -1,
+          "ImmunityPierce": "false",
+          "ImmunitySlash": "false",
+          "ImmunityCrush": "false",
+          "ImmunityBurn": "false",
+          "ImmunityFreeze": "false",
+          "ImmunityShock": "false",
+          "ImmunityCorrode": "false"
+        },
+        {
+          "$type": "Game.GameData.SoulbindComponent, Assembly-CSharp",
+          "ProhibitUnbind": "false",
+          "BindableClassesIDs": [
+          	"825817d4-1fb0-4e5c-bf84-473743ad98de",
+          	"acfd1303-4699-4939-91eb-6ac46d4af0bd"
+          ],
+          "BindConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "UnlockStages": [
+            {
+              "Note": "Stage 1 Wizard",
+              "LoreToAdd": 995012,
+              "ItemModsToAddIDs": [
+                "24f8907f-059f-493c-a000-59b3abdb3bf9",
+                "b86b7370-2582-415b-b711-add46a39b16e"
+              ],
+              "ItemModsToRemoveIDs": [],
+              "EligibleClassesIDs": [
+              	"acfd1303-4699-4939-91eb-6ac46d4af0bd"
+              ],
+              "UnlockActions": [
+                {
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995015,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      {
+                        "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                        "Data": {
+                          "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                          "Parameters": [
+                            "b_Port_Visited_Splintered_Reef",
+                            "EqualTo",
+                            "1"
+                          ],
+                          "Flags": "",
+                          "UnrealCall": "",
+                          "FunctionHash": 901380568,
+                          "ParameterHash": 1085227643
+                        },
+                        "Not": false,
+                        "Operator": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            },
+            {
+              "Note": "Stage 1 Barbarian",
+              "LoreToAdd": 995012,
+              "ItemModsToAddIDs": [
+                "24f8907f-059f-493c-a000-59b3abdb3bf9",
+                "8e2cceae-6f83-4514-9284-3d360db673cb"
+              ],
+              "ItemModsToRemoveIDs": [],
+              "EligibleClassesIDs": [
+              	"825817d4-1fb0-4e5c-bf84-473743ad98de"
+              ],
+              "UnlockActions": [
+                {
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995015,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      {
+                        "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                        "Data": {
+                          "FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+                          "Parameters": [
+                            "b_Port_Visited_Splintered_Reef",
+                            "EqualTo",
+                            "1"
+                          ],
+                          "Flags": "",
+                          "UnrealCall": "",
+                          "FunctionHash": 901380568,
+                          "ParameterHash": 1085227643
+                        },
+                        "Not": false,
+                        "Operator": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            },
+            {
+              "Note": "Stage 2 Wizard",
+              "LoreToAdd": 995013,
+              "ItemModsToAddIDs": [
+                "2f868d39-3962-4a62-a656-041121931423",
+                "34232419-0c25-44ed-b053-c07dbc17ff67"
+              ],
+              "ItemModsToRemoveIDs": [
+                "24f8907f-059f-493c-a000-59b3abdb3bf9",
+                "ffb3229b-d3ad-403f-81ad-280d818ffb18"
+              ],
+              "EligibleClassesIDs": [
+              	"acfd1303-4699-4939-91eb-6ac46d4af0bd"
+              ],
+              "UnlockActions": [
+              {
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995016,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      {
+			"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			"Data": {
+				"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+				"Parameters": [
+					"6b1fe5af-959b-49a2-9ac3-d3560755f2a5",
+					"GreaterThanOrEqualTo",
+					"1"
+				],
+				"FunctionHash": 0,
+				"ParameterHash": 0
+			},
+			"Not": false,
+			"Operator": 0
+		},
+                    ]
+                  }
+                }
+                
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            },
+            {
+              "Note": "Stage 2 Barbarian",
+              "LoreToAdd": 995013,
+              "ItemModsToAddIDs": [
+                "2f868d39-3962-4a62-a656-041121931423",
+                "d7a6eafa-e33c-408b-bddc-4b448b34db5b"
+              ],
+              "ItemModsToRemoveIDs": [
+                "24f8907f-059f-493c-a000-59b3abdb3bf9",
+                "ffb3229b-d3ad-403f-81ad-280d818ffb18"
+              ],
+              "EligibleClassesIDs": [
+              	"825817d4-1fb0-4e5c-bf84-473743ad98de"
+              ],
+              "UnlockActions": [
+                {
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995016,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      {
+			"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			"Data": {
+				"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+				"Parameters": [
+					"6b1fe5af-959b-49a2-9ac3-d3560755f2a5",
+					"GreaterThanOrEqualTo",
+					"1"
+				],
+				"FunctionHash": 0,
+				"ParameterHash": 0
+			},
+			"Not": false,
+			"Operator": 0
+		},
+                    ]
+                  }
+                }
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            },
+            {
+              "Note": "Stage 3 Wizard",
+              "LoreToAdd": 995014,
+              "ItemModsToAddIDs": [
+                "2ce74fe7-eb32-4a61-ab65-6539fc7123c8",
+                "f96d34ec-1b73-46db-81ef-0978f7a889ff"
+              ],
+              "ItemModsToRemoveIDs": [
+              	"2f868d39-3962-4a62-a656-041121931423"
+              ],
+              "EligibleClassesIDs": [
+              	"acfd1303-4699-4939-91eb-6ac46d4af0bd"
+              ],
+              "UnlockActions": [
+              	{
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995017,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      {
+			"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			"Data": {
+				"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+				"Parameters": [
+					"8a0bdc7a-0490-49e4-9b43-325eba0cc672",
+					"GreaterThanOrEqualTo",
+					"10"
+				],
+				"FunctionHash": 0,
+				"ParameterHash": 0
+			},
+			"Not": false,
+			"Operator": 0
+			},
+                    ]
+                  }
+                }
+                
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            },
+            {
+              "Note": "Stage 3 Barbarian",
+              "LoreToAdd": 995014,
+              "ItemModsToAddIDs": [
+                "2ce74fe7-eb32-4a61-ab65-6539fc7123c8",
+                "98d057b6-526f-4f3e-ad93-decb08c40fb0"
+              ],
+              "ItemModsToRemoveIDs": [
+              	"2f868d39-3962-4a62-a656-041121931423"
+              ],
+              "EligibleClassesIDs": [
+              	"825817d4-1fb0-4e5c-bf84-473743ad98de"
+              ],
+              "UnlockActions": [
+                {
+                  "TargetValue": 0,
+                  "StatType": "Conditional",
+                  "OverrideRequirementString": 995017,
+                  "RequireDamageType": "None",
+                  "RequireHitType": "None",
+                  "StatusEffectValueID": "00000000-0000-0000-0000-000000000000",
+                  "Prerequisites": {
+                    "Conditional": {
+                      "Operator": 0,
+                      "Components": []
+                    }
+                  },
+                  "Conditional": {
+                    "Operator": 0,
+                    "Components": [
+                      	{
+			"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			"Data": {
+				"FullName": "Boolean IsItemCount(Guid, Operator, Int32)",
+				"Parameters": [
+					"8a0bdc7a-0490-49e4-9b43-325eba0cc672",
+					"GreaterThanOrEqualTo",
+					"10"
+				],
+				"FunctionHash": 0,
+				"ParameterHash": 0
+			},
+			"Not": false,
+			"Operator": 0
+			},
+                    ]
+                  }
+                }
+                                
+              ],
+              "OverrideIconTextureSmall": "",
+              "OverrideIconTextureLarge": "",
+              "OverrideItemModel": "",
+              "Scripts": []
+            }
+          ]
+        },
+        {
+          "$type": "Game.GameData.DataScriptEventComponent, Assembly-CSharp",
+          "Scripts": []
+        }
+      ]
+    },
+    
+    
+   
+    
+    
+    
+ ]
+}

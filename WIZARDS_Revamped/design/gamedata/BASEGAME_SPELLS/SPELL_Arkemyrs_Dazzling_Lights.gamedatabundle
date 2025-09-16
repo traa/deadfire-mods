@@ -1,0 +1,458 @@
+﻿{
+  "GameDataObjects": [
+  
+  
+  {
+      "$type": "Game.GameData.AttackAOEGameData, Assembly-CSharp",
+      "DebugName": "Arkemyrs_Dazzling_Lights_Trap_Attack_DONT_TOUCH",
+      "ID": "07208283-68ab-4d08-821b-5a05882fbb87",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "69d9e77c-1a78-4af0-b590-0ea1620ab60b"
+          ],
+          "AttackDistance": 12,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "35abdf41-fc3f-4310-8d5d-5d7da644affc",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+          "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "All",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": 0,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 0,
+          "DamageData": {
+            "DamageType": "None",
+            "AlternateDamageType": "None",
+            "Minimum": 0,
+            "Maximum": 0,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "false",
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [
+            "6e5f5159-0fc9-477a-8df9-dd16a14c7b84"
+          ],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "false",
+          "DefendedBy": "Will",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_arkemyrs_dazzling_lights_aoe.prefab",
+              "AttachPoint": "Ground",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnImpact",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "true"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "RightWeapon",
+          "HitBone": "Root",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 0,
+            "Multiplier": 0.5,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+          "LaunchAttackOnCollision": "false",
+          "ProjectileCount": 1,
+          "IgnoreMagicDefense": "false",
+          "ProjectileConeAngle": 180,
+          "ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
+          "IsMultiHit": "false",
+          "MultiHitTravelDist": 10,
+          "MultiHitMaxHits": 0,
+          "LaunchSource": "Caster",
+          "LaunchOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "LaunchOffsetRandom": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
+          "BlastSize": "Small",
+          "BlastRadiusOverride": 1.5,
+          "DamageAngle": 360,
+          "ExcludePrimaryTarget": "false",
+          "IgnoreParentTarget": "false",
+          "ExcludeSelf": "false",
+          "BlastPhysicsForce": 500,
+          "PushFromCaster": "false"
+        }
+      ]
+    },
+    
+    
+  {
+      "$type": "Game.GameData.AttackAOEGameData, Assembly-CSharp",
+      "DebugName": "Arkemyrs_Dazzling_Lights_Attack",
+      "ID": "5b353185-c23f-47bf-964b-7e98e1989eac",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "69d9e77c-1a78-4af0-b590-0ea1620ab60b",
+            "f5842f97-b963-40b5-adc2-d69330adcf96"
+          ],
+          "AttackDistance": 10,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "97294f82-0d50-4d9f-bf04-45ed67b2d4e9",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "e4c738a7-4d3f-407f-b035-cc76191fe26b",
+          "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "All",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": 0,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 0,
+          "DamageData": {
+            "DamageType": "None",
+            "AlternateDamageType": "None",
+            "Minimum": 0,
+            "Maximum": 0,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "false",
+          "StatusEffectKeywordsIDs": [
+            "69d9e77c-1a78-4af0-b590-0ea1620ab60b"
+          ],
+          "StatusEffectsIDs": [
+            "a7ce4a18-60c7-4709-ae87-bd5869324cdb",
+            "e577f244-d9dd-4c4b-bbd9-2d46e3ab780c",
+          ],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "true",
+          "DefendedBy": "Will",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_arkemyrs_dazzling_lights_aoe.prefab",
+              "AttachPoint": "Ground",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnImpact",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "true"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand_launch.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "PositionRotation",
+              "MeshType": "None",
+              "Event": "OnLaunch",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 0,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 1,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_grimoire_close_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 3,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "RightWeapon",
+          "HitBone": "Root",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 0,
+            "Multiplier": 0.5,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+          "LaunchAttackOnCollision": "false",
+          "ProjectileCount": 1,
+          "IgnoreMagicDefense": "false",
+          "ProjectileConeAngle": 180,
+          "ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
+          "IsMultiHit": "false",
+          "MultiHitTravelDist": 10,
+          "MultiHitMaxHits": 0,
+          "LaunchSource": "Caster",
+          "LaunchOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "LaunchOffsetRandom": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
+          "BlastSize": "Small",
+          "BlastRadiusOverride": 1.5,
+          "DamageAngle": 360,
+          "ExcludePrimaryTarget": "false",
+          "IgnoreParentTarget": "false",
+          "ExcludeSelf": "false",
+          "BlastPhysicsForce": 500,
+          "PushFromCaster": "false"
+        }
+      ]
+    },
+
+     
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Arkemyrs_Dazzling_Lights_WillPenalty",
+      "ID": "e577f244-d9dd-4c4b-bbd9-2d46e3ab780c",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "Will",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": -10,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [],
+          "DurationType": "UseDurationTime",
+          "Duration": 30,
+          "MaxStackQuantity": 3,
+          "ApplicationBehavior": "StackIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "true",
+          "ClearOnCombatEnd": "true",
+          "ClearOnRest": "true",
+          "ClearOnFoodRest": "true",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "All",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    
+  
+  
+  
+    ]
+}

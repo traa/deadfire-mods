@@ -1,0 +1,189 @@
+﻿{
+  "GameDataObjects": [
+  
+  {
+      "$type": "Game.GameData.AttackAOEGameData, Assembly-CSharp",
+      "DebugName": "Ninagauths_Shadowflame_AOE",
+      "ID": "cd875e41-a046-4a5e-80cf-6ac14168cfca",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "f8a513bb-3e92-4d10-b59f-abbdf71d8af4",
+            "ab88e534-596e-4f40-b54e-9dd8b2cab983"
+          ],
+          "AttackDistance": 10,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "4365c4d1-44ce-4b2a-bf11-d895a006b12b",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "e2258426-92df-4a1d-b12c-927feb8328cd",
+          "RecoveryTimeID": "cd5ad068-453b-41f9-8779-db38ff00dd20",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "All",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": 0,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 7,
+          "DamageData": {
+            "DamageType": "Freeze",
+            "AlternateDamageType": "None",
+            "Minimum": 42,
+            "Maximum": 51,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "false",
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [
+            "c27a59d2-3ce1-47e3-b200-4092bc50bf32"
+          ],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "true",
+          "DefendedBy": "Reflex",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_ninagauths_shadowflame_aoe.prefab",
+              "AttachPoint": "Ground",
+              "AttachObject": "Target",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnImpact",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "true"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_evocation.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 0,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_ninagauths_shadowflame_start.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 1,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_grimoire_close_evocation.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 3,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/wizzard/fx_ninagauths_shadowflame_launch.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "PositionRotation",
+              "MeshType": "None",
+              "Event": "OnLaunch",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "RightWeapon",
+          "HitBone": "Ground",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 0,
+            "Multiplier": 0.5,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+          "LaunchAttackOnCollision": "false",
+          "ProjectileCount": 1,
+          "IgnoreMagicDefense": "false",
+          "ProjectileConeAngle": 145,
+          "ProjectilePrefab": "prefabs/projectiles/wizard/fx_ninagauths_shadowflame_projectile.prefab",
+          "IsMultiHit": "false",
+          "MultiHitTravelDist": 10,
+          "MultiHitMaxHits": 0,
+          "LaunchSource": "Caster",
+          "LaunchOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "LaunchOffsetRandom": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
+          "BlastSize": "Medium",
+          "BlastRadiusOverride": 2.5,
+          "DamageAngle": 360,
+          "ExcludePrimaryTarget": "false",
+          "IgnoreParentTarget": "false",
+          "ExcludeSelf": "false",
+          "BlastPhysicsForce": 500,
+          "PushFromCaster": "false"
+        }
+      ]
+    },
+
+
+  
+  
+    ]
+}

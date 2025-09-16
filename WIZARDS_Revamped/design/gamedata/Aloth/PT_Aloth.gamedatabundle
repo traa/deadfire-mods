@@ -1,0 +1,87 @@
+﻿{
+  "GameDataObjects": [
+  
+      {
+      "$type": "Game.GameData.BaseProgressionTableAppendGameData, Assembly-CSharp",
+      "DebugName": "PT_Aloth",
+      "ID": "ba057196-c196-4ab7-9658-cf4c5d7f4d4e",
+      "Components": [
+        {
+          "$type": "Game.GameData.BaseProgressionTableAppendComponent, Assembly-CSharp",
+          "BaseTableID": "8b5635bf-28b1-4836-9712-66c99553ccf2",
+          "AbilityUnlocks": [
+          
+		     {
+		      "Note": "PL 1 Unlock - Aloth's Pestering Cantrip",
+		      "Category": "General",
+		      "UnlockStyle": "Unlock",
+		      "ActivationObject": "Self",
+		      "AddAbilityID": "135fc975-1563-4da7-8098-e8f503bcaef0",
+		      "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+		      "Prerequisites": {
+			"MinimumCharacterLevel": 1,
+			"PowerLevelRequirement": {
+			  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+			  "MinimumPowerLevel": 1
+			},
+			"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+			"Conditional": {
+			  "Operator": 0,
+			  "Components": [
+			    {
+			      "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			      "Data": {
+				"FullName": "Boolean ProgressionTableIsSubclass(Guid)",
+				"Parameters": [
+				  "56db1331-3f31-4af3-9481-9af56ef0002f"
+				],
+				"Flags": "",
+				"UnrealCall": "",
+				"FunctionHash": 1231916529,
+				"ParameterHash": 1459496531
+			      },
+			      "Not": true,
+			      "Operator": 0
+			    },
+			    {
+			      "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			      "Data": {
+				"FullName": "Boolean AlwaysFalse()",
+				"Parameters": [],
+				"Flags": "",
+				"UnrealCall": "",
+				"FunctionHash": 334029817,
+				"ParameterHash": 334029817
+			      },
+			      "Not": false,
+			      "Operator": 0
+			    }
+			  ]
+			},
+			"VisibilityConditional": {
+			  "Operator": 0,
+			  "Components": [
+			    {
+			      "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+			      "Data": {
+				"FullName": "Boolean AlwaysFalse()",
+				"Parameters": [],
+				"Flags": "",
+				"UnrealCall": "",
+				"FunctionHash": 334029817,
+				"ParameterHash": 334029817
+			      },
+			      "Not": false,
+			      "Operator": 0
+			    }
+			  ]
+			},
+			"IsMutuallyExclusiveUpgrade": "true"
+		      }
+		    }
+					]
+				}
+			]
+		}
+	]
+}
