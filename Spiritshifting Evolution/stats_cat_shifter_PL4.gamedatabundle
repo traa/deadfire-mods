@@ -1,5 +1,131 @@
-{"GameDataObjects":[ 
-
-{"$type":"Game.GameData.GenericAbilityGameData, Assembly-CSharp","DebugName":"Spiritshift_Cat_Shifter","ID":"b5c6c599-855d-41ed-817c-478531a9bbbb","Components":[{"$type":"Game.GameData.GenericAbilityComponent, Assembly-CSharp","KeywordsIDs":[],"DisplayName":406000467,"Description":406000488,"UpgradeDescriptions":[],"UpgradedFromID":"b5c6c599-855d-41ed-817c-478531a9a90b","Vocalization":"NoVocalization","Icon":"gui/icons/abilities/druid/spiritshift_cat.png","UsageType":"PerEncounter","UsageValue":2,"AbilityClassID":"568f1c26-1398-4e67-8b81-0f6a60e6cdde","AbilityLevel":0,"IsPassive":"false","StackingRuleOverride":"Default","TriggerOnHit":"false","IsModal":"true","ModalGroupID":"be36d74d-1e36-446e-856d-544873e2c27b","IsCombatOnly":"true","IsNonCombatOnly":"false","HideFromUI":"false","HideFromCombatLog":"false","UniqueSet":"None","NoiseLevelID":"82bc1ce9-3a81-41ca-a61a-cc1f73a53de7","DurationOverride":22,"OverrideEmpower":"Default","ClearsOnMovement":"false","CannotActivateWhileInStealth":"false","CannotActivateWhileInvisible":"false","ActivationPrerequisites":{"Conditional":{"Operator":0,"Components":[]}},"ApplicationPrerequisites":{"Conditional":{"Operator":0,"Components":[]}},"DeactivationPrerequisites":{"Conditional":{"Operator":0,"Components":[{"$type":"OEIFormats.FlowCharts.ConditionalCall, OEIFormats","Data":{"FullName":"Boolean HasStatusEffectWithKeyword(Guid, Guid)","Parameters":["011111e9-0000-0000-0000-000000000000","a457d3b9-b5c7-4c2c-817b-65c2835b19cf"],"Flags":"","UnrealCall":"","FunctionHash":-1392641717,"ParameterHash":1889353659},"Not":true,"Operator":0}]}},"PowerLevelScaling":{"ScalingType":"Default","BaseLevel":0,"LevelIncrement":1,"MaxLevel":0,"DamageAdjustment":1,"DurationAdjustment":1.25,"BounceCountAdjustment":0,"ProjectileCountAdjustment":0,"AccuracyAdjustment":0,"PenetrationAdjustment":0},"StatusEffectKeywordsIDs":["a457d3b9-b5c7-4c2c-817b-65c2835b19cf"],"StatusEffectsIDs":["1736dd8f-984e-4778-bbdb-0cbeb274806f","d0b7fffd-3cc3-4aa9-a902-eb9c65076768","dfc867ce-8db8-4992-be25-f01e31c36855","1c31b895-1a55-4caf-8104-7b65255bf5c1","05d422ea-711b-495a-8138-5d78e93c3135","11755907-c64d-4182-86d0-2fd254671a13"],"VisualEffects":[{"VisualEffect":"prefabs/effects/abilities/druid/fx_spiritshift.prefab","AttachPoint":"Ground","AttachObject":"Caster","AttachMode":"Position","MeshType":"None","Event":"OnActivate"},{"VisualEffect":"prefabs/effects/abilities/druid/fx_spiritshift.prefab","AttachPoint":"Ground","AttachObject":"Caster","AttachMode":"Position","MeshType":"None","Event":"OnDeactivate"}],"SelfMaterialReplacementID":"00000000-0000-0000-0000-000000000000","AttackID":"00000000-0000-0000-0000-000000000000","AITargetingConditional":{"Conditional":{"Operator":0,"Components":[]},"Scripts":[]},"AudioEventListID":"be6c9b04-7885-4f4c-abc4-9f76013855dd"},{"$type":"Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"}]}
-
-]}
+{
+    "GameDataObjects": [
+        {
+            "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+            "DebugName": "Spiritshift_Cat_Shifter",
+            "ID": "b5c6c599-855d-41ed-817c-478531a9bbbb",
+            "Components": [
+                {
+                    "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+                    "KeywordsIDs": [],
+                    "DisplayName": 406000467,
+                    "Description": 406000488,
+                    "DescriptionTactical": -1,
+                    "UpgradeDescriptions": [],
+                    "UpgradedFromID": "b5c6c599-855d-41ed-817c-478531a9a90b",
+                    "Vocalization": "NoVocalization",
+                    "Icon": "gui/icons/abilities/druid/spiritshift_cat.png",
+                    "UsageType": "PerEncounter",
+                    "UsageValue": 2,
+                    "AbilityClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+                    "AbilityLevel": 0,
+                    "IsPassive": "false",
+                    "StackingRuleOverride": "Default",
+                    "TriggerOnHit": "false",
+                    "IsModal": "true",
+                    "ModalGroupID": "be36d74d-1e36-446e-856d-544873e2c27b",
+                    "IsCombatOnly": "true",
+                    "IsNonCombatOnly": "false",
+                    "HideFromUI": "false",
+                    "HideFromCombatLog": "false",
+                    "UniqueSet": "None",
+                    "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+                    "DurationOverride": 22,
+                    "OverrideEmpower": "Default",
+                    "ClearsOnMovement": "false",
+                    "CannotActivateWhileInStealth": "false",
+                    "CannotActivateWhileInvisible": "false",
+                    "ActivationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "ApplicationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "DeactivationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+                                    "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean HasStatusEffectWithKeyword(Guid, Guid)",
+                                        "Parameters": [
+                                            "011111e9-0000-0000-0000-000000000000",
+                                            "a457d3b9-b5c7-4c2c-817b-65c2835b19cf"
+                                        ],
+                                        "Flags": "",
+                                        "UnrealCall": "",
+                                        "FunctionHash": -1392641717,
+                                        "ParameterHash": 1889353659
+                                    },
+                                    "Not": true,
+                                    "Operator": 0
+                                }
+                            ]
+                        }
+                    },
+                    "PowerLevelScaling": {
+                        "ScalingType": "Default",
+                        "BaseLevel": 0,
+                        "LevelIncrement": 1,
+                        "MaxLevel": 0,
+                        "DamageAdjustment": 1,
+                        "DurationAdjustment": 1.25,
+                        "BounceCountAdjustment": 0,
+                        "ProjectileCountAdjustment": 0,
+                        "AccuracyAdjustment": 0,
+                        "PenetrationAdjustment": 0
+                    },
+                    "StatusEffectKeywordsIDs": [
+                        "a457d3b9-b5c7-4c2c-817b-65c2835b19cf"
+                    ],
+                    "StatusEffectsIDs": [
+                        "1736dd8f-984e-4778-bbdb-0cbeb274806f",
+                        "d0b7fffd-3cc3-4aa9-a902-eb9c65076768",
+                        "dfc867ce-8db8-4992-be25-f01e31c36855",
+                        "1c31b895-1a55-4caf-8104-7b65255bf5c1",
+                        "05d422ea-711b-495a-8138-5d78e93c3135",
+                        "11755907-c64d-4182-86d0-2fd254671a13"
+                    ],
+                    "VisualEffects": [
+                        {
+                            "VisualEffect": "prefabs/effects/abilities/druid/fx_spiritshift.prefab",
+                            "AttachPoint": "Ground",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Position",
+                            "MeshType": "None",
+                            "Event": "OnActivate"
+                        },
+                        {
+                            "VisualEffect": "prefabs/effects/abilities/druid/fx_spiritshift.prefab",
+                            "AttachPoint": "Ground",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Position",
+                            "MeshType": "None",
+                            "Event": "OnDeactivate"
+                        }
+                    ],
+                    "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+                    "AttackID": "00000000-0000-0000-0000-000000000000",
+                    "AITargetingConditional": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        },
+                        "Scripts": []
+                    },
+                    "AudioEventListID": "be6c9b04-7885-4f4c-abc4-9f76013855dd"
+                },
+                {
+                    "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+                }
+            ]
+        }
+    ]
+}
