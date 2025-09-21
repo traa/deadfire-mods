@@ -1,0 +1,319 @@
+{
+	"GameDataObjects": [
+		
+		{
+			"$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+			"DebugName": "Corpse_Eater_SE_ModifyRageCosts_Temporary",
+			"ID": "2158ea07-4c8f-4963-b7e0-5a24ccfc2f58",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "ModifyResourceCost",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 1,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 0,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "true",
+					"ClearOnRest": "true",
+					"ClearOnFoodRest": "true",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "true",
+					"HideFromCombatTooltip": "true",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "825817d4-1fb0-4e5c-bf84-473743ad98de",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Corpse_Eater",
+			"ID": "7a5396e2-4187-4eee-a188-a1ee6e306187",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"StatusEffectsIDs": []
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Flesh_Communion_Melee",
+			"ID": "584c20db-409d-4ef7-9c2e-625087d8b473",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"CastSpeedId": "e4c738a7-4d3f-407f-b035-cc76191fe26b",
+					"RecoveryTimeID": "039ef4b4-eeb3-42d3-9817-a8df05c53515",
+					"AffectedTargetConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Flesh_Communion",
+			"ID": "098f60bb-b114-4483-9a10-3fb6fb020d43",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"UsageValue": 0,
+					"UsageType": "None",
+					"AbilityClassID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsIDs": [
+						"92ae41a4-47ff-488e-83a6-63637fd374d6",
+						"39ca0b1c-b1d1-4d32-acc3-4337c169ee91",
+						"a01e211d-e871-470e-a640-89b12b7f1a76",
+						"2158ea07-4c8f-4963-b7e0-5a24ccfc2f58"
+					]
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.AfflictionGameData, Assembly-CSharp",
+			"DebugName": "Corpse_Eater_Brilliant",
+			"ID": "92ae41a4-47ff-488e-83a6-63637fd374d6",
+			"Components": [
+				{
+					"$type": "Game.GameData.AfflictionComponent, Assembly-CSharp",
+					"DisplayName": 2219,
+					"Icon": "gui/icons/keywords/int_pos_3.png",
+					"AfflictionTypeID": "ea9b7553-52cc-40ce-aa97-1a42237e8626",
+					"IsThinUI": "false"
+				},
+				{
+					"$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+					"StatusEffectType": "None",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "Child",
+					"BaseValue": 0,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [
+						"ae8eaf9c-6fdc-4c63-9aac-8ee874082c0f",
+						"10599782-9812-451d-8e24-693c06bb4062"
+					],
+					"DurationType": "UseDurationTime",
+					"Duration": 15,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"InclusionConditions": {
+						"Operator": 0,
+						"Components": []
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"HideIfNoValue": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [
+						"7a16d8c3-fe74-4c7b-97a6-43999b95cd50",
+						"290e8f53-7bd5-4b7a-adf1-b050eb6ae198",
+						"600e15a1-2db9-45f7-9584-c98d8a9aeff8"
+					],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,143 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+			"DebugName": "Zandethus_Unstoppable_Force",
+			"ID": "733192ba-9329-4cb4-8b91-ed4f70faed7a",
+			"Components": [
+				{
+					"$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+					"KeywordsIDs": [
+						"69d9e77c-1a78-4af0-b590-0ea1620ab60b"
+					],
+					"AttackDistance": 1,
+					"MinAttackDistance": 0,
+					"AttackVariationID": "97294f82-0d50-4d9f-bf04-45ed67b2d4e9",
+					"CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+					"RecoveryTimeID": "cd5ad068-453b-41f9-8779-db38ff00dd20",
+					"ImpactDelay": 0,
+					"ForcedTarget": "Self",
+					"AffectedTargetType": "Self",
+					"AffectedTargetConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"AffectedTargetDeathState": "Alive",
+					"HostilityOverride": "Default",
+					"PushDistance": 0,
+					"FaceTarget": "true",
+					"AccuracyBonus": 0,
+					"PenetrationRating": 0,
+					"DamageData": {
+						"DamageType": "None",
+						"AlternateDamageType": "None",
+						"Minimum": 0,
+						"Maximum": 0,
+						"TacticalMinimumOverride": 0,
+                        "TacticalMaximumOverride": 0,
+						"DamageProcs": []
+					},
+					"RequiresHitObject": "true",
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [],
+					"RandomizeStatusEffect": "false",
+					"CanGraze": "false",
+					"CanCrit": "false",
+					"DefendedBy": "None",
+					"AfflictionsDefendedBy": "None",
+					"AfflictionApplicationModifier": "None",
+					"SubstituteHitVisualEffect": "",
+					"VisualEffects": [
+						{
+							"VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control.prefab",
+							"AttachPoint": "LeftWeapon",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnAnimEvent",
+							"AnimEventID": 0,
+							"Loop": "true",
+							"Scale": "false"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand.prefab",
+							"AttachPoint": "RightWeapon",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnAnimEvent",
+							"AnimEventID": 1,
+							"Loop": "true",
+							"Scale": "false"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/cast/fx_grimoire_close_control.prefab",
+							"AttachPoint": "LeftWeapon",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnAnimEvent",
+							"AnimEventID": 3,
+							"Loop": "false",
+							"Scale": "false"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand_launch.prefab",
+							"AttachPoint": "RightWeapon",
+							"AttachObject": "Caster",
+							"AttachMode": "Position",
+							"MeshType": "None",
+							"Event": "OnLaunch",
+							"AnimEventID": 0,
+							"Loop": "false",
+							"Scale": "false"
+						},
+						{
+							"VisualEffect": "prefabs/effects/abilities/wizzard/fx_deleterious_alacrity_of_motion.prefab",
+							"AttachPoint": "Root",
+							"AttachObject": "Caster",
+							"AttachMode": "Attach",
+							"MeshType": "None",
+							"Event": "OnHit",
+							"AnimEventID": 0,
+							"Loop": "false",
+							"Scale": "false"
+						}
+					],
+					"AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+					"ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+					"LaunchBone": "RightWeapon",
+					"HitBone": "Root",
+					"OnHitShakeDuration": "None",
+					"OnHitShakeStrength": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"AllReactNoise": "false",
+					"InterruptsOn": "None",
+					"InterruptType": "Normal",
+					"TargetAngle": 0,
+					"ApplyOnceOnly": "false",
+					"PathsToTarget": "true",
+					"HideFromCombatLog": "false",
+					"DoesNotApplyDamage": "false",
+					"TreatAsWeapon": "false",
+					"BounceData": {
+						"Bounces": 0,
+						"Multiplier": 0.5,
+						"Range": 10,
+						"InRangeOrder": "false",
+						"NoRepeatTargets": "false",
+						"AlwaysBounceAtEnemies": "false",
+						"Delay": 0
+					}
+				},
+				{
+					"$type": "Game.GameData.AttackMeleeComponent, Assembly-CSharp",
+					"EngagementRadius": 1,
+					"IsUnarmed": "false"
+				}
+			]
+		}
+	]
+}

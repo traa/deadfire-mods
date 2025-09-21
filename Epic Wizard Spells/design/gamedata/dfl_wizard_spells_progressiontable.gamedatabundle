@@ -1,0 +1,1109 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.BaseProgressionTableAppendGameData, Assembly-CSharp",
+			"DebugName": "dfl_wizard_epic_spells",
+			"ID": "4b8a2571-2133-4766-a8ff-cb51ba82e9d2",
+			"Components": [
+				{
+					"$type": "Game.GameData.BaseProgressionTableAppendComponent, Assembly-CSharp",
+					"BaseTableID": "8b5635bf-28b1-4836-9712-66c99553ccf2",
+					"AbilityUnlocks": [
+						{
+						  "Note": "PL 1 Unlock - Zandethus' Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "c70c08da-63c7-4d23-9652-296c268e44c9",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["a87da1e7-5981-4257-ac0a-8058f4ef7750"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["3f39a3c8-cad6-40b1-b8cc-fb40e671c633"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["fef812bb-6da0-47f3-a21d-0cd375f65e1b"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Zandethus' Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "a87da1e7-5981-4257-ac0a-8058f4ef7750",
+						  "RemoveAbilityID": "c70c08da-63c7-4d23-9652-296c268e44c9",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "c70c08da-63c7-4d23-9652-296c268e44c9",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["c70c08da-63c7-4d23-9652-296c268e44c9"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Zandethus' Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "3f39a3c8-cad6-40b1-b8cc-fb40e671c633",
+						  "RemoveAbilityID": "a87da1e7-5981-4257-ac0a-8058f4ef7750",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "a87da1e7-5981-4257-ac0a-8058f4ef7750",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["a87da1e7-5981-4257-ac0a-8058f4ef7750"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Zandethus' Unstoppable Force",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "fef812bb-6da0-47f3-a21d-0cd375f65e1b",
+						  "RemoveAbilityID": "3f39a3c8-cad6-40b1-b8cc-fb40e671c633",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "3f39a3c8-cad6-40b1-b8cc-fb40e671c633",
+							"Conditional": {
+								"Operator": 0,
+								"Components": [
+								  {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["3f39a3c8-cad6-40b1-b8cc-fb40e671c633"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								  }
+								]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 1 Unlock - Citzal's Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "9334ecde-1f8b-46e4-b8de-254d5c3a0d32",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["80a4127b-6331-4bdb-82eb-c9e1b7cc52cf"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["7479e3ba-01f7-4852-8881-dd5d04a80bdf"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["90c6b385-227f-407a-b636-c0436d979150"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Citzal's Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "80a4127b-6331-4bdb-82eb-c9e1b7cc52cf",
+						  "RemoveAbilityID": "9334ecde-1f8b-46e4-b8de-254d5c3a0d32",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "9334ecde-1f8b-46e4-b8de-254d5c3a0d32",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["9334ecde-1f8b-46e4-b8de-254d5c3a0d32"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Citzal's Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "7479e3ba-01f7-4852-8881-dd5d04a80bdf",
+						  "RemoveAbilityID": "80a4127b-6331-4bdb-82eb-c9e1b7cc52cf",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "80a4127b-6331-4bdb-82eb-c9e1b7cc52cf",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["80a4127b-6331-4bdb-82eb-c9e1b7cc52cf"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Citzal's Immovable Object",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "90c6b385-227f-407a-b636-c0436d979150",
+						  "RemoveAbilityID": "7479e3ba-01f7-4852-8881-dd5d04a80bdf",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "7479e3ba-01f7-4852-8881-dd5d04a80bdf",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["7479e3ba-01f7-4852-8881-dd5d04a80bdf"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 1 Unlock - Concelhaut's Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "8be12d2f-afd0-463d-ac36-adf050309759",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["3ec3ea95-5df4-4a35-afae-770f223cc671"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["9e7fc660-0e5a-43bf-ae28-cf407e8f4957"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["8badfa6e-54dd-49fe-98f6-58a968566f19"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Concelhaut's Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "3ec3ea95-5df4-4a35-afae-770f223cc671",
+						  "RemoveAbilityID": "8be12d2f-afd0-463d-ac36-adf050309759",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "8be12d2f-afd0-463d-ac36-adf050309759",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["8be12d2f-afd0-463d-ac36-adf050309759"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Concelhaut's Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "9e7fc660-0e5a-43bf-ae28-cf407e8f4957",
+						  "RemoveAbilityID": "3ec3ea95-5df4-4a35-afae-770f223cc671",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "3ec3ea95-5df4-4a35-afae-770f223cc671",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["3ec3ea95-5df4-4a35-afae-770f223cc671"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Concelhaut's Leeching Cloud",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "8badfa6e-54dd-49fe-98f6-58a968566f19",
+						  "RemoveAbilityID": "9e7fc660-0e5a-43bf-ae28-cf407e8f4957",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "9e7fc660-0e5a-43bf-ae28-cf407e8f4957",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["9e7fc660-0e5a-43bf-ae28-cf407e8f4957"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 1 Unlock - Ryngrim's Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "014e9139-72a2-44da-8840-56b886e437db",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["4622f7e4-8139-4ed0-b793-be391e52ad24"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["a4def3ab-dd15-47e9-92ae-626129315ad2"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["7b1c28d8-f0a9-4ab0-ac43-555bf20fd8bf"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Ryngrim's Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "4622f7e4-8139-4ed0-b793-be391e52ad24",
+						  "RemoveAbilityID": "014e9139-72a2-44da-8840-56b886e437db",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "014e9139-72a2-44da-8840-56b886e437db",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["014e9139-72a2-44da-8840-56b886e437db"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Ryngrim's Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "a4def3ab-dd15-47e9-92ae-626129315ad2",
+						  "RemoveAbilityID": "4622f7e4-8139-4ed0-b793-be391e52ad24",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "4622f7e4-8139-4ed0-b793-be391e52ad24",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["4622f7e4-8139-4ed0-b793-be391e52ad24"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Ryngrim's Overwhelming Dread",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "7b1c28d8-f0a9-4ab0-ac43-555bf20fd8bf",
+						  "RemoveAbilityID": "a4def3ab-dd15-47e9-92ae-626129315ad2",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "a4def3ab-dd15-47e9-92ae-626129315ad2",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["a4def3ab-dd15-47e9-92ae-626129315ad2"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 1 Unlock - Minoletta's Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "204f4395-f693-4c79-b10e-be781f889b79",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["45adca34-bbd2-466f-9c7d-936351874d23"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["33717897-45ab-436a-991b-6c9b139e21de"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["96c96662-39d1-4c29-8608-7ac7316d7cd4"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Minoletta's Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "45adca34-bbd2-466f-9c7d-936351874d23",
+						  "RemoveAbilityID": "204f4395-f693-4c79-b10e-be781f889b79",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "204f4395-f693-4c79-b10e-be781f889b79",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["204f4395-f693-4c79-b10e-be781f889b79"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Minoletta's Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "33717897-45ab-436a-991b-6c9b139e21de",
+						  "RemoveAbilityID": "45adca34-bbd2-466f-9c7d-936351874d23",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "45adca34-bbd2-466f-9c7d-936351874d23",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["45adca34-bbd2-466f-9c7d-936351874d23"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Minoletta's Arcane Potency",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "96c96662-39d1-4c29-8608-7ac7316d7cd4",
+						  "RemoveAbilityID": "33717897-45ab-436a-991b-6c9b139e21de",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "33717897-45ab-436a-991b-6c9b139e21de",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["33717897-45ab-436a-991b-6c9b139e21de"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 1 Unlock - Maura's Epic Spell Research I",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "f963fbca-bf49-4216-b4bb-9bdf88aa9f0c",
+						  "RemoveAbilityID": "00000000-0000-0000-0000-000000000000",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 1
+							},
+							"RequiresAbilityID": "00000000-0000-0000-0000-000000000000",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["8d5a0a70-802a-49a8-8f92-317daf29d2aa"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["12291d20-a5ae-48fc-8e60-4c271801a3b3"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 },
+								 {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["a16dbcbc-9512-4591-899d-f2fcba7d3cdb"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": true,
+									"Operator": 0
+								 }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 3 Unlock - Maura's Epic Spell Research II",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "8d5a0a70-802a-49a8-8f92-317daf29d2aa",
+						  "RemoveAbilityID": "f963fbca-bf49-4216-b4bb-9bdf88aa9f0c",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 3
+							},
+							"RequiresAbilityID": "f963fbca-bf49-4216-b4bb-9bdf88aa9f0c",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							  {
+								"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+								"Data": {
+									"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+									"Parameters": ["f963fbca-bf49-4216-b4bb-9bdf88aa9f0c"],
+									"Flags": "",
+									"UnrealCall": "",
+									"FunctionHash": 0,
+									"ParameterHash": 0
+								},
+								"Not": false,
+								"Operator": 0
+							  }
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 7 Unlock - Maura's Epic Spell Research III",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "12291d20-a5ae-48fc-8e60-4c271801a3b3",
+						  "RemoveAbilityID": "8d5a0a70-802a-49a8-8f92-317daf29d2aa",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 7
+							},
+							"RequiresAbilityID": "8d5a0a70-802a-49a8-8f92-317daf29d2aa",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["8d5a0a70-802a-49a8-8f92-317daf29d2aa"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						},
+						{
+						  "Note": "PL 9 Unlock - Maura's Creeping Doom",
+						  "Category": "General",
+						  "UnlockStyle": "Unlock",
+						  "ActivationObject": "Self",
+						  "AddAbilityID": "a16dbcbc-9512-4591-899d-f2fcba7d3cdb",
+						  "RemoveAbilityID": "12291d20-a5ae-48fc-8e60-4c271801a3b3",
+						  "Prerequisites": {
+							"MinimumCharacterLevel": 1,
+							"PowerLevelRequirement": {
+							  "ClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+							  "MinimumPowerLevel": 9
+							},
+							"RequiresAbilityID": "12291d20-a5ae-48fc-8e60-4c271801a3b3",
+							"Conditional": {
+							  "Operator": 0,
+							  "Components": [
+							    {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean ProgressionTableHasAbility(Guid)",
+										"Parameters": ["12291d20-a5ae-48fc-8e60-4c271801a3b3"],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+									"Not": false,
+									"Operator": 0
+								}
+							  ]
+							},
+							"VisibilityConditional": {
+							  "Operator": 0,
+							  "Components": []
+							},
+							"IsMutuallyExclusiveUpgrade": "true"
+						  }
+						}
+					]
+				}
+			]
+		}
+	]
+}

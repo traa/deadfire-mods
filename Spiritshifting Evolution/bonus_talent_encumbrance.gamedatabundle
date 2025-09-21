@@ -1,0 +1,242 @@
+{
+	"GameDataObjects": [
+		{
+			"$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+			"DebugName": "Encumbrance",
+			"ID": "87472624-c422-485f-9522-769b566e6637",
+			"Components": [
+				{
+					"$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+					"KeywordsIDs": [],
+					"DisplayName": 906000327,
+					"Description": 906000328,
+					"UpgradeDescriptions": [],
+					"UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+					"Vocalization": "NoVocalization",
+					"Icon": "gui/icons/abilities/chanter/the_shield_cracks.png",
+					"UsageType": "None",
+					"UsageValue": 0,
+					"AbilityClassID": "568f1c26-1398-4e67-8b81-0f6a60e6cdde",
+					"AbilityLevel": 0,
+					"IsPassive": "true",
+					"StackingRuleOverride": "Default",
+					"TriggerOnHit": "false",
+					"IsModal": "false",
+					"ModalGroupID": "00000000-0000-0000-0000-000000000000",
+					"IsCombatOnly": "true",
+					"IsNonCombatOnly": "false",
+					"HideFromUI": "false",
+					"HideFromCombatLog": "false",
+					"UniqueSet": "None",
+					"NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+					"DurationOverride": 0,
+					"OverrideEmpower": "Default",
+					"ClearsOnMovement": "false",
+					"CannotActivateWhileInStealth": "false",
+					"CannotActivateWhileInvisible": "false",
+					"ActivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": [
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"Flags": "",
+										"FullName": "Boolean IsArmorTypeEquipped(Guid, ArmorCategory)",
+										"FunctionHash": -2095364499,
+										"ParameterHash": 684138494,
+										"Parameters": [
+											"1a26e100-0000-0000-0000-000000000000",
+											"Heavy"
+										],
+										"UnrealCall": ""
+									},
+									"Not": false,
+									"Operator": 1
+								},
+								{
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"Flags": "",
+										"FullName": "Boolean IsArmorTypeEquipped(Guid, ArmorCategory)",
+										"FunctionHash": -2095364499,
+										"ParameterHash": 182226760,
+										"Parameters": [
+											"1a26e100-0000-0000-0000-000000000000",
+											"Medium"
+										],
+										"UnrealCall": ""
+									},
+									"Not": false,
+									"Operator": 1
+								}
+							]
+						}
+					},
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"DeactivationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"PowerLevelScaling": {
+						"ScalingType": "Default",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"DamageAdjustment": 1,
+						"DurationAdjustment": 1,
+						"BounceCountAdjustment": 0,
+						"ProjectileCountAdjustment": 0,
+						"AccuracyAdjustment": 0,
+						"PenetrationAdjustment": 0
+					},
+					"StatusEffectKeywordsIDs": [],
+					"StatusEffectsIDs": [
+						"3839d8a8-4782-45e1-8cbf-8865ef7a7126"
+					],
+					"VisualEffects": [],
+					"SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackID": "00000000-0000-0000-0000-000000000000",
+					"AITargetingConditional": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						},
+						"Scripts": []
+					},
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"GrantedViaScript": "false"
+				},
+				{
+					"$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+				}
+			]
+		},
+		{
+			"$type": "Game.GameData.StatusEffectGameData,Assembly-CSharp",
+			"DebugName": "Encumbrance_SE_Speed",
+			"ID": "3839d8a8-4782-45e1-8cbf-8865ef7a7126",
+			"Components": [
+				{
+					"$type": "Game.GameData.StatusEffectComponent,Assembly-CSharp",
+					"StatusEffectType": "RecoveryTimeMultiplier",
+					"OverrideDescriptionString": -1,
+					"OverrideDescriptionStringTactical": -1,
+					"UseStatusEffectValueAs": "None",
+					"BaseValue": 1.2,
+					"DynamicValue": {
+						"Stat": "None",
+						"SkillDataID": "00000000-0000-0000-0000-000000000000",
+						"ClassID": "00000000-0000-0000-0000-000000000000",
+						"MultiplyBy": 1,
+						"Operator": "Add"
+					},
+					"KeywordsIDs": [],
+					"DurationType": "Infinite",
+					"Duration": 0,
+					"MaxStackQuantity": 0,
+					"ApplicationBehavior": "StackIfAlreadyApplied",
+					"ApplicationType": "ApplyOnStart",
+					"IntervalRateID": "00000000-0000-0000-0000-000000000000",
+					"StackedChildrenApplyEffects": "false",
+					"ApplicationPrerequisites": {
+						"Conditional": {
+							"Operator": 0,
+							"Components": []
+						}
+					},
+					"TriggerAdjustment": {
+						"TriggerOnEvent": "None",
+						"TriggerOffEvent": "None",
+						"ValidateWithAttackFilter": "false",
+						"ParamValue": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0,
+						"ResetTriggerOnEffectTimeout": "false",
+						"MaxTriggerCount": 0,
+						"IgnoreMaxTriggerCount": "false",
+						"RemoveEffectAtMax": "false",
+						"ChanceToTrigger": 1
+					},
+					"PowerLevelScaling": {
+						"UseCharacterLevel": "false",
+						"BaseLevel": 0,
+						"LevelIncrement": 1,
+						"MaxLevel": 0,
+						"ValueAdjustment": 0,
+						"DurationAdjustment": 0
+					},
+					"IsHostile": "false",
+					"ClearOnCombatEnd": "false",
+					"ClearOnRest": "false",
+					"ClearOnFoodRest": "false",
+					"ClearWhenAttacks": "false",
+					"ClearOnDeath": "false",
+					"HideFromCombatTooltip": "false",
+					"HideFromCombatLog": "false",
+					"HideFromUI": "false",
+					"VisualEffects": [],
+					"MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+					"AttackFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"Range": "None",
+						"ClassTypeID": "00000000-0000-0000-0000-000000000000",
+						"Source": "None",
+						"DefendedBy": "None",
+						"Empowered": "false",
+						"Disengagement": "false",
+						"Stealthed": "false",
+						"UseStealthLinger": "false",
+						"PowerLevel": 0,
+						"PowerLevelOperator": "EqualTo",
+						"ChanceToApply": 1,
+						"AttackHostility": "Default",
+						"TargetType": "None"
+					},
+					"AttackTargetFilter": {
+						"KeywordsIDs": [],
+						"KeywordLogic": "Or",
+						"Race": "None",
+						"IsKith": "false",
+						"HealthPercentage": 0,
+						"HealthOperator": "EqualTo",
+						"Distance": 0,
+						"DistanceOperator": "EqualTo",
+						"HasDOT": "false",
+						"IsMarked": "false",
+						"TargetHostility": "Default"
+					},
+					"ExtraValue": 0,
+					"OverridePenetration": 0,
+					"DamageTypeValue": "All",
+					"KeywordValueID": "00000000-0000-0000-0000-000000000000",
+					"RaceValue": "None",
+					"StatusEffectTypeValue": "None",
+					"ItemValueID": "00000000-0000-0000-0000-000000000000",
+					"AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+					"StatusEffectsValueIDs": [],
+					"AttackValueID": "00000000-0000-0000-0000-000000000000",
+					"AttackOverrideValue": "None",
+					"EventValue": "OnApply",
+					"ClassValueID": "00000000-0000-0000-0000-000000000000",
+					"WeaponTypeValue": "None",
+					"AttackHitType": "None",
+					"SkillValueID": "00000000-0000-0000-0000-000000000000",
+					"AudioEventListID": "00000000-0000-0000-0000-000000000000",
+					"BedRestDaysMinimum": 0,
+					"BedRestDaysMaximum": 0
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,161 @@
+{
+  "GameDataObjects": [
+		{
+            "$type": "Game.GameData.AttackAOEGameData, Assembly-CSharp",
+            "DebugName": "Mauras_Creeping_Doom_AOE",
+            "ID": "16945691-a2a9-49cf-b41d-b632a38315ef",
+            "Components": [{
+                    "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+                    "KeywordsIDs": [],
+                    "AttackDistance": 10,
+                    "MinAttackDistance": 0,
+                    "AttackVariationID": "7439b86f-785c-4551-8851-95b375a02792",
+                    "UseParentEquippableHand": "false",
+                    "CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+                    "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+                    "OverrideTacticalActionType": "None",
+                    "ImpactDelay": 0,
+                    "ForcedTarget": "None",
+                    "AffectedTargetType": "Hostile",
+                    "AffectedTargetConditional": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "AffectedTargetDeathState": "Alive",
+                    "HostilityOverride": "Default",
+                    "PushDistance": 0,
+                    "FaceTarget": "true",
+                    "AccuracyBonus": 0,
+                    "PenetrationRating": 0,
+                    "DamageData": {
+                        "DamageType": "None",
+                        "AlternateDamageType": "None",
+                        "Minimum": 0,
+                        "Maximum": 0,
+                        "TacticalMinimumOverride": 0,
+                        "TacticalMaximumOverride": 0,
+                        "DamageProcs": []
+                    },
+                    "RequiresHitObject": "false",
+                    "StatusEffectKeywordsIDs": ["2f013adc-8e9d-480a-bc65-ba1c7b66dc6c"],
+                    "StatusEffectsIDs": ["13410882-2064-46da-b368-cc0004f5d275"],
+                    "RandomizeStatusEffect": "false",
+                    "CanGraze": "true",
+                    "CanCrit": "true",
+                    "DefendedBy": "Fortitude",
+                    "AfflictionsDefendedBy": "None",
+                    "AfflictionApplicationModifier": "None",
+                    "SubstituteHitVisualEffect": "",
+                    "VisualEffects": [{
+                            "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_druid_left_arm.prefab",
+                            "AttachPoint": "LeftWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Attach",
+                            "MeshType": "None",
+                            "Event": "OnAnimEvent",
+                            "AnimEventID": 0,
+                            "Loop": "true",
+                            "Scale": "false"
+                        }, {
+                            "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_druid_right_arm.prefab",
+                            "AttachPoint": "RightWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Attach",
+                            "MeshType": "None",
+                            "Event": "OnAnimEvent",
+                            "AnimEventID": 0,
+                            "Loop": "true",
+                            "Scale": "false"
+                        }, {
+                            "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_druid_finish.prefab",
+                            "AttachPoint": "RightWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Attach",
+                            "MeshType": "None",
+                            "Event": "OnLaunch",
+                            "AnimEventID": 0,
+                            "Loop": "false",
+                            "Scale": "false"
+                        }, {
+                            "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_druid_finish.prefab",
+                            "AttachPoint": "LeftWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Attach",
+                            "MeshType": "None",
+                            "Event": "OnLaunch",
+                            "AnimEventID": 0,
+                            "Loop": "false",
+                            "Scale": "false"
+                        }
+                    ],
+                    "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+                    "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+                    "LaunchBone": "RightWeapon",
+                    "HitBone": "Chest",
+                    "OnHitShakeDuration": "None",
+                    "OnHitShakeStrength": "None",
+                    "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+                    "AllReactNoise": "false",
+                    "InterruptsOn": "None",
+                    "InterruptType": "Normal",
+                    "TargetAngle": 0,
+                    "ApplyOnceOnly": "false",
+                    "PathsToTarget": "true",
+                    "HideFromCombatLog": "false",
+                    "AdditionalAttackOnTooltip": "false",
+                    "DoesNotApplyDamage": "false",
+                    "TreatAsWeapon": "false",
+                    "BounceData": {
+                        "Bounces": 0,
+                        "Multiplier": 0.5,
+                        "Range": 10,
+                        "InRangeOrder": "false",
+                        "NoRepeatTargets": "false",
+                        "AlwaysBounceAtEnemies": "false",
+                        "Delay": 0,
+                        "NeverBounce": "false"
+                    },
+                    "AttackValidityConditional": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    }
+                }, {
+                    "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+                    "LaunchAttackOnCollision": "false",
+                    "ProjectileCount": 1,
+                    "IgnoreMagicDefense": "false",
+                    "ProjectileConeAngle": 145,
+                    "ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
+                    "IsMultiHit": "false",
+                    "MultiHitTravelDist": 10,
+                    "MultiHitMaxHits": 0,
+                    "LaunchSource": "Caster",
+                    "LaunchOffset": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "LaunchOffsetRandom": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }, {
+                    "$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
+                    "BlastSize": "Large",
+                    "BlastRadiusOverride": 5,
+                    "DamageAngle": 360,
+                    "ExcludePrimaryTarget": "false",
+                    "IgnoreParentTarget": "false",
+                    "ExcludeSelf": "false",
+                    "BlastPhysicsForce": 500,
+                    "PushFromCaster": "false"
+                }
+            ]
+        }
+	]
+}

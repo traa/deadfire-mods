@@ -1,0 +1,124 @@
+{
+	"GameDataObjects": [
+		{
+            "$type": "Game.GameData.AttackMeleeGameData, Assembly-CSharp",
+            "DebugName": "Minolettas_Arcane_Potency_Attack",
+            "ID": "dc604a79-28ea-464c-9083-0e59d4d53bd3",
+            "Components": [{
+                    "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+                    "KeywordsIDs": [],
+                    "AttackDistance": 1,
+                    "MinAttackDistance": 0,
+                    "AttackVariationID": "97294f82-0d50-4d9f-bf04-45ed67b2d4e9",
+                    "UseParentEquippableHand": "false",
+                    "CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+                    "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+                    "OverrideTacticalActionType": "None",
+                    "ImpactDelay": 0,
+                    "ForcedTarget": "Self",
+                    "AffectedTargetType": "Self",
+                    "AffectedTargetConditional": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "AffectedTargetDeathState": "Alive",
+                    "HostilityOverride": "Default",
+                    "PushDistance": 0,
+                    "FaceTarget": "true",
+                    "AccuracyBonus": 0,
+                    "PenetrationRating": 0,
+                    "DamageData": {
+                        "DamageType": "None",
+                        "AlternateDamageType": "None",
+                        "Minimum": 0,
+                        "Maximum": 0,
+                        "TacticalMinimumOverride": 0,
+                        "TacticalMaximumOverride": 0,
+                        "DamageProcs": []
+                    },
+                    "RequiresHitObject": "true",
+                    "StatusEffectKeywordsIDs": [],
+                    "StatusEffectsIDs": ["5a99824f-0620-409e-8222-2f9d22585fe3"],
+                    "RandomizeStatusEffect": "false",
+                    "CanGraze": "false",
+                    "CanCrit": "false",
+                    "DefendedBy": "None",
+                    "AfflictionsDefendedBy": "None",
+                    "AfflictionApplicationModifier": "None",
+                    "SubstituteHitVisualEffect": "",
+                    "VisualEffects": [{
+                            "VisualEffect": "prefabs/effects/abilities/wizzard/fx_minolettas_minor_missiles_start.prefab",
+                            "AttachPoint": "RightWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Attach",
+                            "MeshType": "None",
+                            "Event": "OnAnimEvent",
+                            "AnimEventID": 2,
+                            "Loop": "true",
+                            "Scale": "false"
+                        }, {
+                            "VisualEffect": "prefabs/effects/abilities/wizzard/fx_minolettas_minor_missiles_launch.prefab",
+                            "AttachPoint": "RightWeapon",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Position",
+                            "MeshType": "None",
+                            "Event": "OnLaunch",
+                            "AnimEventID": 0,
+                            "Loop": "false",
+                            "Scale": "false"
+                        }, {
+                            "VisualEffect": "prefabs/effects/abilities/wizzard/fx_minolettas_piercing_sigil_self.prefab",
+                            "AttachPoint": "Root",
+                            "AttachObject": "Caster",
+                            "AttachMode": "Position",
+                            "MeshType": "None",
+                            "Event": "OnHit",
+                            "AnimEventID": 0,
+                            "Loop": "false",
+                            "Scale": "false"
+                        }
+                    ],
+                    "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+                    "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+                    "LaunchBone": "RightWeapon",
+                    "HitBone": "Root",
+                    "OnHitShakeDuration": "None",
+                    "OnHitShakeStrength": "None",
+                    "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+                    "AllReactNoise": "false",
+                    "InterruptsOn": "None",
+                    "InterruptType": "Normal",
+                    "TargetAngle": 0,
+                    "ApplyOnceOnly": "false",
+                    "PathsToTarget": "true",
+                    "HideFromCombatLog": "false",
+                    "AdditionalAttackOnTooltip": "false",
+                    "DoesNotApplyDamage": "false",
+                    "TreatAsWeapon": "false",
+                    "BounceData": {
+                        "Bounces": 0,
+                        "Multiplier": 0.5,
+                        "Range": 10,
+                        "InRangeOrder": "false",
+                        "NoRepeatTargets": "false",
+                        "AlwaysBounceAtEnemies": "false",
+                        "Delay": 0,
+                        "NeverBounce": "false"
+                    },
+                    "AttackValidityConditional": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    }
+                }, {
+                    "$type": "Game.GameData.AttackMeleeComponent, Assembly-CSharp",
+                    "EngagementRadius": 1,
+                    "IsUnarmed": "false"
+                }
+            ]
+        }
+	]
+}
