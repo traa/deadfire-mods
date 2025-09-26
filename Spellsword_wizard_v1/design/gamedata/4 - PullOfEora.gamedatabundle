@@ -1,0 +1,446 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Pull_of_Eora",
+      "ID": "be4f67d9-d8b6-4940-81d3-27fd975fd00e",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02", "ab88e534-596e-4f40-b54e-9dd8b2cab983" ],
+          "DisplayName": 41625661,
+          "Description": 41625662,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast5",
+          "Icon": "gui/icons/abilities/wizard/pull_of_eora.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 4,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "d1f1951a-0253-4831-acf6-684afbd17c4e",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+		  "ApplyEffectsToPrimaryOnly":"true",
+          "AttackKeywordsIDs": ["bd7fffff-4383-40be-a746-faa3931c9c02"],
+          "AttackStatusEffectsIDs": [ "cdc314bb-5d00-4c12-bbee-24b31f11fcac" ],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "SS_Pull_of_Eora_SE_AttackOnEvent",
+      "ID": "cdc314bb-5d00-4c12-bbee-24b31f11fcac",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "AttackTargetOnEvent",
+          "OverrideDescriptionString": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "Class": "None",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [],
+          "DurationType": "Instant",
+          "Duration": 0,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Range": "None",
+            "ClassType": "None",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "All",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "4a2a0285-cbda-4d87-8481-483a512ecc1b",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValue": "None",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.AttackPulsedAOEGameData, Assembly-CSharp",
+      "DebugName": "SS_Pull_of_Eora_Pulse",
+      "ID": "4a2a0285-cbda-4d87-8481-483a512ecc1b",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "ab88e534-596e-4f40-b54e-9dd8b2cab983" ],
+          "AttackDistance": 10,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "4365c4d1-44ce-4b2a-bf11-d895a006b12b",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "eacb53e3-6eb5-422a-92ca-99cc883ae4a9",
+          "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "All",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": -6,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 0,
+          "DamageData": {
+            "DamageType": "None",
+            "AlternateDamageType": "None",
+            "Minimum": 0,
+            "Maximum": 0,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "false",
+          "StatusEffectKeywordsIDs": [ "ab88e534-596e-4f40-b54e-9dd8b2cab983" ],
+          "StatusEffectsIDs": [ "ce6cd495-5859-46be-9192-0fb0894988d4" ],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "true",
+          "DefendedBy": "Fortitude",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 0,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 1,
+              "Loop": "true",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_grimoire_close_control.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnAnimEvent",
+              "AnimEventID": 3,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_wizard_control_rhand_launch.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "PositionRotation",
+              "MeshType": "None",
+              "Event": "OnLaunch",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "RightWeapon",
+          "HitBone": "Chest",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 0,
+            "Multiplier": 0.5,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+          "LaunchAttackOnCollision": "false",
+          "ProjectileCount": 1,
+          "IgnoreMagicDefense": "false",
+          "ProjectileConeAngle": 277,
+          "ProjectilePrefab": "prefabs/projectiles/invisible_projectile.prefab",
+          "IsMultiHit": "false",
+          "MultiHitTravelDist": 10,
+          "MultiHitMaxHits": 0,
+          "LaunchSource": "Target",
+          "LaunchOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "LaunchOffsetRandom": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackAOEComponent, Assembly-CSharp",
+          "BlastSize": "Medium",
+          "BlastRadiusOverride": 2.5,
+          "DamageAngle": 360,
+          "ExcludePrimaryTarget": "false",
+          "IgnoreParentTarget": "false",
+          "ExcludeSelf": "true",
+          "BlastPhysicsForce": 500,
+          "PushFromCaster": "false"
+        },
+        {
+          "$type": "Game.GameData.AttackPulsedAOEComponent, Assembly-CSharp",
+          "Duration": 15,
+          "PulseIntervalRate": 3,
+          "OneValidTargetPerPulse": "false",
+          "PulsedVisualEffect": "prefabs/effects/abilities/wizzard/fx_pull_of_eora.prefab",
+          "LingerVisualEffect": "prefabs/effects/abilities/wizzard/fx_pull_of_eora_linger.prefab",
+          "LingerEffectAttachMode": "Position",
+          "LingerEffectAttachPoint": "Ground",
+          "Scale": "true"
+        }
+      ]
+    }
+  ]
+}

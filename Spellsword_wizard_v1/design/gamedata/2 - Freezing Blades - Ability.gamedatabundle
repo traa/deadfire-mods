@@ -1,0 +1,221 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Freezing_Blades",
+      "ID": "469197a0-17f6-4125-b8d7-9c609108e776",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "04f1f10c-5b4c-42ce-8fc2-01ce366851ad",
+            "902ae78f-1151-4f14-9db6-a7a1c728a1eb"
+          ],
+          "DisplayName": 41625731,
+          "Description": 41625732,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "CipherMindWhisper1",
+          "Icon": "gui/icons/abilities/cipher/mind_blades.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 2,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "6628b134-c9e9-4d49-ad39-c5b8ba57ce34",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "2063bcb5-9384-4676-9a33-d2d0e8ac170c"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.AttackRangedGameData, Assembly-CSharp",
+      "DebugName": "Freezing_Blades_Target",
+      "ID": "6628b134-c9e9-4d49-ad39-c5b8ba57ce34",
+      "Components": [
+        {
+          "$type": "Game.GameData.AttackBaseComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02", "f8a513bb-3e92-4d10-b59f-abbdf71d8af4", "ab88e534-596e-4f40-b54e-9dd8b2cab983" ],
+          "AttackDistance": 1,
+          "MinAttackDistance": 0,
+          "AttackVariationID": "22a5b7d3-6d4d-4401-9aa9-79ca5d051a48",
+          "UseParentEquippableHand": "false",
+          "CastSpeedID": "e4c738a7-4d3f-407f-b035-cc76191fe26b",
+          "RecoveryTimeID": "566840d9-1561-4243-8ca7-889df9869847",
+          "OverrideTacticalActionType": "None",
+          "ImpactDelay": 0,
+          "ForcedTarget": "None",
+          "AffectedTargetType": "Hostile",
+          "AffectedTargetConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "AffectedTargetDeathState": "Alive",
+          "HostilityOverride": "Default",
+          "PushDistance": 0,
+          "FaceTarget": "true",
+          "AccuracyBonus": 0,
+          "PenetrationRating": 9,
+          "DamageData": {
+            "DamageType": "Freeze",
+            "AlternateDamageType": "None",
+            "Minimum": 9,
+            "Maximum": 14,
+            "TacticalMinimumOverride": 0,
+            "TacticalMaximumOverride": 0,
+            "DamageProcs": []
+          },
+          "RequiresHitObject": "true",
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "RandomizeStatusEffect": "false",
+          "CanGraze": "false",
+          "CanCrit": "true",
+          "DefendedBy": "Deflect",
+          "AfflictionsDefendedBy": "None",
+          "AfflictionApplicationModifier": "None",
+          "SubstituteHitVisualEffect": "",
+          "VisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/cast/fx_cast_cipher_generic_head_launch.prefab",
+              "AttachPoint": "Head",
+              "AttachObject": "Caster",
+              "AttachMode": "PositionRotation",
+              "MeshType": "None",
+              "Event": "OnLaunch",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/cipher/fx_mind_blades_hit.prefab",
+              "AttachPoint": "Head",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ],
+          "AttackOnImpactID": "00000000-0000-0000-0000-000000000000",
+          "ExtraAttackID": "00000000-0000-0000-0000-000000000000",
+          "LaunchBone": "Head",
+          "HitBone": "Head",
+          "OnHitShakeDuration": "None",
+          "OnHitShakeStrength": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "AllReactNoise": "false",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "TargetAngle": 0,
+          "ApplyOnceOnly": "false",
+          "PathsToTarget": "true",
+          "HideFromCombatLog": "false",
+          "AdditionalAttackOnTooltip": "false",
+          "DoesNotApplyDamage": "false",
+          "TreatAsWeapon": "false",
+          "BounceData": {
+            "Bounces": 5,
+            "Multiplier": 0.9,
+            "Range": 10,
+            "InRangeOrder": "false",
+            "NoRepeatTargets": "false",
+            "AlwaysBounceAtEnemies": "false",
+            "Delay": 0,
+            "NeverBounce": "false"
+          },
+          "AttackValidityConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          }
+        },
+        {
+          "$type": "Game.GameData.AttackRangedComponent, Assembly-CSharp",
+          "LaunchAttackOnCollision": "false",
+          "ProjectileCount": 1,
+          "IgnoreMagicDefense": "false",
+          "ProjectileConeAngle": 145,
+          "ProjectilePrefab": "prefabs/projectiles/cipher/fx_mind_blades_projectile.prefab",
+          "IsMultiHit": "false",
+          "MultiHitTravelDist": 10,
+          "MultiHitMaxHits": 0,
+          "LaunchSource": "Target",
+          "LaunchOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "LaunchOffsetRandom": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    }
+  ]
+}

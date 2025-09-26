@@ -1,0 +1,2506 @@
+{
+  "GameDataObjects": [
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_01",
+      "ID": "f81f648f-6636-4d39-9e0d-8bc6afb6ad17",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 1,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "48e41696-6e40-4a49-ab17-4152fafe5a83" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_01",
+      "ID": "48e41696-6e40-4a49-ab17-4152fafe5a83",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.10,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_02",
+      "ID": "0b68908e-7788-4de6-ad65-bfee285f98c0",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 2,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "595491fa-b611-4df7-9a3b-c3fb78e13ae5" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_02",
+      "ID": "595491fa-b611-4df7-9a3b-c3fb78e13ae5",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.20,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_03",
+      "ID": "c54291fe-9990-4010-8c0c-a9bdc895a372",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 3,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "b84c217f-6219-4c01-93c2-2bf2f2fec31f" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_03",
+      "ID": "b84c217f-6219-4c01-93c2-2bf2f2fec31f",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.30,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_04",
+      "ID": "64a15294-f7c6-4153-9eaf-38e03e0792cd",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 4,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "58a5866e-d29b-4e00-a15c-183e09510ab6" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_04",
+      "ID": "58a5866e-d29b-4e00-a15c-183e09510ab6",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.40,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_05",
+      "ID": "f4e965c4-a529-4e2c-83ed-07727ca9e05f",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 5,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "07f8886a-8aba-4dc2-8419-da50cf4115a2" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_05",
+      "ID": "07f8886a-8aba-4dc2-8419-da50cf4115a2",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.50,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_06",
+      "ID": "09d2876b-acee-4f42-8f8a-45177c0d7aab",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 6,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "3cba109c-81df-490e-946c-110d0700da53" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_06",
+      "ID": "3cba109c-81df-490e-946c-110d0700da53",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.60,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_07",
+      "ID": "6e29cef1-b7f1-4896-8200-c981773fedc2",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 7,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "cd8b4865-5dc0-4313-93fd-22f3ef7af862" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_07",
+      "ID": "cd8b4865-5dc0-4313-93fd-22f3ef7af862",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.70,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_08",
+      "ID": "dbfccd31-7627-4db0-8367-63de1115a24f",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 8,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "32fe4fd3-af21-460d-9c94-8a06475a4206" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_08",
+      "ID": "32fe4fd3-af21-460d-9c94-8a06475a4206",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.80,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "SS_Spellstrike_09",
+      "ID": "17a01b74-00ed-435e-a241-dc21a20d3413",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DisplayName": 41625601,
+          "Description": 41625602,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "GenericSpellCast3",
+          "Icon": "gui/icons/abilities/paladin/flames_of_devotion.png",
+          "UsageType": "Spell",
+          "UsageValue": 0,
+          "AbilityClassID": "acfd1303-4699-4939-91eb-6ac46d4af0bd",
+          "AbilityLevel": 9,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "ShowStatusEffects": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [ "f65e9a93-0903-439a-ad7a-8bdc22bee1c1" ],
+          "RandomizeStatusEffect": "false",
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "21064a0c-bfee-40a5-8135-0d37aa5e7a58",
+          "GrantedViaScript": "false"
+        },
+        { "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp" },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "Primary",
+          "Range": "Melee",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1,
+          "BonusAccuracy": 0,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Count",
+          "InterruptsOn": "None",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "AttackStatusEffectsIDs": [],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_hit.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "Position",
+              "MeshType": "None",
+              "Event": "OnHit"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_chest.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftWeapon",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "RightFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/paladin/fx_flames_of_devotion_white_se.prefab",
+              "AttachPoint": "LeftFoot",
+              "AttachObject": "Caster",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+      "DebugName": "Spellstrike_SE_RawDamage_09",
+      "ID": "f65e9a93-0903-439a-ad7a-8bdc22bee1c1",
+      "Components": [
+        {
+          "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+          "StatusEffectType": "BonusDamageProc",
+          "OverrideDescriptionString": -1,
+          "OverrideDescriptionStringTactical": -1,
+          "UseStatusEffectValueAs": "None",
+          "BaseValue": 0.90,
+          "DynamicValue": {
+            "Stat": "None",
+            "SkillDataID": "00000000-0000-0000-0000-000000000000",
+            "ClassID": "00000000-0000-0000-0000-000000000000",
+            "MultiplyBy": 1,
+            "Operator": "Add"
+          },
+          "KeywordsIDs": [ "bd7fffff-4383-40be-a746-faa3931c9c02" ],
+          "DurationType": "OneHitUse",
+          "Duration": 1,
+          "MaxStackQuantity": 0,
+          "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+          "ApplicationType": "ApplyOnStart",
+          "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+          "StackedChildrenApplyEffects": "false",
+          "InclusionConditions": {
+            "Operator": 0,
+            "Components": []
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "TriggerAdjustment": {
+            "TriggerOnEvent": "None",
+            "TriggerOffEvent": "None",
+            "ValidateWithAttackFilter": "false",
+            "ParamValue": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0,
+            "ResetTriggerOnEffectTimeout": "false",
+            "MaxTriggerCount": 0,
+            "IgnoreMaxTriggerCount": "false",
+            "RemoveEffectAtMax": "false",
+            "ChanceToTrigger": 1
+          },
+          "PowerLevelScaling": {
+            "UseCharacterLevel": "false",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "ValueAdjustment": 0,
+            "DurationAdjustment": 0
+          },
+          "IsHostile": "false",
+          "ClearOnCombatEnd": "false",
+          "ClearOnRest": "false",
+          "ClearOnFoodRest": "false",
+          "ClearWhenAttacks": "false",
+          "ClearOnDeath": "false",
+          "HideFromCombatTooltip": "false",
+          "HideFromCombatLog": "false",
+          "HideFromUI": "false",
+          "HideIfNoValue": "false",
+          "VisualEffects": [],
+          "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Range": "None",
+            "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+            "Source": "None",
+            "DefendedBy": "None",
+            "Empowered": "false",
+            "Disengagement": "false",
+            "Stealthed": "false",
+            "UseStealthLinger": "false",
+            "PowerLevel": 0,
+            "PowerLevelOperator": "EqualTo",
+            "ChanceToApply": 1,
+            "AttackHostility": "Default",
+            "TargetType": "None"
+          },
+          "AttackTargetFilter": {
+            "KeywordsIDs": [],
+            "KeywordLogic": "Or",
+            "Race": "None",
+            "IsKith": "false",
+            "HealthPercentage": 0,
+            "HealthOperator": "EqualTo",
+            "Distance": 0,
+            "DistanceOperator": "EqualTo",
+            "HasDOT": "false",
+            "IsMarked": "false",
+            "TargetHostility": "Default"
+          },
+          "ExtraValue": 0,
+          "OverridePenetration": 0,
+          "DamageTypeValue": "Raw",
+          "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+          "RaceValue": "None",
+          "StatusEffectTypeValue": "None",
+          "ItemValueID": "00000000-0000-0000-0000-000000000000",
+          "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+          "StatusEffectsValueIDs": [],
+          "AttackValueID": "00000000-0000-0000-0000-000000000000",
+          "AttackOverrideValue": "None",
+          "EventValue": "OnApply",
+          "ClassValueID": "00000000-0000-0000-0000-000000000000",
+          "WeaponTypeValue": "None",
+          "AttackHitType": "None",
+          "SkillValueID": "00000000-0000-0000-0000-000000000000",
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+          "BedRestDaysMinimum": 0,
+          "BedRestDaysMaximum": 0
+        }
+      ]
+    }
+  ]
+}

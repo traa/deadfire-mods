@@ -1,0 +1,683 @@
+{
+   "GameDataObjects": [
+      {
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Umbral_Mystics_Order",
+      "ID": "57d5a710-9032-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [],
+          "DisplayName": 16121,
+          "Description": 16122,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [
+            {
+              "String": 16123
+            }
+          ],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "NoVocalization",
+          "Icon": "gui/icons/abilities/talents/class_paladin.png",
+          "UsageType": "None",
+          "UsageValue": 0,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 0,
+          "IsPassive": "true",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    {    
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Shrouded_Blade_of_the_Mystic_Knights",
+      "ID": "6178ac72-9037-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [],
+          "DisplayName": 16124,
+          "Description": 16125,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/paladin/UmbralBlade.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 2,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 3,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "true",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": [
+                {
+                  "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                  "Data": {
+                    "FullName": "Boolean HasStatusEffectType(Guid, StatusEffectType)",
+                    "Parameters": [
+                      "7d150000-0000-0000-0000-000000000000",
+                      "ChangeForm"
+                    ],
+                    "Flags": "",
+                    "UnrealCall": "",
+                    "FunctionHash": 0,
+                    "ParameterHash": 0
+                  },
+                  "Not": true,
+                  "Operator": 0
+                }
+              ]
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "846a9aea-9039-11e8-b21f-529269fb1459",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "f32ef1b3-fb7d-47aa-a98b-8436cfb126b0"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    {  
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Form_of_the_Umbral_Warrior",
+      "ID": "4e825038-9045-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "ad3de01a-e7a8-4a5e-9ec3-7d858d1ffea7"
+          ],
+          "DisplayName": 16126,
+          "Description": 16127,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/paladin/FormofUmbral.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 5,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 9,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "true",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": [
+                {
+                  "$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                  "Data": {
+                    "FullName": "Boolean HasStatusEffectType(Guid, StatusEffectType)",
+                    "Parameters": [
+                      "7d150000-0000-0000-0000-000000000000",
+                      "ChangeForm"
+                    ],
+                    "Flags": "",
+                    "UnrealCall": "",
+                    "FunctionHash": 0,
+                    "ParameterHash": 0
+                  },
+                  "Not": true,
+                  "Operator": 0
+                }
+              ]
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "8118e944-9045-11e8-9eb6-529269fb1459",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "eb2ecacc-2df6-4a28-869f-8f4c59043565"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Conjure_Shadow",
+      "ID": "b8d61fc0-90d9-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [
+            "a7a06148-9a41-44fe-9cc8-31acef0e13aa"
+          ],
+          "DisplayName": 16128,
+          "Description": 16129,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/paladin/SummonShadows.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 4,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 7,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "true",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "7a0c0748-90dc-11e8-9eb6-529269fb1459",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "22c258f5-fcda-415d-8ff9-b9867b137290"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    { 
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Umbral_Knight_Shadow_Walk",
+      "ID": "1b5eff4a-90e4-11e8-bada-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [],
+          "DisplayName": 16130,
+          "Description": 16131,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/paladin/UmbralShadowWalk.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 3,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 5,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "true",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [
+            "d7609158-d186-4841-88df-c4ae1bc15c87",
+            "b63ece42-41ba-43c0-9449-680d6ce90263",
+            "c5f1b323-9efe-49dc-bba2-3a852f859d34",
+            "3b4bf424-b037-49f2-8567-135b50668268",
+            "59b807a1-7f0e-47da-89cf-c8aea527bc8c"
+          ],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "1a935493-2f1d-420c-baed-6f3c09b798b8",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "445c8cfb-5e74-4705-96cc-d38fc2dddc8c"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.WeaponAttackAbilityGameData, Assembly-CSharp",
+      "DebugName": "Umbral_Strike",
+      "ID": "4c065e66-91b3-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [],
+          "DisplayName": 16136,
+          "Description": 16135,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/paladin/UmbralStrike.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 2,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 1,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "15743f94-1026-40b0-8e13-a667b3f66f63",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "00000000-0000-0000-0000-000000000000",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "704f19ff-1653-4727-875c-2d80564f0117"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        },
+        {
+          "$type": "Game.GameData.WeaponAttackAbilityComponent, Assembly-CSharp",
+          "Type": "FullAttack",
+          "Range": "None",
+          "AttackVariationID": "00000000-0000-0000-0000-000000000000",
+          "RecoveryTimeID": "00000000-0000-0000-0000-000000000000",
+          "BonusDamageMultiplier": 1.20,
+          "BonusAccuracy": 10,
+          "BonusPenetration": 0,
+          "BonusPushDistance": 0,
+          "DefendedBy": "Count",
+          "AfflictionsDefendedBy": "Reflex",
+          "InterruptsOn": "Hit",
+          "InterruptType": "Normal",
+          "AttackKeywordsIDs": [],
+          "AttackStatusEffectsIDs": [
+            "d0f6a5a3-6448-4fe6-a5e2-61aae1fd1c1b"
+          ],
+          "AttackVisualEffects": [
+            {
+              "VisualEffect": "prefabs/effects/abilities/rogue/fx_withering_strike.prefab",
+              "AttachPoint": "Chest",
+              "AttachObject": "Target",
+              "AttachMode": "PositionFaceSource",
+              "MeshType": "None",
+              "Event": "OnHit",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            },
+            {
+              "VisualEffect": "prefabs/effects/abilities/rogue/fx_blinding_strike.prefab",
+              "AttachPoint": "Head",
+              "AttachObject": "Target",
+              "AttachMode": "Attach",
+              "MeshType": "None",
+              "Event": "OnHit",
+              "AnimEventID": 0,
+              "Loop": "false",
+              "Scale": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Game.GameData.GenericAbilityGameData, Assembly-CSharp",
+      "DebugName": "Pitfall_Umbral_Knight",
+      "ID": "efab4f14-9293-11e8-9eb6-529269fb1459",
+      "Components": [
+        {
+          "$type": "Game.GameData.GenericAbilityComponent, Assembly-CSharp",
+          "KeywordsIDs": [],
+          "DisplayName": 16444,
+          "Description": 16445,
+          "DescriptionTactical": -1,
+          "UpgradeDescriptions": [],
+          "UpgradedFromID": "00000000-0000-0000-0000-000000000000",
+          "Vocalization": "AbilityCast",
+          "Icon": "gui/icons/abilities/wizard/UmbralPitfall.png",
+          "UsageType": "ClassPowerPool",
+          "UsageValue": 2,
+          "AbilityClassID": "f64b5a21-2dd1-41ae-8562-60ce099b25aa",
+          "AbilityLevel": 0,
+          "IsPassive": "false",
+          "StackingRuleOverride": "Default",
+          "TriggerOnHit": "false",
+          "IsModal": "false",
+          "ModalGroupID": "00000000-0000-0000-0000-000000000000",
+          "IsCombatOnly": "false",
+          "IsNonCombatOnly": "false",
+          "HideFromUI": "false",
+          "HideFromCombatLog": "false",
+          "UniqueSet": "None",
+          "NoiseLevelID": "82bc1ce9-3a81-41ca-a61a-cc1f73a53de7",
+          "DurationOverride": 0,
+          "OverrideEmpower": "Default",
+          "ClearsOnMovement": "false",
+          "CannotActivateWhileInStealth": "false",
+          "CannotActivateWhileInvisible": "false",
+          "ActivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "ApplicationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "DeactivationPrerequisites": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            }
+          },
+          "PowerLevelScaling": {
+            "ScalingType": "Default",
+            "BaseLevel": 0,
+            "LevelIncrement": 1,
+            "MaxLevel": 0,
+            "DamageAdjustment": 1,
+            "DurationAdjustment": 1,
+            "BounceCountAdjustment": 0,
+            "ProjectileCountAdjustment": 0,
+            "AccuracyAdjustment": 0,
+            "PenetrationAdjustment": 0
+          },
+          "StatusEffectKeywordsIDs": [],
+          "StatusEffectsIDs": [],
+          "VisualEffects": [],
+          "SelfMaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+          "AttackID": "7c3e5748-935a-11e8-9eb6-529269fb1459",
+          "AITargetingConditional": {
+            "Conditional": {
+              "Operator": 0,
+              "Components": []
+            },
+            "Scripts": []
+          },
+          "AudioEventListID": "c97f52e4-ba46-4eb8-9f43-94c03f635c8f"
+        },
+        {
+          "$type": "Game.GameData.ProgressionUnlockableComponent, Assembly-CSharp"
+        }
+      ]
+    }
+  ]
+}
