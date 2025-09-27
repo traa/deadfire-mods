@@ -151,6 +151,151 @@
 					}
 				}
 			]
-		}
+		},
+		{		
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "Give_Missed_Items_ScriptHook(club justiciar)",
+            "ID": "8ef2009b-079a-433b-ac2a-d7bc81fc0e53",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "77dc0f1f-b27a-48a4-aef3-e31c89559282"
+                                        ],
+                                        "Flags": "",
+                                        "UnrealCall": "",
+                                        "FunctionHash": 0,
+                                        "ParameterHash": 0
+                                    },
+                                    "Not": true,
+                                    "Operator": 0
+                                },
+								{
+                            		"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+										"Parameters": [
+											"n_CP_Port_Maje_main",
+											"EqualTo",
+											"0"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+                                    "Not": true,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+							{
+                                "Data": {
+                                    "FullName": "Void GiveItems(Guid, Int32)",
+                                    "Parameters": [
+                                        "72c8139c-674d-48a8-bf7c-11bb4c35daf3",
+                                        "1"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+							}
+                        ]
+                    }
+                }
+            ]
+        },
+		{		
+            "$type": "Game.GameData.ModScriptHookGameData, Assembly-CSharp",
+            "DebugName": "Give_Missed_Items_ScriptHook(stiletto razor, seal of the magi)",
+            "ID": "48518b76-f199-4c3a-91b3-86bd7079294a",
+            "Components": [
+                {
+                    "$type": "Game.GameData.ModScriptHookComponent, Assembly-CSharp",
+                    "RunOnlyOnce": "false",
+                    "SucceedOnlyOnce": "true",
+                    "Script": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": [
+                                {
+									"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+                                    "Data": {
+                                        "FullName": "Boolean IsInActiveScene(Guid)",
+                                        "Parameters": [
+                                            "77dc0f1f-b27a-48a4-aef3-e31c89559282"
+                                        ],
+                                        "Flags": "",
+                                        "UnrealCall": "",
+                                        "FunctionHash": 0,
+                                        "ParameterHash": 0
+                                    },
+                                    "Not": true,
+                                    "Operator": 0
+                                },
+								{
+                            		"$type": "OEIFormats.FlowCharts.ConditionalCall, OEIFormats",
+									"Data": {
+										"FullName": "Boolean IsGlobalValue(String, Operator, Int32)",
+										"Parameters": [
+											"n_CP_Port_Maje_main",
+											"EqualTo",
+											"0"
+										],
+										"Flags": "",
+										"UnrealCall": "",
+										"FunctionHash": 0,
+										"ParameterHash": 0
+									},
+                                    "Not": true,
+                                    "Operator": 0
+                                }
+                            ]
+                        },
+                        "Scripts": [
+							{
+                                "Data": {
+                                    "FullName": "Void GiveItems(Guid, Int32)",
+                                    "Parameters": [
+                                        "df3e1c62-5b63-4287-8cce-d6808f5128cf",
+                                        "1"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+							},
+							{
+                                "Data": {
+                                    "FullName": "Void GiveItems(Guid, Int32)",
+                                    "Parameters": [
+                                        "f2199ece-4e2e-4905-8a6e-87a6f67b3fac",
+                                        "1"
+                                    ]
+                                },
+                                "Conditional": {
+                                    "Operator": 0,
+                                    "Components": []
+                                }
+							}
+                        ]
+                    }
+                }
+            ]
+        }
 	]
 }
