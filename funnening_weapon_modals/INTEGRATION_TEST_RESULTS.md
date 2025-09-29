@@ -9,7 +9,7 @@ Manual verification of the implementation against all requirements from the spec
 ## Component Verification
 
 ### 1. Persistent Momentum Tracker System ✅
-**Status Effect ID**: `a1b2c3d4-e5f6-7890-1234-567890abcdef`
+**Status Effect ID**: `d2076c77-cd3c-4eb8-bf4e-0be948c4c215`
 - **Configuration**: 
   - `DurationType: Infinite` ✅
   - `ClearWhenAttacks: false` ✅

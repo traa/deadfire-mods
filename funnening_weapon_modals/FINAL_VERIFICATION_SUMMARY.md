@@ -8,7 +8,7 @@
 - **Trigger**: Character moves with Spear Engaging Thrust active
 - **Expected**: Momentum stacks accumulate (1.15x per stack, max 20)
 - **Verified**: 
-  - Persistent tracker (`a1b2c3d4-e5f6-7890-1234-567890abcdef`) applies active tracker
+  - Persistent tracker (`d2076c77-cd3c-4eb8-bf4e-0be948c4c215`) applies active tracker
   - Active tracker (`b2c3d4e5-f6a7-8901-2345-678901bcdef0`) triggers on movement
   - Damage stacks (`d4e5f6a7-b8c9-0123-4567-890123def012`) accumulate properly
   - Visual effects: Blue flames on feet + carnage on chest
