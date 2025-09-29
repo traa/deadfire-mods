@@ -24,7 +24,7 @@
                     "TriggerOnHit": "false",
                     "IsModal": "true",
                     "ModalGroupID": "00000000-0000-0000-0000-000000000000",
-                    "IsCombatOnly": "false",
+                    "IsCombatOnly": "true",
                     "IsNonCombatOnly": "false",
                     "HideFromUI": "false",
                     "ShowStatusEffects": "false",
@@ -70,8 +70,9 @@
                     "StatusEffectsIDs": [
                         "0aac7268-0fd4-4458-be4e-dd4f6e8557d1",
                         "67d5aa71-11a3-4588-964f-a86db54404a4",
-                        "b2c3d4e5-f6a7-8901-2345-678901bcdef0",
-                        "195cf92f-b292-41a4-b692-6f93a44da689"
+                        "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+                        "195cf92f-b292-41a4-b692-6f93a44da689",
+                        "c5d6e7f8-9a0b-1c2d-3e4f-567890123456"
                     ],
                     "RandomizeStatusEffect": "false",
                     "VisualEffects": [],
@@ -350,7 +351,137 @@
                 }
             ]
         },
-       {
+        {
+            "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+            "DebugName": "spear_momentum_tracker_persistent",
+            "ID": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+            "Components": [
+                {
+                    "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+                    "StatusEffectType": "ApplyStatusEffectOnEvent",
+                    "OverrideDescriptionString": -1,
+                    "OverrideDescriptionStringTactical": -1,
+                    "UseStatusEffectValueAs": "None",
+                    "BaseValue": 0,
+                    "DynamicValue": {
+                        "Stat": "None",
+                        "SkillDataID": "00000000-0000-0000-0000-000000000000",
+                        "ClassID": "00000000-0000-0000-0000-000000000000",
+                        "MultiplyBy": 1,
+                        "Operator": "Add"
+                    },
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a"
+                    ],
+                    "DurationType": "Infinite",
+                    "Duration": 0,
+                    "MaxStackQuantity": 0,
+                    "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+                    "ApplicationType": "ApplyOnStart",
+                    "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+                    "StackedChildrenApplyEffects": "false",
+                    "InclusionConditions": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "ApplicationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "TriggerAdjustment": {
+                        "TriggerOnEvent": "None",
+                        "TriggerOffEvent": "None",
+                        "ValidateWithAttackFilter": "false",
+                        "ParamValue": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0,
+                        "ResetTriggerOnEffectTimeout": "false",
+                        "MaxTriggerCount": 0,
+                        "IgnoreMaxTriggerCount": "false",
+                        "RemoveEffectAtMax": "false",
+                        "ChanceToTrigger": 1
+                    },
+                    "PowerLevelScaling": {
+                        "UseCharacterLevel": "false",
+                        "BaseLevel": 0,
+                        "LevelIncrement": 1,
+                        "MaxLevel": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0
+                    },
+                    "IsHostile": "false",
+                    "ClearOnCombatEnd": "true",
+                    "ClearOnRest": "false",
+                    "ClearOnFoodRest": "false",
+                    "ClearWhenAttacks": "false",
+                    "ClearOnDeath": "false",
+                    "HideFromCombatTooltip": "false",
+                    "HideFromCombatLog": "true",
+                    "HideFromUI": "false",
+                    "HideIfNoValue": "false",
+                    "VisualEffects": [],
+                    "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+                    "AttackFilter": {
+                        "KeywordsIDs": [],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Range": "None",
+                        "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+                        "Source": "None",
+                        "DefendedBy": "None",
+                        "Empowered": "false",
+                        "Disengagement": "false",
+                        "Stealthed": "false",
+                        "UseStealthLinger": "false",
+                        "PowerLevel": 0,
+                        "PowerLevelOperator": "EqualTo",
+                        "ChanceToApply": 1,
+                        "AttackHostility": "Default",
+                        "TargetType": "None"
+                    },
+                    "AttackTargetFilter": {
+                        "KeywordsIDs": [],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Distance": 0,
+                        "DistanceOperator": "EqualTo",
+                        "HasDOT": "false",
+                        "IsMarked": "false",
+                        "TargetHostility": "Default"
+                    },
+                    "ExtraValue": 0,
+                    "OverridePenetration": 0,
+                    "DamageTypeValue": "All",
+                    "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+                    "RaceValue": "None",
+                    "StatusEffectTypeValue": "None",
+                    "ItemValueID": "00000000-0000-0000-0000-000000000000",
+                    "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+                    "StatusEffectsValueIDs": [
+                        "b2c3d4e5-f6a7-8901-2345-678901bcdef0"
+                    ],
+                    "AttackValueID": "00000000-0000-0000-0000-000000000000",
+                    "AttackOverrideValue": "None",
+                    "EventValue": "OnApply",
+                    "ClassValueID": "00000000-0000-0000-0000-000000000000",
+                    "WeaponTypeValue": "None",
+                    "AttackHitType": "None",
+                    "SkillValueID": "00000000-0000-0000-0000-000000000000",
+                    "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+                    "BedRestDaysMinimum": 0,
+                    "BedRestDaysMaximum": 0
+                }
+            ]
+        },
+        {
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
             "DebugName": "spear_momentum_tracker",
             "ID": "b2c3d4e5-f6a7-8901-2345-678901bcdef0",
@@ -369,13 +500,15 @@
                         "MultiplyBy": 1,
                         "Operator": "Add"
                     },
-                    "KeywordsIDs": [],
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a"
+                    ],
                     "DurationType": "Infinite",
                     "Duration": 0,
                     "MaxStackQuantity": 0,
                     "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
                     "ApplicationType": "ApplyOnStart",
-                    "IntervalRateID": "c3d4e5f6-a7b8-9012-3456-789012cdef01",
+                    "IntervalRateID": "47b8ed3c-8899-4ab8-aa01-e51a374ab3ba",
                     "StackedChildrenApplyEffects": "false",
                     "InclusionConditions": {
                         "Operator": 0,
@@ -396,7 +529,7 @@
                         "DurationAdjustment": 0,
                         "ResetTriggerOnEffectTimeout": "false",
                         "MaxTriggerCount": 0,
-                        "IgnoreMaxTriggerCount": "true",
+                        "IgnoreMaxTriggerCount": "false",
                         "RemoveEffectAtMax": "false",
                         "ChanceToTrigger": 1
                     },
@@ -409,10 +542,10 @@
                         "DurationAdjustment": 0
                     },
                     "IsHostile": "false",
-                    "ClearOnCombatEnd": "false",
+                    "ClearOnCombatEnd": "true",
                     "ClearOnRest": "false",
                     "ClearOnFoodRest": "false",
-                    "ClearWhenAttacks": "false",
+                    "ClearWhenAttacks": "true",
                     "ClearOnDeath": "false",
                     "HideFromCombatTooltip": "false",
                     "HideFromCombatLog": "true",
@@ -495,9 +628,9 @@
                 }
             ]
         },
-       {
+        {
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-            "DebugName": "spear_momentum_stack",
+            "DebugName": "spear_engaging_thrust_SE_apply_tick",
             "ID": "d4e5f6a7-b8c9-0123-4567-890123def012",
             "Components": [
                 {
@@ -506,7 +639,7 @@
                     "OverrideDescriptionString": -1,
                     "OverrideDescriptionStringTactical": -1,
                     "UseStatusEffectValueAs": "Child",
-                    "BaseValue": 0.10,
+                    "BaseValue": 1.15,
                     "DynamicValue": {
                         "Stat": "None",
                         "SkillDataID": "00000000-0000-0000-0000-000000000000",
@@ -514,10 +647,13 @@
                         "MultiplyBy": 1,
                         "Operator": "Add"
                     },
-                    "KeywordsIDs": [],
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a",
+                        "7e8f9a0b-c1d2-3e4f-5678-90123456789b"
+                    ],
                     "DurationType": "Infinite",
                     "Duration": 0,
-                    "MaxStackQuantity": 15,
+                    "MaxStackQuantity": 20,
                     "ApplicationBehavior": "StackWithAllSimilarDataEffects",
                     "ApplicationType": "ApplyOnStart",
                     "IntervalRateID": "00000000-0000-0000-0000-000000000000",
@@ -533,14 +669,14 @@
                         }
                     },
                     "TriggerAdjustment": {
-                        "TriggerOnEvent": "None",
+                        "TriggerOnEvent": "OnInterval",
                         "TriggerOffEvent": "None",
                         "ValidateWithAttackFilter": "false",
                         "ParamValue": 0,
                         "ValueAdjustment": 0,
                         "DurationAdjustment": 0,
                         "ResetTriggerOnEffectTimeout": "false",
-                        "MaxTriggerCount": 0,
+                        "MaxTriggerCount": 20,
                         "IgnoreMaxTriggerCount": "false",
                         "RemoveEffectAtMax": "false",
                         "ChanceToTrigger": 1
@@ -554,7 +690,7 @@
                         "DurationAdjustment": 0
                     },
                     "IsHostile": "false",
-                    "ClearOnCombatEnd": "false",
+                    "ClearOnCombatEnd": "true",
                     "ClearOnRest": "false",
                     "ClearOnFoodRest": "false",
                     "ClearWhenAttacks": "true",
@@ -651,7 +787,10 @@
                         "MultiplyBy": 1,
                         "Operator": "Add"
                     },
-                    "KeywordsIDs": [],
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a",
+                        "0a499f40-1241-4754-9450-ecf991809dc2"
+                    ],
                     "DurationType": "Infinite",
                     "Duration": 0,
                     "MaxStackQuantity": 0,
@@ -710,7 +849,7 @@
                         "DurationAdjustment": 0
                     },
                     "IsHostile": "false",
-                    "ClearOnCombatEnd": "false",
+                    "ClearOnCombatEnd": "true",
                     "ClearOnRest": "false",
                     "ClearOnFoodRest": "false",
                     "ClearWhenAttacks": "true",
@@ -1053,14 +1192,264 @@
             ]
         },
         {
-            "$type": "Game.GameData.IntervalRateGameData, Assembly-CSharp",
-            "DebugName": "Interval_2_Per_Second_spear",
-            "ID": "c3d4e5f6-a7b8-9012-3456-789012cdef01",
+            "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+            "DebugName": "spear_momentum_attack_cleanup_coordinator",
+            "ID": "c5d6e7f8-9a0b-1c2d-3e4f-567890123456",
             "Components": [
                 {
-                    "$type": "Game.GameData.IntervalRateComponent, Assembly-CSharp",
-                    "Interval": 0.5,
-                    "OnlyWhileMoving": "true"
+                    "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+                    "StatusEffectType": "ApplyStatusEffectOnEvent",
+                    "OverrideDescriptionString": -1,
+                    "OverrideDescriptionStringTactical": -1,
+                    "UseStatusEffectValueAs": "None",
+                    "BaseValue": 0,
+                    "DynamicValue": {
+                        "Stat": "None",
+                        "SkillDataID": "00000000-0000-0000-0000-000000000000",
+                        "ClassID": "00000000-0000-0000-0000-000000000000",
+                        "MultiplyBy": 1,
+                        "Operator": "Add"
+                    },
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a"
+                    ],
+                    "DurationType": "Infinite",
+                    "Duration": 0,
+                    "MaxStackQuantity": 0,
+                    "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+                    "ApplicationType": "ApplyOnStart",
+                    "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+                    "StackedChildrenApplyEffects": "false",
+                    "InclusionConditions": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "ApplicationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "TriggerAdjustment": {
+                        "TriggerOnEvent": "OnScoringHitOrCriticalHit",
+                        "TriggerOffEvent": "None",
+                        "ValidateWithAttackFilter": "true",
+                        "ParamValue": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0,
+                        "ResetTriggerOnEffectTimeout": "false",
+                        "MaxTriggerCount": 0,
+                        "IgnoreMaxTriggerCount": "true",
+                        "RemoveEffectAtMax": "false",
+                        "ChanceToTrigger": 1
+                    },
+                    "PowerLevelScaling": {
+                        "UseCharacterLevel": "false",
+                        "BaseLevel": 0,
+                        "LevelIncrement": 1,
+                        "MaxLevel": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0
+                    },
+                    "IsHostile": "false",
+                    "ClearOnCombatEnd": "false",
+                    "ClearOnRest": "false",
+                    "ClearOnFoodRest": "false",
+                    "ClearWhenAttacks": "false",
+                    "ClearOnDeath": "false",
+                    "HideFromCombatTooltip": "true",
+                    "HideFromCombatLog": "true",
+                    "HideFromUI": "true",
+                    "HideIfNoValue": "false",
+                    "VisualEffects": [],
+                    "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+                    "AttackFilter": {
+                        "KeywordsIDs": [
+                            "986d919f-07c1-4b44-a82b-c39adc0d763e"
+                        ],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Range": "None",
+                        "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+                        "Source": "Weapon",
+                        "DefendedBy": "None",
+                        "Empowered": "false",
+                        "Disengagement": "false",
+                        "Stealthed": "false",
+                        "UseStealthLinger": "false",
+                        "PowerLevel": 0,
+                        "PowerLevelOperator": "EqualTo",
+                        "ChanceToApply": 1,
+                        "AttackHostility": "Default",
+                        "TargetType": "None"
+                    },
+                    "AttackTargetFilter": {
+                        "KeywordsIDs": [],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Distance": 0,
+                        "DistanceOperator": "EqualTo",
+                        "HasDOT": "false",
+                        "IsMarked": "false",
+                        "TargetHostility": "Default"
+                    },
+                    "ExtraValue": 0,
+                    "OverridePenetration": 0,
+                    "DamageTypeValue": "All",
+                    "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+                    "RaceValue": "None",
+                    "StatusEffectTypeValue": "None",
+                    "ItemValueID": "00000000-0000-0000-0000-000000000000",
+                    "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+                    "StatusEffectsValueIDs": [
+                        "e7f8a9b0-c1d2-3e4f-5678-90123456789a"
+                    ],
+                    "AttackValueID": "00000000-0000-0000-0000-000000000000",
+                    "AttackOverrideValue": "None",
+                    "EventValue": "OnInterval",
+                    "ClassValueID": "00000000-0000-0000-0000-000000000000",
+                    "WeaponTypeValue": "None",
+                    "AttackHitType": "None",
+                    "SkillValueID": "00000000-0000-0000-0000-000000000000",
+                    "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+                    "BedRestDaysMinimum": 0,
+                    "BedRestDaysMaximum": 0
+                }
+            ]
+        },
+        {
+            "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
+            "DebugName": "spear_momentum_reinitialization_trigger",
+            "ID": "e7f8a9b0-c1d2-3e4f-5678-90123456789a",
+            "Components": [
+                {
+                    "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
+                    "StatusEffectType": "ApplyStatusEffectOnEvent",
+                    "OverrideDescriptionString": -1,
+                    "OverrideDescriptionStringTactical": -1,
+                    "UseStatusEffectValueAs": "None",
+                    "BaseValue": 0,
+                    "DynamicValue": {
+                        "Stat": "None",
+                        "SkillDataID": "00000000-0000-0000-0000-000000000000",
+                        "ClassID": "00000000-0000-0000-0000-000000000000",
+                        "MultiplyBy": 1,
+                        "Operator": "Add"
+                    },
+                    "KeywordsIDs": [
+                        "5cd4a196-d5a8-4268-bfc4-401315584b8a"
+                    ],
+                    "DurationType": "UseDurationTime",
+                    "Duration": 0.1,
+                    "MaxStackQuantity": 0,
+                    "ApplicationBehavior": "UseLongerDurationIfAlreadyApplied",
+                    "ApplicationType": "ApplyOnStart",
+                    "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+                    "StackedChildrenApplyEffects": "false",
+                    "InclusionConditions": {
+                        "Operator": 0,
+                        "Components": []
+                    },
+                    "ApplicationPrerequisites": {
+                        "Conditional": {
+                            "Operator": 0,
+                            "Components": []
+                        }
+                    },
+                    "TriggerAdjustment": {
+                        "TriggerOnEvent": "None",
+                        "TriggerOffEvent": "OnExpire",
+                        "ValidateWithAttackFilter": "false",
+                        "ParamValue": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0,
+                        "ResetTriggerOnEffectTimeout": "false",
+                        "MaxTriggerCount": 1,
+                        "IgnoreMaxTriggerCount": "false",
+                        "RemoveEffectAtMax": "true",
+                        "ChanceToTrigger": 1
+                    },
+                    "PowerLevelScaling": {
+                        "UseCharacterLevel": "false",
+                        "BaseLevel": 0,
+                        "LevelIncrement": 1,
+                        "MaxLevel": 0,
+                        "ValueAdjustment": 0,
+                        "DurationAdjustment": 0
+                    },
+                    "IsHostile": "false",
+                    "ClearOnCombatEnd": "false",
+                    "ClearOnRest": "false",
+                    "ClearOnFoodRest": "false",
+                    "ClearWhenAttacks": "false",
+                    "ClearOnDeath": "false",
+                    "HideFromCombatTooltip": "true",
+                    "HideFromCombatLog": "true",
+                    "HideFromUI": "true",
+                    "HideIfNoValue": "false",
+                    "VisualEffects": [],
+                    "MaterialReplacementID": "00000000-0000-0000-0000-000000000000",
+                    "AttackFilter": {
+                        "KeywordsIDs": [],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Range": "None",
+                        "ClassTypeID": "00000000-0000-0000-0000-000000000000",
+                        "Source": "None",
+                        "DefendedBy": "None",
+                        "Empowered": "false",
+                        "Disengagement": "false",
+                        "Stealthed": "false",
+                        "UseStealthLinger": "false",
+                        "PowerLevel": 0,
+                        "PowerLevelOperator": "EqualTo",
+                        "ChanceToApply": 1,
+                        "AttackHostility": "Default",
+                        "TargetType": "None"
+                    },
+                    "AttackTargetFilter": {
+                        "KeywordsIDs": [],
+                        "KeywordLogic": "Or",
+                        "Race": "None",
+                        "IsKith": "false",
+                        "HealthPercentage": 0,
+                        "HealthOperator": "EqualTo",
+                        "Distance": 0,
+                        "DistanceOperator": "EqualTo",
+                        "HasDOT": "false",
+                        "IsMarked": "false",
+                        "TargetHostility": "Default"
+                    },
+                    "ExtraValue": 0,
+                    "OverridePenetration": 0,
+                    "DamageTypeValue": "All",
+                    "KeywordValueID": "00000000-0000-0000-0000-000000000000",
+                    "RaceValue": "None",
+                    "StatusEffectTypeValue": "None",
+                    "ItemValueID": "00000000-0000-0000-0000-000000000000",
+                    "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
+                    "StatusEffectsValueIDs": [
+                        "b2c3d4e5-f6a7-8901-2345-678901bcdef0"
+                    ],
+                    "AttackValueID": "00000000-0000-0000-0000-000000000000",
+                    "AttackOverrideValue": "None",
+                    "EventValue": "OnExpire",
+                    "ClassValueID": "00000000-0000-0000-0000-000000000000",
+                    "WeaponTypeValue": "None",
+                    "AttackHitType": "None",
+                    "SkillValueID": "00000000-0000-0000-0000-000000000000",
+                    "AudioEventListID": "00000000-0000-0000-0000-000000000000",
+                    "BedRestDaysMinimum": 0,
+                    "BedRestDaysMaximum": 0
                 }
             ]
         }
