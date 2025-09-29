@@ -748,7 +748,7 @@
                     "ItemValueID": "00000000-0000-0000-0000-000000000000",
                     "AfflictionTypeValueID": "00000000-0000-0000-0000-000000000000",
                     "StatusEffectsValueIDs": [
-                        "d8e59416-5d46-4f3a-9117-5421c9496412"
+                        "a1b2c3d4-e5f6-7890-1234-56789abcdef0"
                     ],
                     "AttackValueID": "00000000-0000-0000-0000-000000000000",
                     "AttackOverrideValue": "None",
@@ -765,8 +765,8 @@
         },
         {
             "$type": "Game.GameData.StatusEffectGameData, Assembly-CSharp",
-            "DebugName": "spear_engaging_thrust_SE_apply_tick",
-            "ID": "d4e5f6a7-b8c9-0123-4567-890123def012",
+            "DebugName": "spear_momentum_SE_damage",
+            "ID": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
             "Components": [
                 {
                     "$type": "Game.GameData.StatusEffectComponent, Assembly-CSharp",
@@ -786,12 +786,12 @@
                         "5cd4a196-d5a8-4268-bfc4-401315584b8a",
                         "7e8f9a0b-c1d2-3e4f-5678-90123456789b"
                     ],
-                    "DurationType": "Infinite",
-                    "Duration": 0,
+                    "DurationType": "UseDurationTimeUnadjusted",
+                    "Duration": 7,
                     "MaxStackQuantity": 20,
                     "ApplicationBehavior": "StackWithAllSimilarDataEffects",
                     "ApplicationType": "ApplyOnStart",
-                    "IntervalRateID": "00000000-0000-0000-0000-000000000000",
+                    "IntervalRateID": "47b8ed3c-8899-4ab8-aa01-e51a374ab3ba",
                     "StackedChildrenApplyEffects": "false",
                     "InclusionConditions": {
                         "Operator": 0,
@@ -811,7 +811,7 @@
                         "ValueAdjustment": 0,
                         "DurationAdjustment": 0,
                         "ResetTriggerOnEffectTimeout": "false",
-                        "MaxTriggerCount": 20,
+                        "MaxTriggerCount": 0,
                         "IgnoreMaxTriggerCount": "true",
                         "RemoveEffectAtMax": "false",
                         "ChanceToTrigger": 1
@@ -825,13 +825,13 @@
                         "DurationAdjustment": 0
                     },
                     "IsHostile": "false",
-                    "ClearOnCombatEnd": "true",
+                    "ClearOnCombatEnd": "false",
                     "ClearOnRest": "false",
                     "ClearOnFoodRest": "false",
                     "ClearWhenAttacks": "true",
                     "ClearOnDeath": "false",
                     "HideFromCombatTooltip": "false",
-                    "HideFromCombatLog": "false",
+                    "HideFromCombatLog": "true",
                     "HideFromUI": "false",
                     "HideIfNoValue": "false",
                     "VisualEffects": [
@@ -947,7 +947,7 @@
                                         "FullName": "Boolean IsStatusEffectCount(Guid, Guid, Operator, Int32)",
                                         "Parameters": [
                                             "011111e9-0000-0000-0000-000000000000",
-                                            "d4e5f6a7-b8c9-0123-4567-890123def012",
+                                            "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
                                             "GreaterThanOrEqualTo",
                                             "15"
                                         ],
@@ -984,7 +984,7 @@
                         "DurationAdjustment": 0
                     },
                     "IsHostile": "false",
-                    "ClearOnCombatEnd": "true",
+                    "ClearOnCombatEnd": "false",
                     "ClearOnRest": "false",
                     "ClearOnFoodRest": "false",
                     "ClearWhenAttacks": "true",
